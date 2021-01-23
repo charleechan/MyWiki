@@ -1,0 +1,65 @@
+{
+ "plugins": [
+     "wavedrom",
+     "back-to-top-button",
+     "chapter-fold",
+     "splitter",
+     "code",
+     "-lunr",
+     "-search",
+     "-sharing",
+     "sharing-plus",
+     "search-pro",
+     "insert-logo",
+     "custom-favicon",
+     "pageview-count",
+     "tbfed-pagefooter",
+     "mind-maps",
+     "hide-element",
+     "mathjax",
+     "forkmegithub",
+     "mermaid-gb3"
+ ],
+ "pluginsConfig": {
+     "insert-logo": {
+         "url": "./img/logo.png",
+         "style": "background: none; max-height: 30px; min-height: 30px"
+     },
+     "favicon": "./img/inlook.ico",
+     "tbfed-pagefooter": {
+         "copyright": "Copyright &copy charleechan 2021",
+         "modify_label": "本文最终修订于：",
+         "modify_format": "YYYY-MM-DD HH:mm:ss"
+     },
+     "forkmegithub": {
+       "url": "https://github.com/your/repo"
+     },
+     "sharing": {
+         "douban": true,
+         "facebook": false,
+         "google": false,
+         "hatenaBookmark": false,
+         "instapaper": false,
+         "line": false,
+         "linkedin": false,
+         "messenger": false,
+         "pocket": false,
+         "qq": true,
+         "qzone": false,
+         "stumbleupon": false,
+         "twitter": true,
+         "viber": false,
+         "vk": false,
+         "weibo": true,
+         "whatsapp": false,
+         "all": [
+             "facebook", "google", "twitter",
+             "weibo", "instapaper", "linkedin",
+             "pocket", "stumbleupon"
+         ]
+     },
+     "hide-element": {
+         "elements": [".gitbook-link"]
+     }
+ }
+}
