@@ -92,9 +92,9 @@ click C18 "http://charleechan.github.io/MyWiki/Coding/LangsGene/Java/" "点我�
 click C19 "http://charleechan.github.io/MyWiki/Coding/LangsHard/Verilog/" "点我打开"
 click C20 "http://charleechan.github.io/MyWiki/Coding/LangsHard/VHDL/" "点我打开"
 click C21 "http://charleechan.github.io/MyWiki/Coding/LangsHard/SystemVerilog/" "点我打开"
-click C22 "http://charleechan.github.io/MyWiki/Coding/OtherLibs/Tensorflow/" "点我打开"
-click C23 "http://charleechan.github.io/MyWiki/Coding/OtherLibs/Pytorch/" "点我打开"
-click C24 "http://charleechan.github.io/MyWikiCoding/OtherLibs/OpenCV/" "点我打开"
+click C22 "http://charleechan.github.io/MyWiki/OtherLibs/Tensorflow/" "点我打开"
+click C23 "http://charleechan.github.io/MyWiki/OtherLibs/Pytorch/" "点我打开"
+click C24 "http://charleechan.github.io/MyWiki/OtherLibs/OpenCV/" "点我打开"
 
 class C1,C2,C3,C4,C5,,C6,C7,C8,C9,C10,C11,C12 CSS3
 class C13,C14,C15,C16,C17,C18,C19,C20,C21,C22,C23,C24 CSS3
