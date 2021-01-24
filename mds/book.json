@@ -60,6 +60,15 @@
      },
      "hide-element": {
          "elements": [".gitbook-link"]
+     },
+     "simple-mind-map": {
+         "type": "markdown",
+         "preset": "colorful",
+         "linkShape": "diagonal",
+         "autoFit": true,
+         "style": {
+           "height":  "750px"
+         }
      }
  }
 }
