@@ -1,11 +1,11 @@
 # Summary
 
-## 知识体系
+# 知识体系
 * [我的Wiki-编程语言](README.md)
 * [我的Wiki-编程平台](nav1.md)
 * [我的Wiki-软件教程](nav2.md)
 
-## 编程语言
+# 编程语言
 * [通用语言](Coding/LangsGene/README.md)
   * [C语言](Coding/LangsGene/C/README.md)
   * [C++](Coding/LangsGene/Cpp/README.md)
@@ -44,7 +44,7 @@
   * [Ini](Coding/LangsConf/Ini/README.md)
   * [Json](Coding/LangsConf/Json/README.md)
 
-## 软件教程
+# 软件教程
 * [工程/项目软件](SoftTuto/Project/README.md)
   * [Altium Designer](SoftTuto/Project/AltiumDesigner/README.md)
   * [Cadence SPB](SoftTuto/Project/CadenceSPB/README.md)
