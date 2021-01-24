@@ -5,43 +5,96 @@
 * [我的Wiki-编程平台](nav1.md)
 * [我的Wiki-软件教程](nav2.md)
 
-## 通用编程语言
-* [C语言](GeneCode/C/README.md)
+## 编程语言
+* 通用语言
+  * [C语言](Coding/LangsGene/C/README.md)
+  * [C++](Coding/LangsGene/Cpp/README.md)
+  * [Java](Coding/LangsGene/Java/README.md)
+* 硬件描述语言
+  * [Verilog HDL](Coding/LangsHard/Verilog/README.md)
+  * [VHDL](Coding/LangsHard/VHDL/README.md)
+  * [System Verilog](Coding/LangsHard/SystemVerilog/README.md)
 
-* [C++](GeneCode/Cpp/README.md)
+* 标记语言
+  * [MarkDown](Coding/LangsMark/MarkDown/README.md)
+    * [用markdown绘各种各样的图](Coding/LangsMark/MarkDown/MDPlotChart.md)
+    * [用markdown画时序图](Coding/LangsMark/MarkDown/MDPlotTiming.md)
+    * [用Markdown画脑图](Coding/LangsMark/MarkDown/MDPlotMindMap.md)
+  * [HTML](Coding/LangsMark/HTML/README.md)
+  * [QML](Coding/LangsMark/QML/README.md)
+  * [XML](Coding/LangsMark/XML/README.md)
+* 脚本语言
+  * [Javascript/QScript](Coding/LangsScript/JS/README.md)
+    * [把博客园装饰得美丽大方](Coding/LangsScript/JS/CnblogsUsage.md)
+  * [Bash](Coding/LangsScript/Bash/README.md)
+  * [CMD](Coding/LangsScript/CMD/README.md)
+  * [Matlab](Coding/LangsScript/Matlab/README.md)
+  * [Python](Coding/LangsScript/Python/README.md)
+  * [SQL](Coding/LangsScript/SQL/README.md)
+  * [TCL](Coding/LangsScript/TCL/README.md)
+  * [PHP](Coding/LangsScript/PHP/README.md)
+* 库/框架
+  * [Tensorflow](Coding/OtherLibs/Tensorflow/README.md)
+  * [Pytorch](Coding/OtherLibs/Pytorch/README.md)
+  * [OpenCV](Coding/OtherLibs/OpenCV/README.md)
+* 样式表
+  * [CSS/QSS](Coding/LangsStyle/CSS_QSS/README.md)
 
-* [Java](GeneCode/Java/README.md)
+* 配置文件
+  * [Ini](Coding/LangsConf/Ini/README.md)
+  * [Json](Coding/LangsConf/Json/README.md)
 
-## 标记编程语言
+## 软件教程
+* 工程/项目软件
+  * [Altium Designer](SoftTuto/Project/AltiumDesigner/README.md)
+  * [Cadence SPB](SoftTuto/Project/CadenceSPB/README.md)
+  * [Keil MDK](SoftTuto/Project/KeilMDK/README.md)
+  * [ModelSim](SoftTuto/Project/ModelSim/README.md)
+  * [MultiSim](SoftTuto/Project/MultiSim/README.md)
+  * [Qt](SoftTuto/Project/Qt/README.md)
+  * [SolidWorks](SoftTuto/Project/SolidWorks/README.md)
+  * [Visual Studio](SoftTuto/Project/VisualStudio/README.md)
+  * [Vivado](SoftTuto/Project/Vivado/README.md)
+  * [VS Code](SoftTuto/Project/VSCode/README.md)
+* 图像图表软件
+  * [GIMP](SoftTuto/Image/GIMP/README.md)
+    * [默认快捷键](SoftTuto/Image/GIMP/GIMPKeys.md)
+  * [Mermaid](SoftTuto/Image/Mermaid/README.md)
+  * [Origin](SoftTuto/Image/Origin/README.md)
+  * [Solidworks](SoftTuto/Image/Solidworks/README.md)
+  * [Visio](SoftTuto/Image/Visio/README.md)
+* 动画制作软件
+  * [Solidworks](SoftTuto/Animation/SolidWorks/README.md)
+  * [HTML5](SoftTuto/Animation/HTML5/README.md)
+  * [口袋动画-Pocket Animation](SoftTuto/Animation/PocketAnimation/README.md)
+* 办公软件
+  * [Word](SoftTuto/Office/Word/README.md)
+    * [中文学位论文参考文献格式设置Mendeley](SoftTuto/Office/Word/ChinesePaperCSL.md)
+  * [PPT](SoftTuto/Office/PPT/README.md)
+  * [Excel](SoftTuto/Office/Excel/README.md)
+* 管理类软件
+  * [Git](SoftTuto/Manage/Git/README.md)
+    * [使用Github的基本入门流程](SoftTuto/Manage/Git/GithubUsage.md)
+    * [结合Github Pages使用GitBook](SoftTuto/Manage/Git/GitbookUsage.md)
+  * [Inlook](SoftTuto/Manage/Inlook/README.md)
+    * [Inlook-你的私人工作秘书](SoftTuto/Manage/Inlook/InlookUsage.md)
+  * [Outlook](SoftTuto/Manage/Outlook/README.md)
+* 插件类
+  * [Chrome插件](SoftTuto/Plugins/ChromeExt/README.md)
+    * [使用Floccus和坚果云同步任意平台任意浏览器书签](SoftTuto/Plugins/ChromeExt/FloccusSync.md)
+  * [GIMP插件](SoftTuto/Plugins/GIMPPlu/README.md)
+  * [Gitbook插件](SoftTuto/Plugins/GitbookPlu/README.md)
+  * [Office插件](SoftTuto/Plugins/OfficePlu/README.md)
+  * [VSCode插件](SoftTuto/Plugins/VSCodeExt/README.md)
+* 视频软件
+  * [会声会影](SoftTuto/Video/VideoStudio/README.md)
 
-## 脚本编程语言
 
-## 样式表编程
 
-## 常用配置文件
 
-## 工程/项目软件教程
 
-## 图像图表软件教程
 
-## 动画制作软件教程
 
-## 办公软件教程
 
-## 管理类软件教程
 
-## 插件类教程
-
-## 视频软件教程
-
-* [1 使用Github的基本入门流程](GithubUsage.md)
-* [2 把博客园装饰得美丽大方](CnblogsUsage.md)
-* [3 结合Github Pages使用GitBook](GitbookUsage.md)
-* [4 GIMP默认快捷键](GIMPKeys.md)
-* [5 Inlook-你的私人工作秘书](InlookUsage.md)
-* [6 使用Floccus和坚果云同步任意平台任意浏览器书签](FloccusSync.md)
-* [7 中文学位论文参考文献格式设置Mendeley](ChinesePaperCSL.md)
-* [8 用markdown绘各种各样的图](MDPlotChart.md)
-* [9 用markdown画时序图](MDPlotTiming.md)
-* [10 用Markdown画脑图](MDPlotMindMap.md)
 

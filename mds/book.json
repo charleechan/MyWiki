@@ -22,10 +22,10 @@
  ],
  "pluginsConfig": {
      "insert-logo": {
-         "url": "./img/logo.png",
+         "url": "https:/charleechan.github.io/MyWiki/img/logo.png",
          "style": "background: none; max-height: 30px; min-height: 30px"
      },
-     "favicon": "./img/inlook.ico",
+     "favicon": "https:/charleechan.github.io/MyWiki/img/inlook.ico",
      "tbfed-pagefooter": {
          "copyright": "Copyright &copy charleechan 2021",
          "modify_label": "Updated At: ",
@@ -35,7 +35,7 @@
        "url": "https://github.com/your/repo"
      },
      "sharing": {
-         "douban": true,
+         "douban": false,
          "facebook": false,
          "google": false,
          "hatenaBookmark": false,
@@ -44,13 +44,13 @@
          "linkedin": false,
          "messenger": false,
          "pocket": false,
-         "qq": true,
+         "qq": false,
          "qzone": false,
          "stumbleupon": false,
-         "twitter": true,
+         "twitter": false,
          "viber": false,
          "vk": false,
-         "weibo": true,
+         "weibo": false,
          "whatsapp": false,
          "all": [
              "facebook", "google", "twitter",
