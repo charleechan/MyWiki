@@ -1,7 +1,7 @@
 # Markdown支持绘制脑图啦
 使用插件[gitbook-plugin-simple-mind-map](https://github.com/snowdreams1006/gitbook-plugin-simple-mind-map#readme)绘制脑图
 
-* 代码块标识:`markdown`, 且代码块外要包一层壳,`{% simplemindmap style={"height":"600px"}%}`,`{% endsimplemindmap %}`
+代码块
 
 ```
 * simplemindmap
