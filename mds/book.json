@@ -28,7 +28,7 @@
      "favicon": "./img/inlook.ico",
      "tbfed-pagefooter": {
          "copyright": "Copyright &copy charleechan 2021",
-         "modify_label": "本文最终修订于：",
+         "modify_label": "Updated At: ",
          "modify_format": "YYYY-MM-DD HH:mm:ss"
      },
      "forkmegithub": {

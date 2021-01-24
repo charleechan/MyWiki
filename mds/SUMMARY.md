@@ -9,5 +9,5 @@
 * [6 使用Floccus和坚果云同步任意平台任意浏览器书签](FloccusSync.md)
 * [7 中文学位论文参考文献格式设置Mendeley](ChinesePaperCSL.md)
 * [8 用markdown绘各种各样的图](MarkdownPlotChart.md)
-* [9 用markdown画时序图](MDPlotTiming1.md)
+* [9 用markdown画时序图](MDPlotTiming.md)
 

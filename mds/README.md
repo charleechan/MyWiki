@@ -10,3 +10,8 @@
 8. [用markdown绘各种各样的图](https://charleechan.github.io/MyWiki/MarkdownPlotChart.html)
 9. [用markdown画时序图](https://charleechan.github.io/MyWiki/MDPlotTiming1.html)
 
+```mind:height=300,title=a mind map of something,color
+* a
+  * bb
+  * cc
+```

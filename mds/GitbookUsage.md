@@ -202,7 +202,6 @@ git push origin master
 
 GitBook使用[基于Node.Js的Gitbook插件](https://www.npmjs.com/)对Markdown文件进行渲染.
 
-
 1. 写配置文件:在根目录新建`book.json`,在`book.json`中写入以下代码:
 ```json
 {
@@ -271,49 +270,50 @@ GitBook使用[基于Node.Js的Gitbook插件](https://www.npmjs.com/)对Markdown�
     }
 }
 ```
-其中
+2. CMD中导航到book.json所在目录,执行命令`gitbook install`,会自动安装`book.json`中用到的插件. 当然,也可以使用以下命令单独安装:
+
+
+CMD中导航到book.json所在目录,执行以下命令:
 
 ```bash
-# disable 掉Gitbook内置的搜索功能的后台
--lunr
-# disable 掉Gitbook内置的搜索功能的部件
--search
-# disable 掉Gitbook内置的分享功能的部件
--sharing
+
+npm install gitbook-plugin-mermaid-gb3 
 # wavedrom 插件, 渲染代码块wavedrom为时序图或电路图
-wavedrom
+npm install gitbook-plugin-wavedrom 
 # 返回顶部按钮
-back-to-top-button
+npm install gitbook-plugin-back-to-top-button 
 # 导航目录折叠
-chapter-fold
+npm install gitbook-plugin-chapter-fold 
 # 侧边栏宽度可调节
-splitter
+npm install gitbook-plugin-splitter 
 # 给代码块增加复制代码按钮和行号
-code-pro
+npm install gitbook-plugin-code
 # 分享功能增强
-sharing-plus
+npm install gitbook-plugin-sharing-plus 
 # 高级搜索,支持中英文,准确率更高
-search-pro
+npm install gitbook-plugin-search-pro 
 # 个性化网站导航栏的logo
-insert-logo
+npm install gitbook-plugin-insert-logo 
 # 个性化网站的icon
-custom-favicon
+npm install gitbook-plugin-custom-favicon 
 # 个性化文章的页脚, 增加版权和修改时间
-tbfed-pagefooter
+npm install gitbook-plugin-tbfed-pagefooter 
 # 文档页面阅读数
-pageview-count
+npm install gitbook-plugin-pageview-count 
 # 思维导图
-mind-maps
+npm install gitbook-plugin-mind-maps 
 # 隐藏元素
-hide-element
+npm install gitbook-plugin-hide-element 
 # 支持mathjax公式
-mathjax
-# 支持mermaid画图
-mermaid
+npm install mathjax@2.7.6 
+npm install gitbook-plugin-mathjax
 # 右上角添加fork me 丝带
-forkmegithub-cn
+npm install gitbook-plugin-forkmegithub-cn 
+# 可以复制本代码块到cmd中,会自动安装
 ```
 
-3. 执行命令`gitbook install`,将自动安装gitbook插件,然后使用gitbook 编译即可.
 
-4. 如果编译中`mathjax`出现错误,使用以下命令将mathjax包降级,`npm install mathjax@2.7.6`
+
+3. 由于插件年久失修, 需要执行以下操作来使插件生效.
+   * 使用以下命令将mathjax包降级,`npm install mathjax@2.7.6`
+   * 将文件[mermaid.min.js](./res/mermaid.min.js)拷贝到`\node_modules\gitbook-plugin-mermaid-gb3\dist\mermaid`目录,进行文件替换.
