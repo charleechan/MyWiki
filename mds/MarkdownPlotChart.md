@@ -115,27 +115,6 @@ class input Cssinput;
 class printA,printB,printC Cssprint;
 ```
 
-* 示例3: 脑图
-
-
-
-```
-* 编程学习
-  * 标记语言
-    * markdown
-    * qml
-    * html
-  * 脚本语言
-    * javascript
-    * python
-    * matlab
-    * cmd shell
-    * tcl
-    * bash
-  * 样式表
-    * css(qss)
-```
-
 ## 使用[`mermaid.js`](https://github.com/mermaid-js/mermaid)绘制序列图
 
 代码

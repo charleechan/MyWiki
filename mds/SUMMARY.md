@@ -1,7 +1,7 @@
 # Summary
 
-* [Introduction](README.md)
-* [架构图](Architecture.md)
+* [我的Wiki](README.md)
+* [知识体系](Architecture.md)
 * [1 使用Github的基本入门流程](GithubUsage.md)
 * [2 把博客园装饰得美丽大方](CnblogsUsage.md)
 * [3 结合Github Pages使用GitBook](GitbookUsage.md)
@@ -11,4 +11,5 @@
 * [7 中文学位论文参考文献格式设置Mendeley](ChinesePaperCSL.md)
 * [8 用markdown绘各种各样的图](MarkdownPlotChart.md)
 * [9 用markdown画时序图](MDPlotTiming.md)
+* [10 用Markdown画脑图](MDPlotMindMap.md)
 
