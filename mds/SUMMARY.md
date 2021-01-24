@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+* [架构图](Architecture.md)
 * [1 使用Github的基本入门流程](GithubUsage.md)
 * [2 把博客园装饰得美丽大方](CnblogsUsage.md)
 * [3 结合Github Pages使用GitBook](GitbookUsage.md)

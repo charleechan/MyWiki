@@ -1,5 +1,6 @@
 # Introduction
 本文档记录了我的工具使用情况,内容包括：
+0. [框架图](https://charleechan.github.io/MyWiki/Architecture.html)
 1. [GitHub基本使用流程](https://charleechan.github.io/MyWiki/GithubUsage.html)
 2. [博客园皮肤配置](https://charleechan.github.io/MyWiki/CnblogsUsage.html)
 3. [Gitbook的使用流程](https://charleechan.github.io/MyWiki/GitbookUsage.html)
@@ -9,9 +10,3 @@
 7. [中文学位论文参考文献格式设置Mendeley](https://charleechan.github.io/MyWiki/ChinesePaperCSL.html)
 8. [用markdown绘各种各样的图](https://charleechan.github.io/MyWiki/MarkdownPlotChart.html)
 9. [用markdown画时序图](https://charleechan.github.io/MyWiki/MDPlotTiming1.html)
-
-```mind:height=300,title=a mind map of something,color
-* a
-  * bb
-  * cc
-```
