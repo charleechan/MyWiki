@@ -32,30 +32,4 @@
 
 对应的脑图为
 
-{% simplemindmap style={"height":"600px"}%}
-```markdown
-* simplemindmap
-    * config book.json
-        * plugins
-            * others
-            * simple-mind-map
-        * pluginsConfig
-            * others
-            * simple-mind-map
-                * type
-                * preset
-                * linkShape
-                * autoFit
-                * style
-    * custom file.md
-        * markdown
-            * type
-            * preset
-            * linkShape
-            * autoFit
-            * style
-        * txtmap
-        * json
-        * mindmup
-```
-{% endsimplemindmap %}
+<mark>不支持.</mark>
