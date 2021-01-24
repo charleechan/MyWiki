@@ -2,12 +2,12 @@
  "plugins": [
      "wavedrom",
      "back-to-top-button",
-     "chapter-fold",
      "splitter",
      "code",
      "-lunr",
      "-search",
      "-sharing",
+	 "toggle-chapters",
      "sharing-plus",
      "search-pro",
      "insert-logo",
@@ -22,10 +22,10 @@
  ],
  "pluginsConfig": {
      "insert-logo": {
-         "url": "https:/charleechan.github.io/MyWiki/img/logo.png",
+         "url": "https:/charleechan.github.io/MyWiki/mds/img/logo.png",
          "style": "background: none; max-height: 30px; min-height: 30px"
      },
-     "favicon": "https:/charleechan.github.io/MyWiki/img/inlook.ico",
+     "favicon": "https:/charleechan.github.io/MyWiki/mds/img/inlook.ico",
      "tbfed-pagefooter": {
          "copyright": "Copyright &copy charleechan 2021",
          "modify_label": "Updated At: ",
