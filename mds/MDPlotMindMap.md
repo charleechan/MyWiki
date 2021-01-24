@@ -1,11 +1,11 @@
-# MarkdownÖ§³Ö»æÖÆÄÔÍ¼À²
-Ê¹ÓÃ²å¼ş`gitbook-plugin-simple-mind-map`»æÖÆÄÔÍ¼
+# Markdownæ”¯æŒç»˜åˆ¶è„‘å›¾å•¦
+ä½¿ç”¨æ’ä»¶`gitbook-plugin-simple-mind-map`ç»˜åˆ¶è„‘å›¾
 
-´úÂë¿é±êÊ¶:markdown
+ä»£ç å—æ ‡è¯†:markdown
 
-´úÂë
+ä»£ç 
 ````
-{% simplemindmap %}
+{% simplemindmap style={"height":"600px"}%}
 ```markdown
 * simplemindmap
     * config book.json
@@ -34,8 +34,8 @@
 {% endsimplemindmap %}
 ````
 
-¶ÔÓ¦µÄÄÔÍ¼Îª
-{% simplemindmap %}
+å¯¹åº”çš„è„‘å›¾ä¸º
+{% simplemindmap style={"height":"600px"}%}
 ```markdown
 * simplemindmap
     * config book.json
