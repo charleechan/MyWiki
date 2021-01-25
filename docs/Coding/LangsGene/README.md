@@ -1,3 +1,18 @@
-# 404
 
-<mark>你似乎来到了知识的荒原~</mark>
+# 目录列表
+* [C](C/index.html)
+  * [index](C/index.html)
+* [Cpp](Cpp/index.html)
+  * [index](Cpp/index.html)
+* [Java](Java/index.html)
+  * [index](Java/index.html)
+
+
+```mind:height=300,title=内容概要,color
+* [C](C/index.html)
+  * [index](C/index.html)
+* [Cpp](Cpp/index.html)
+  * [index](Cpp/index.html)
+* [Java](Java/index.html)
+  * [index](Java/index.html)
+```

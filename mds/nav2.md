@@ -34,6 +34,7 @@ F6(Project )
   G23(Qt )
   G24(Visual Studio )
   G25(VS Code )
+  G1(Others)
 F7(Manage )
   G26(Git )
   G27(Inlook )
@@ -57,7 +58,8 @@ F3--> G10
 F3--> G11  
 F5--> G13  
 F5--> G14  
-F5--> G15  
+F5--> G15 
+F6--> G1 
 F6--> G16  
 F6--> G17  
 F6--> G18  
@@ -83,6 +85,7 @@ ROOT --> F5
 ROOT --> F6
 ROOT --> F7
 ROOT --> F8
+click G1 "./SoftTuto/Project/Others/index.html" "点我打开";
 click G2 "./SoftTuto/Image/GIMP/index.html" "点我打开";
 click G3 "./SoftTuto/Image/Origin/index.html" "点我打开";
 click G4 "./SoftTuto/Image/Mermaid/index.html" "点我打开";
@@ -113,7 +116,7 @@ click G31 "./SoftTuto/Plugins/GitbookPlu/index.html" "点我打开";
 click G32 "./SoftTuto/Plugins/GIMPPlu/index.html" "点我打开"; 
 click G33 "./SoftTuto/Plugins/OfficePlu/index.html" "点我打开";
 
-class G2,G3,G4,G5,G7,G8,G9,G10,G11,G12 CSS3
+class G1,G2,G3,G4,G5,G7,G8,G9,G10,G11,G12 CSS3
 class G13,G14,G15,G16,G17,G18,G19,G20,G21,G22,G23,G24 CSS3
 class G25,G26,G27,G28,G29,G30,G31,G32,G33 CSS3
 class F2,F3,F4,F5,F6,F7,F8 CSS1

@@ -8,7 +8,7 @@
 
 @echo off
 
-
+echo 本脚本功能: 将所有readme.md 替换为默认的404页面.
 
 echo 正在批量复制 Default.md 文件...
 
@@ -77,6 +77,7 @@ echo 正在批量复制 Default.md 文件...
 @xcopy /y .\mds\res\Default.md .\mds\OtherLibs\OpenCV\README.md >nul
 @xcopy /y .\mds\res\Default.md .\mds\OtherLibs\Pytorch\README.md >nul
 @xcopy /y .\mds\res\Default.md .\mds\OtherLibs\Tensorflow\README.md >nul
+@xcopy /y .\mds\res\Default.md .\mds\SoftTuto\Project\Others\README.md >nul
 
 echo=
 echo 已完成~
