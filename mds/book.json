@@ -14,7 +14,7 @@
      "custom-favicon",
      "pageview-count",
      "tbfed-pagefooter",
-     "simple-mind-map",
+     "mind-maps",
      "hide-element",
      "mathjax",
      "forkmegithub",
@@ -60,15 +60,6 @@
      },
      "hide-element": {
          "elements": [".gitbook-link"]
-     },
-     "simple-mind-map": {
-         "type": "markdown",
-         "preset": "colorful",
-         "linkShape": "diagonal",
-         "autoFit": true,
-         "style": {
-           "height":  "750px"
-         }
      }
  }
 }

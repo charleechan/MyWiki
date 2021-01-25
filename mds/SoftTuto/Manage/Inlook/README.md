@@ -1,1 +1,3 @@
-To be added!
+# 404
+
+<mark>你似乎来到了知识的荒原~</mark>

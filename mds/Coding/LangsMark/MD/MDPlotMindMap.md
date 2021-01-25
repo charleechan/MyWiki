@@ -1,63 +1,26 @@
 # Markdown支持绘制脑图啦
-使用插件[gitbook-plugin-simple-mind-map](https://github.com/snowdreams1006/gitbook-plugin-simple-mind-map#readme) 绘制脑图.
+使用插件[mind-maps](https://www.npmjs.com/package/gitbook-plugin-mind-maps) 绘制脑图.
 
-代码块
+代码块标识 `mind`, 选项有`height=300,title=a mind map of something,color`
 
 ```
-* simplemindmap
-    * config book.json
-        * plugins
-            * others
-            * simple-mind-map
-        * pluginsConfig
-            * others
-            * simple-mind-map
-                * type
-                * preset
-                * linkShape
-                * autoFit
-                * style
-    * custom file.md
-        * markdown
-            * type
-            * preset
-            * linkShape
-            * autoFit
-            * style
-        * txtmap
-        * json
-        * mindmup
+# 1
+## 1.1
+### 1.1.1
+## 1.2
+# 2
+# 3
 ```
-
 
 对应的脑图为
 
-<mark>不支持.</mark>
 
-{% simplemindmap %}
-```markdown
-* simplemindmap
-    * config book.json
-        * plugins
-            * others
-            * simple-mind-map
-        * pluginsConfig
-            * others
-            * simple-mind-map
-                * type
-                * preset
-                * linkShape
-                * autoFit
-                * style
-    * custom file.md
-        * markdown
-            * type
-            * preset
-            * linkShape
-            * autoFit
-            * style
-        * txtmap
-        * json
-        * mindmup
+```mind:height=300,title=脑图示例,color
+# 1
+## 1.1
+### 1.1.1
+## 1.2
+# 2
+# 3
 ```
-{% endsimplemindmap %}
+

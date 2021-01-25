@@ -316,5 +316,6 @@ npm install gitbook-plugin-forkmegithub-cn
 
 3. 由于插件年久失修, 需要执行以下操作来使插件生效.
    * 使用以下命令将mathjax包降级,`npm install mathjax@2.7.6`
-   * 将文件[mermaid.min.js](./res/mermaid.min.js)分别拷贝到`\node_modules\gitbook-plugin-mermaid-gb3\dist\mermaid`和`\node_modules\mermaid\dist`目录,进行文件替换.
-   * 在生成的文档的`gitbook`文件夹中,找到`theme.js`，搜索`if(m)for(n.handler&&`，将`if(m)`改为`if(false)`.
+   * gitbook build 之前, 将文件[mermaid.min.js](./res/mermaid.min.js)分别拷贝到`\node_modules\gitbook-plugin-mermaid-gb3\dist\mermaid`和`\node_modules\mermaid\dist`目录,进行文件替换.
+   * gitbook build 之后, 将文件[theme.js](./res/mermaid.min.js)拷贝到`\docs\gitbook`目录,进行文件替换.
+   * 以上两条命令已经写入文件[md2docs.bat](https://charleechan.github.io/MyWiki/md2docs.bat),因此在不用每次执行.
