@@ -71,7 +71,7 @@ B7 --> C22
 B7 --> C23
 B7 --> C24
 
-click C1 "http://charleechan.github.io/MyWiki/Coding/LangsMark/MarkDown/" "点我打开"
+click C1 "http://charleechan.github.io/MyWiki/Coding/LangsMark/MD/" "点我打开"
 click C2 "http://charleechan.github.io/MyWiki/Coding/LangsMark/HTML/" "点我打开"
 click C3 "http://charleechan.github.io/MyWiki/Coding/LangsMark/QM/L" "点我打开"
 click C4 "http://charleechan.github.io/MyWiki/Coding/LangsScript/JS/" "点我打开"
@@ -82,7 +82,7 @@ click C8 "http://charleechan.github.io/MyWiki/Coding/LangsScript/TCL/" "点我�
 click C9 "http://charleechan.github.io/MyWiki/Coding/LangsScript/Bash/" "点我打开"
 click C10 "http://charleechan.github.io/MyWiki/Coding/LangsScript/PHP/" "点我打开"
 click C11 "http://charleechan.github.io/MyWiki/Coding/LangsScript/SQL/" "点我打开"
-click C12 "http://charleechan.github.io/MyWiki/Coding/LangsStyle/CSS_QSS/" "点我打开"
+click C12 "http://charleechan.github.io/MyWiki/Coding/LangsStyle/CSS/" "点我打开"
 click C13 "http://charleechan.github.io/MyWiki/Coding/LangsMark/XML/" "点我打开"
 click C14 "http://charleechan.github.io/MyWiki/Coding/LangsConf/Json/" "点我打开"
 click C15 "http://charleechan.github.io/MyWiki/Coding/LangsConf/Ini/" "点我打开"

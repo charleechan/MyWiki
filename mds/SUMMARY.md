@@ -16,10 +16,10 @@
   * [System Verilog](Coding/LangsHard/SystemVerilog/README.md)
 
 * [标记语言](Coding/LangsMark/README.md)
-  * [MarkDown](Coding/LangsMark/MarkDown/README.md)
-    * [用markdown绘各种各样的图](Coding/LangsMark/MarkDown/MDPlotChart.md)
-    * [用markdown画时序图](Coding/LangsMark/MarkDown/MDPlotTiming.md)
-    * [用Markdown画脑图](Coding/LangsMark/MarkDown/MDPlotMindMap.md)
+  * [MarkDown](Coding/LangsMark/MD/README.md)
+    * [用markdown绘各种各样的图](Coding/LangsMark/MD/MDPlotChart.md)
+    * [用markdown画时序图](Coding/LangsMark/MD/MDPlotTiming.md)
+    * [用Markdown画脑图](Coding/LangsMark/MD/MDPlotMindMap.md)
   * [HTML](Coding/LangsMark/HTML/README.md)
   * [QML](Coding/LangsMark/QML/README.md)
   * [XML](Coding/LangsMark/XML/README.md)
@@ -38,7 +38,7 @@
   * [Pytorch](OtherLibs/Pytorch/README.md)
   * [OpenCV](OtherLibs/OpenCV/README.md)
 * [样式表](Coding/LangsStyle/README.md)
-  * [CSS/QSS](Coding/LangsStyle/CSS_QSS/README.md)
+  * [CSS/QSS](Coding/LangsStyle/CSS/README.md)
 
 * [配置文件](Coding/LangsConf/README.md)
   * [Ini](Coding/LangsConf/Ini/README.md)

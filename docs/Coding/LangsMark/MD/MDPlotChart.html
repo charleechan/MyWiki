@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>用Markdown画脑图 · GitBook</title>
+        <title>用markdown绘各种各样的图 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -97,10 +97,10 @@
     <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../HTML/" />
+    <link rel="next" href="MDPlotTiming.html" />
     
     
-    <link rel="prev" href="MDPlotTiming.html" />
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -319,7 +319,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.3.1.1" data-path="MDPlotChart.html">
+        <li class="chapter active" data-level="2.3.1.1" data-path="MDPlotChart.html">
             
                 <a href="MDPlotChart.html">
             
@@ -345,7 +345,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.3.1.3" data-path="MDPlotMindMap.html">
+        <li class="chapter " data-level="2.3.1.3" data-path="MDPlotMindMap.html">
             
                 <a href="MDPlotMindMap.html">
             
@@ -621,9 +621,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.6.1" data-path="../../LangsStyle/CSS_QSS/">
+        <li class="chapter " data-level="2.6.1" data-path="../../LangsStyle/CSS/">
             
-                <a href="../../LangsStyle/CSS_QSS/">
+                <a href="../../LangsStyle/CSS/">
             
                     
                     CSS/QSS
@@ -1352,7 +1352,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../../.." >用Markdown画脑图</a>
+        <a href="../../.." >用markdown绘各种各样的图</a>
     </h1>
 </div>
 
@@ -1367,36 +1367,216 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="markdown&#x652F;&#x6301;&#x7ED8;&#x5236;&#x8111;&#x56FE;&#x5566;">Markdown&#x652F;&#x6301;&#x7ED8;&#x5236;&#x8111;&#x56FE;&#x5566;</h1>
-<p>&#x4F7F;&#x7528;&#x63D2;&#x4EF6;<a href="https://github.com/snowdreams1006/gitbook-plugin-simple-mind-map#readme" target="_blank">gitbook-plugin-simple-mind-map</a>&#x7ED8;&#x5236;&#x8111;&#x56FE;</p>
-<p>&#x4EE3;&#x7801;&#x5757;</p>
-<pre><code>* simplemindmap
-    * config book.json
-        * plugins
-            * others
-            * simple-mind-map
-        * pluginsConfig
-            * others
-            * simple-mind-map
-                * type
-                * preset
-                * linkShape
-                * autoFit
-                * style
-    * custom file.md
-        * markdown
-            * type
-            * preset
-            * linkShape
-            * autoFit
-            * style
-        * txtmap
-        * json
-        * mindmup
-</code></pre><p>&#x5BF9;&#x5E94;&#x7684;&#x8111;&#x56FE;&#x4E3A;</p>
-<p><mark>&#x4E0D;&#x652F;&#x6301;.</mark> </p>
+                                <h2 id="&#x4F7F;&#x7528;mermaidjs&#x7ED8;&#x5236;&#x6D41;&#x7A0B;&#x56FE;&#x8111;&#x56FE;">&#x4F7F;&#x7528;<a href="https://github.com/mermaid-js/mermaid" target="_blank"><code>mermaid.js</code></a>&#x7ED8;&#x5236;&#x6D41;&#x7A0B;&#x56FE;/&#x8111;&#x56FE;</h2>
+<p>&#x4EE3;&#x7801;&#x5757;&#x6807;&#x8BC6;: <code>mermaid</code></p>
+<ul>
+<li><p>mermaid&#x6D41;&#x7A0B;&#x56FE;(flowchart)&#x7684;&#x6298;&#x7EBF;&#x53D8;&#x6210;&#x8D1D;&#x585E;&#x5C14;&#x66F2;&#x7EBF;: <code>mermaid.min.js&#x4E2D;&#x7684; flowchart:{... curve:&quot;linear&quot;}</code>&#x53D8;&#x6210;<code>flowchart:{... curve:&quot;basis&quot;}</code>.</p>
+</li>
+<li><p>&#x793A;&#x4F8B;1:&#x8282;&#x70B9;,&#x8FDE;&#x7EBF;,&#x5B50;&#x56FE;&#x7684;&#x6837;&#x5F0F;&#x63A7;&#x5236;
+&#x4EE3;&#x7801;</p>
+</li>
+</ul>
+<pre><code>graph LR;
+subgraph line
+A1 --&gt; B1
+A2 --- B2
+A3 -.- B3
+A4 -.-&gt; B4
+A5 ==&gt; B5
+A6 -- &#x63CF;&#x8FF0; --- B6
+A7 -- &#x63CF;&#x8FF0; --&gt; B7
+A8 -. &#x63CF;&#x8FF0; .-&gt; B8
+A9 == &#x63CF;&#x8FF0; ==&gt; B9
+end
+
+subgraph node
+C1[&#x5E26;&#x6587;&#x672C;&#x7684;&#x77E9;&#x5F62;]
+C2(&#x5E26;&#x6587;&#x672C;&#x7684;&#x5706;&#x89D2;&#x77E9;&#x5F62;)
+C3&gt;&#x5E26;&#x6587;&#x672C;&#x7684;&#x4E0D;&#x5BF9;&#x79F0;&#x7684;&#x77E9;&#x5F62;]
+C4{&#x5E26;&#x6587;&#x672C;&#x7684;&#x83F1;&#x5F62;}
+C5((&#x5E26;&#x6587;&#x672C;&#x7684;&#x5706;&#x5F62;))
+C1 --&gt; A1
+C1 --&gt; A2
+C2 --&gt; A2
+C3 --&gt; A3
+end
+style C2 fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5;
+</code></pre><p>  &#x5BF9;&#x5E94;&#x7684;&#x6D41;&#x7A0B;&#x56FE;</p>
+<div class="mermaid">
+graph LR;
+subgraph line
+A1 --&gt; B1
+A2 --- B2
+A3 -.- B3
+A4 -.-&gt; B4
+A5 ==&gt; B5
+A6 -- &#x63CF;&#x8FF0; --- B6
+A7 -- &#x63CF;&#x8FF0; --&gt; B7
+A8 -. &#x63CF;&#x8FF0; .-&gt; B8
+A9 == &#x63CF;&#x8FF0; ==&gt; B9
+end
+
+subgraph node
+C1[&#x5E26;&#x6587;&#x672C;&#x7684;&#x77E9;&#x5F62;]
+C2(&#x5E26;&#x6587;&#x672C;&#x7684;&#x5706;&#x89D2;&#x77E9;&#x5F62;)
+C3&gt;&#x5E26;&#x6587;&#x672C;&#x7684;&#x4E0D;&#x5BF9;&#x79F0;&#x7684;&#x77E9;&#x5F62;]
+C4{&#x5E26;&#x6587;&#x672C;&#x7684;&#x83F1;&#x5F62;}
+C5((&#x5E26;&#x6587;&#x672C;&#x7684;&#x5706;&#x5F62;))
+C1 --&gt; A1
+C1 --&gt; A2
+C2 --&gt; A2
+C3 --&gt; A3
+end
+style C2 fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5;
+</div>
+
+
+<ul>
+<li>&#x793A;&#x4F8B;2:&#x7EDF;&#x4E00;&#x6837;&#x5F0F;&#x63A7;&#x5236;
+&#x4EE3;&#x7801;</li>
+</ul>
+<pre><code>graph LR
+classDef default fill:#f90,stroke:#555,stroke-width:4px;
+classDef Cssinput fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray:5,5;
+classDef Cssprint fill:#ed6,stroke:#333,stroke-width:0px;
+
+start(&quot;fa:fa-twitter start&quot;) --&gt; input[&#x8F93;&#x5165;A,B,C]
+input --&gt; conditionA{A&#x662F;&#x5426;&#x5927;&#x4E8E;B}
+conditionA -- YES --&gt; conditionC{A&#x662F;&#x5426;&#x5927;&#x4E8E;C}
+conditionA -- NO --&gt; conditionB{B&#x662F;&#x5426;&#x5927;&#x4E8E;C}
+conditionC -- YES --&gt; printA[&#x8F93;&#x51FA;A]
+conditionC -- NO --&gt; printC[&#x8F93;&#x51FA;C]
+conditionB -- YES --&gt; printB[&#x8F93;&#x51FA;B]
+conditionB -- NO --&gt; printC[&#x8F93;&#x51FA;C]
+printA --&gt; stop(&quot;fa:fa-camera-retro end&quot;)
+printC --&gt; stop
+printB --&gt; stop
+
+class input Cssinput;
+class printA,printB,printC Cssprint;
+</code></pre><p>&#x5BF9;&#x5E94;&#x7684;&#x56FE;</p>
+<div class="mermaid">
+graph LR
+classDef default fill:#f90,stroke:#555,stroke-width:4px;
+classDef Cssinput fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray:5,5;
+classDef Cssprint fill:#ed6,stroke:#333,stroke-width:0px;
+
+start(&quot;fa:fa-twitter start&quot;) --&gt; input[&#x8F93;&#x5165;A,B,C]
+input --&gt; conditionA{A&#x662F;&#x5426;&#x5927;&#x4E8E;B}
+conditionA -- YES --&gt; conditionC{A&#x662F;&#x5426;&#x5927;&#x4E8E;C}
+conditionA -- NO --&gt; conditionB{B&#x662F;&#x5426;&#x5927;&#x4E8E;C}
+conditionC -- YES --&gt; printA[&#x8F93;&#x51FA;A]
+conditionC -- NO --&gt; printC[&#x8F93;&#x51FA;C]
+conditionB -- YES --&gt; printB[&#x8F93;&#x51FA;B]
+conditionB -- NO --&gt; printC[&#x8F93;&#x51FA;C]
+printA --&gt; stop(&quot;fa:fa-camera-retro end&quot;)
+printC --&gt; stop
+printB --&gt; stop
+
+class input Cssinput;
+class printA,printB,printC Cssprint;
+</div>
+
+<h2 id="&#x4F7F;&#x7528;mermaidjs&#x7ED8;&#x5236;&#x5E8F;&#x5217;&#x56FE;">&#x4F7F;&#x7528;<a href="https://github.com/mermaid-js/mermaid" target="_blank"><code>mermaid.js</code></a>&#x7ED8;&#x5236;&#x5E8F;&#x5217;&#x56FE;</h2>
+<p>&#x4EE3;&#x7801;</p>
+<pre><code>sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice-&gt;&gt;John: Hello John, how are you?
+    loop Healthcheck
+        John-&gt;&gt;John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts &lt;br/&gt;prevail!
+    John--&gt;&gt;Alice: Great!
+    John-&gt;&gt;Bob: How about you?
+    Bob--&gt;&gt;John: Jolly good!
+</code></pre><p>&#x5BF9;&#x5E94;&#x7684;&#x5E8F;&#x5217;&#x56FE;&#x4E3A;</p>
+<div class="mermaid"> 
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice-&gt;&gt;John: Hello John, how are you?
+    loop Healthcheck
+        John-&gt;&gt;John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts <br>prevail!
+    John--&gt;&gt;Alice: Great!
+    John-&gt;&gt;Bob: How about you?
+    Bob--&gt;&gt;John: Jolly good!
+</div>
+
+<h2 id="&#x4F7F;&#x7528;mermaidjs&#x753B;&#x7518;&#x7279;&#x56FE;">&#x4F7F;&#x7528;<a href="https://github.com/mermaid-js/mermaid" target="_blank"><code>mermaid.js</code></a>&#x753B;&#x7518;&#x7279;&#x56FE;</h2>
+<p>&#x4EE3;&#x7801;:</p>
+<pre><code>gantt
+dateFormat  YYYY-MM-DD
+title Adding GANTT diagram to mermaid
+excludes weekdays 2014-01-10
+
+section A section
+Completed task            :done,    des1, 2014-01-06,2014-01-08
+Active task               :active,  des2, 2014-01-09, 3d
+Future task               :         des3, after des2, 5d
+Future task2               :         des4, after des3, 5d
+</code></pre><p>&#x5BF9;&#x5E94;&#x7684;&#x7518;&#x7279;&#x56FE;&#x4E3A;:</p>
+<div class="mermaid"> 
+gantt
+dateFormat  YYYY-MM-DD
+title Adding GANTT diagram to mermaid
+excludes weekdays 2014-01-10
+
+section A section
+Completed task            :done,    des1, 2014-01-06,2014-01-08
+Active task               :active,  des2, 2014-01-09, 3d
+Future task               :         des3, after des2, 5d
+Future task2               :         des4, after des3, 5d
+</div>
+
+<h2 id="&#x4F7F;&#x7528;mermaidjs&#x753B;&#x65E5;&#x7A0B;&#x56FE;">&#x4F7F;&#x7528;<a href="https://github.com/mermaid-js/mermaid" target="_blank"><code>mermaid.js</code></a>&#x753B;&#x65E5;&#x7A0B;&#x56FE;</h2>
+<pre><code>journey
+  title My working day
+  section Go to work
+    Make tea: 5: Me
+    Go upstairs: 3: Me
+    Do work: 1: Me, Cat
+  section Go home
+    Go downstairs: 5: Me
+    Sit down: 5: Me
+</code></pre><p>&#x5BF9;&#x5E94;&#x7684;&#x56FE;</p>
+<div class="mermaid"> 
+journey
+  title My working day
+  section Go to work
+    Make tea: 5: Me
+    Go upstairs: 3: Me
+    Do work: 1: Me, Cat
+  section Go home
+    Go downstairs: 5: Me
+    Sit down: 5: Me
+</div>
+
+<h2 id="&#x4F7F;&#x7528;mermaidjs&#x753B;&#x997C;&#x56FE;">&#x4F7F;&#x7528;<a href="https://github.com/mermaid-js/mermaid" target="_blank"><code>mermaid.js</code></a>&#x753B;&#x997C;&#x56FE;</h2>
+<p>&#x4EE3;&#x7801;</p>
+<pre><code>pie
+title Pie Chart
+&quot;Dogs&quot; : 386
+&quot;cats&quot; : 567
+&quot;rabbit&quot; : 700
+&quot;pig&quot;:365
+&quot;tiger&quot; : 15
+</code></pre><p>&#x5BF9;&#x5E94;&#x7684;&#x997C;&#x56FE;:</p>
+<div class="mermaid"> 
+pie
+title Pie Chart
+&quot;Dogs&quot; : 386
+&quot;cats&quot; : 567
+&quot;rabbit&quot; : 700
+&quot;pig&quot;:365
+&quot;tiger&quot; : 15
+</div>
+
+
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; charleechan 2021 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Updated At: 
-2021-01-24 23:05:40
+2021-01-24 16:53:02
 </span></footer>
                                 
                                 </section>
@@ -1424,12 +1604,12 @@
 
             
                 
-                <a href="MDPlotTiming.html" class="navigation navigation-prev " aria-label="Previous page: 用markdown画时序图">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: MarkDown">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../HTML/" class="navigation navigation-next " aria-label="Next page: HTML">
+                <a href="MDPlotTiming.html" class="navigation navigation-next " aria-label="Next page: 用markdown画时序图">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1440,7 +1620,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"用Markdown画脑图","level":"2.3.1.3","depth":3,"next":{"title":"HTML","level":"2.3.2","depth":2,"path":"Coding/LangsMark/HTML/README.md","ref":"Coding/LangsMark/HTML/README.md","articles":[]},"previous":{"title":"用markdown画时序图","level":"2.3.1.2","depth":3,"path":"Coding/LangsMark/MarkDown/MDPlotTiming.md","ref":"Coding/LangsMark/MarkDown/MDPlotTiming.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["wavedrom","back-to-top-button","splitter","code","-lunr","-search","-sharing","toggle-chapters","sharing-plus","search-pro","insert-logo","custom-favicon","pageview-count","tbfed-pagefooter","simple-mind-map","hide-element","mathjax","forkmegithub","mermaid-gb3"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy charleechan 2021","modify_label":"Updated At: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"wavedrom":{},"splitter":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"favicon":"https://charleechan.github.io/MyWiki/img/inlook.ico","back-to-top-button":{},"pageview-count":{},"custom-favicon":{},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"simple-mind-map":{"autoFit":true,"linkShape":"diagonal","preset":"colorful","style":{"height":"750px"},"type":"markdown"},"forkmegithub":{"color":"gray","url":"https://github.com/your/repo"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{},"insert-logo":{"style":"background: none; max-height: 30px; min-height: 30px","url":"https://charleechan.github.io/MyWiki/img/logo.png"}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Coding/LangsMark/MarkDown/MDPlotMindMap.md","mtime":"2021-01-24T15:05:40.446Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-25T01:06:49.561Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"用markdown绘各种各样的图","level":"2.3.1.1","depth":3,"next":{"title":"用markdown画时序图","level":"2.3.1.2","depth":3,"path":"Coding/LangsMark/MD/MDPlotTiming.md","ref":"Coding/LangsMark/MD/MDPlotTiming.md","articles":[]},"previous":{"title":"MarkDown","level":"2.3.1","depth":2,"path":"Coding/LangsMark/MD/README.md","ref":"Coding/LangsMark/MD/README.md","articles":[{"title":"用markdown绘各种各样的图","level":"2.3.1.1","depth":3,"path":"Coding/LangsMark/MD/MDPlotChart.md","ref":"Coding/LangsMark/MD/MDPlotChart.md","articles":[]},{"title":"用markdown画时序图","level":"2.3.1.2","depth":3,"path":"Coding/LangsMark/MD/MDPlotTiming.md","ref":"Coding/LangsMark/MD/MDPlotTiming.md","articles":[]},{"title":"用Markdown画脑图","level":"2.3.1.3","depth":3,"path":"Coding/LangsMark/MD/MDPlotMindMap.md","ref":"Coding/LangsMark/MD/MDPlotMindMap.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["wavedrom","back-to-top-button","splitter","code","-lunr","-search","-sharing","toggle-chapters","sharing-plus","search-pro","insert-logo","custom-favicon","pageview-count","tbfed-pagefooter","simple-mind-map","hide-element","mathjax","forkmegithub","mermaid-gb3"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy charleechan 2021","modify_label":"Updated At: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"wavedrom":{},"splitter":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"favicon":"https://charleechan.github.io/MyWiki/img/inlook.ico","back-to-top-button":{},"pageview-count":{},"custom-favicon":{},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"simple-mind-map":{"autoFit":true,"linkShape":"diagonal","preset":"colorful","style":{"height":"750px"},"type":"markdown"},"forkmegithub":{"color":"gray","url":"https://github.com/your/repo"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{},"insert-logo":{"style":"background: none; max-height: 30px; min-height: 30px","url":"https://charleechan.github.io/MyWiki/img/logo.png"}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Coding/LangsMark/MD/MDPlotChart.md","mtime":"2021-01-24T08:53:02.105Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-25T01:15:37.546Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
