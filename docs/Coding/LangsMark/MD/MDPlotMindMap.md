@@ -1,5 +1,5 @@
 # Markdown支持绘制脑图啦
-使用插件[gitbook-plugin-simple-mind-map](https://github.com/snowdreams1006/gitbook-plugin-simple-mind-map#readme)绘制脑图
+使用插件[gitbook-plugin-simple-mind-map](https://github.com/snowdreams1006/gitbook-plugin-simple-mind-map#readme) 绘制脑图.
 
 代码块
 
@@ -33,3 +33,31 @@
 对应的脑图为
 
 <mark>不支持.</mark>
+
+{% simplemindmap %}
+```markdown
+* simplemindmap
+    * config book.json
+        * plugins
+            * others
+            * simple-mind-map
+        * pluginsConfig
+            * others
+            * simple-mind-map
+                * type
+                * preset
+                * linkShape
+                * autoFit
+                * style
+    * custom file.md
+        * markdown
+            * type
+            * preset
+            * linkShape
+            * autoFit
+            * style
+        * txtmap
+        * json
+        * mindmup
+```
+{% endsimplemindmap %}
