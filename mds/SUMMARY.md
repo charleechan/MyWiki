@@ -78,7 +78,7 @@
   * [Git](SoftTuto/Manage/Git/README.md)
     * [Github使用教程](SoftTuto/Manage/Git/Github使用教程.md)
     * [Gitbook使用教程](SoftTuto/Manage/Git/Gitbook使用教程.md)
-    * [本站Wiki的更新教程](SoftTuto/Manage/Git/Gitbook使用教程2.md)
+    * [Gitbook本站Wiki的更新教程](SoftTuto/Manage/Git/Gitbook本站Wiki的更新教程.md)
     * [Gitbook插件开发教程](SoftTuto/Manage/Git/Gitbook插件开发教程.md)
   * [Inlook](SoftTuto/Manage/Inlook/README.md)
     * [Inlook-你的私人工作秘书](SoftTuto/Manage/Inlook/Inlook发布页.md)

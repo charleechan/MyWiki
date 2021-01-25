@@ -2,8 +2,8 @@
 # 目录列表
 * [Git](Git/index.html)
   * [Gitbook使用教程](Git/Gitbook使用教程.html)
-  * [Gitbook使用教程2](Git/Gitbook使用教程2.html)
   * [Gitbook插件开发教程](Git/Gitbook插件开发教程.html)
+  * [Gitbook本站Wiki的更新教程](Git/Gitbook本站Wiki的更新教程.html)
   * [Github使用教程](Git/Github使用教程.html)
   * [res](res/index.html)
     * [mermaid.min](Git/res/mermaid.min.html)
@@ -18,8 +18,8 @@
 ```mind:height=300,title=内容概要,color
 * [Git](Git/index.html)
   * [Gitbook使用教程](Git/Gitbook使用教程.html)
-  * [Gitbook使用教程2](Git/Gitbook使用教程2.html)
   * [Gitbook插件开发教程](Git/Gitbook插件开发教程.html)
+  * [Gitbook本站Wiki的更新教程](Git/Gitbook本站Wiki的更新教程.html)
   * [Github使用教程](Git/Github使用教程.html)
   * [res](res/index.html)
     * [mermaid.min](Git/res/mermaid.min.html)

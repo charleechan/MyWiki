@@ -1,169 +1,104 @@
 # 我的Wiki
 
-```mermaid
-graph LR
-classDef A2 fill:#20A162,stroke:#000000,color:#ffffff,stroke-width:0px;
-classDef A4 fill:#4C1F24,stroke:#000000,color:#ffffff,stroke-width:0px;
-classDef A3 fill:#CF7543,stroke:#000000,color:#ffffff,stroke-width:0px;
-classDef A1 fill:#1677B3,stroke:#000000,color:#ffffff,stroke-width:0px;
-subgraph Code/Libs
-B1(Mark Language )
-  C1(Markdown )
-  C2(HTML )
-  C3(QML )
-B2(Scripts )
-  C4("Javascript(QScript) ")
-  C5(Python )
-  C6(Matlab )
-  C7(CMD )
-  C8(TCL )
-  C9(Bash )
-  C10(PHP )
-  C11(SQL )
-B3(StyleSheet )
-  C12("css(qss) ")
-B4(ConfigFile )
-  C13(XML )
-  C14(Json )
-  C15(Ini )
-B5(GeneralCode )
-  C16(C++ )
-  C17(C )
-  C18(Java )
-B6(Hardware )
-  C19(Verilog HDL )
-  C20(VHDL )
-  C21(System Verilog )
-B7(OtherLibs )
-  C22(Tensorflow )
-  C23(Pytorch )
-  C24(OpenCV )
-end
+## 知识体系
+* [我的Wiki-编程语言](README.md)
+* [我的Wiki-编程平台](nav1.md)
+* [我的Wiki-软件教程](nav2.md)
 
-subgraph Platforms
-D1(Hardware )
-D2(OS )
-D3(Web Apps )
-D4(Local Apps )
-D5(Server Apps )
-end
+## 编程语言
+* [通用语言](Coding/LangsGene/README.md)
+  * [C语言](Coding/LangsGene/C/README.md)
+  * [C++](Coding/LangsGene/Cpp/README.md)
+  * [Java](Coding/LangsGene/Java/README.md)
+* [硬件描述语言](Coding/LangsHard/README.md)
+  * [Verilog HDL](Coding/LangsHard/Verilog/README.md)
+  * [VHDL](Coding/LangsHard/VHDL/README.md)
+  * [System Verilog](Coding/LangsHard/SystemVerilog/README.md)
 
+* [标记语言](Coding/LangsMark/README.md)
+  * [MarkDown](Coding/LangsMark/MD/README.md)
+    * [用markdown绘各种各样的图](Coding/LangsMark/MD/用markdown绘各种各样的图.md)
+    * [用markdown画时序图](Coding/LangsMark/MD/用markdown画时序图.md)
+    * [用Markdown画脑图](Coding/LangsMark/MD/用Markdown画脑图.md)
+  * [HTML](Coding/LangsMark/HTML/README.md)
+  * [QML](Coding/LangsMark/QML/README.md)
+  * [XML](Coding/LangsMark/XML/README.md)
+* [脚本语言](Coding/LangsScript/README.md)
+  * [Javascript/QScript](Coding/LangsScript/JS/README.md)
+    * [把博客园装饰得美丽大方](Coding/LangsScript/JS/把博客园装饰得美丽大方.md)
+  * [Bash](Coding/LangsScript/Bash/README.md)
+  * [CMD](Coding/LangsScript/CMD/README.md)
+  * [Matlab](Coding/LangsScript/Matlab/README.md)
+  * [Python](Coding/LangsScript/Python/README.md)
+  * [SQL](Coding/LangsScript/SQL/README.md)
+  * [TCL](Coding/LangsScript/TCL/README.md)
+  * [PHP](Coding/LangsScript/PHP/README.md)
+* [库/框架](OtherLibs/README.md)
+  * [Tensorflow](OtherLibs/Tensorflow/README.md)
+  * [Pytorch](OtherLibs/Pytorch/README.md)
+  * [OpenCV](OtherLibs/OpenCV/README.md)
+* [样式表](Coding/LangsStyle/README.md)
+  * [CSS/QSS](Coding/LangsStyle/CSS/README.md)
 
-subgraph Software
-F2(Image )
-  G2(GIMP )
-  G3(Origin )
-  G4(Mermaid )
-  G5(Visio )
-  G6(Matlab/Python )
-F3(Animation )
-  G7(PocketAnimation )
-  G10(SolidWorks )
-  G11(HTML5 )
-F4(Video )
-  G12(VideoStudio )
-F5(Office )
-  G13(Word )
-  G14(PPT )
-  G15(Excel )
-F6(Project )
-  G16(Vivado )
-  G17(ModelSim )
-  G18("Cadence SPB(Allegro) ")
-  G19(MultiSim )
-  G20(Altium Designer )
-  G21(Keil MDK )
-  G22(SolidWorks )
-  G23(Qt )
-  G24(Visual Studio )
-  G25(VS Code )
-F7(Manage )
-  G26(Git )
-  G27(Inlook )
-  G28(Outlook )
-F8(Plugins )
-  G29(Chrome Extension )
-  G30(VS Extension )
-  G31(gitbook plugin )
-  G32(GIMP plugin )
-  G33(Office plugin )
-end
+* [配置文件](Coding/LangsConf/README.md)
+  * [Ini](Coding/LangsConf/Ini/README.md)
+  * [Json](Coding/LangsConf/Json/README.md)
 
-
-D3 --> C5
-D4 --> C12
-
-D3 --> C1  --> B1
-D3 --> C2  --> B1
-D4 --> C3  --> B1
-D3 --> C4  --> B2
-D4 --> C5  --> B2
-               
-D4 --> C6  --> B2
-D2 --> C7  --> B2
-D1 --> C8  --> B2
-D2 --> C9  --> B2
-D5 --> C10 --> B2
-D5 --> C11 --> B2
-D3 --> C12 --> B3
-               
-D3 --> C13 --> B4
-D3 --> C14 --> B4
-D4 --> C15 --> B4
-D4 --> C16 --> B5
-D4 --> C17 --> B5
-D4 --> C18 --> B5
-D1 --> C19 --> B6
-D1 --> C20 --> B6
-D1 --> C21 --> B6
-D4 --> C22 --> B7
-D4 --> C23 --> B7
-D4 --> C24 --> B7
+## 软件教程
+* [工程/项目软件](SoftTuto/Project/README.md)
+  * [Altium Designer](SoftTuto/Project/AltiumDesigner/README.md)
+  * [Cadence SPB](SoftTuto/Project/CadenceSPB/README.md)
+  * [Keil MDK](SoftTuto/Project/KeilMDK/README.md)
+  * [ModelSim](SoftTuto/Project/ModelSim/README.md)
+  * [MultiSim](SoftTuto/Project/MultiSim/README.md)
+  * [Qt](SoftTuto/Project/Qt/README.md)
+  * [SolidWorks](SoftTuto/Project/SolidWorks/README.md)
+  * [Visual Studio](SoftTuto/Project/VisualStudio/README.md)
+  * [Vivado](SoftTuto/Project/Vivado/README.md)
+  * [VS Code](SoftTuto/Project/VSCode/README.md)
+  * [其他](SoftTuto/Project/Others/README.md)
+    * [代码中插入字符画](SoftTuto/Project/Others/代码中插入字符画.md)
+* [图像图表软件](SoftTuto/Image/README.md)
+  * [GIMP](SoftTuto/Image/GIMP/README.md)
+    * [默认快捷键](SoftTuto/Image/GIMP/GIMP默认快捷键.md)
+  * [Mermaid](SoftTuto/Image/Mermaid/README.md)
+  * [Origin](SoftTuto/Image/Origin/README.md)
+  * [Solidworks](SoftTuto/Image/Solidworks/README.md)
+  * [Visio](SoftTuto/Image/Visio/README.md)
+* [动画制作软件](SoftTuto/Animation/README.md)
+  * [Solidworks](SoftTuto/Animation/SolidWorks/README.md)
+  * [HTML5](SoftTuto/Animation/HTML5/README.md)
+  * [口袋动画-Pocket Animation](SoftTuto/Animation/PocketAnimation/README.md)
+* [办公软件](SoftTuto/Office/README.md)
+  * [Word](SoftTuto/Office/Word/README.md)
+    * [中文学位论文参考文献格式设置Mendeley](SoftTuto/Office/Word/中文学位论文参考文献格式设置Mendeley.md)
+  * [PPT](SoftTuto/Office/PPT/README.md)
+  * [Excel](SoftTuto/Office/Excel/README.md)
+* [管理类软件](SoftTuto/Manage/README.md)
+  * [Git](SoftTuto/Manage/Git/README.md)
+    * [Github使用教程](SoftTuto/Manage/Git/Github使用教程.md)
+    * [Gitbook使用教程](SoftTuto/Manage/Git/Gitbook使用教程.md)
+    * [本站Wiki的更新教程](SoftTuto/Manage/Git/Gitbook使用教程2.md)
+    * [Gitbook插件开发教程](SoftTuto/Manage/Git/Gitbook插件开发教程.md)
+  * [Inlook](SoftTuto/Manage/Inlook/README.md)
+    * [Inlook-你的私人工作秘书](SoftTuto/Manage/Inlook/Inlook发布页.md)
+  * [Outlook](SoftTuto/Manage/Outlook/README.md)
+* [插件类](SoftTuto/Plugins/README.md)
+  * [Chrome插件](SoftTuto/Plugins/ChromeExt/README.md)
+    * [Floccus跨平台同步你的浏览器书签](SoftTuto/Plugins/ChromeExt/Floccus跨平台同步你的浏览器书签.md)
+  * [GIMP插件](SoftTuto/Plugins/GIMPPlu/README.md)
+  * [Gitbook插件](SoftTuto/Plugins/GitbookPlu/README.md)
+  * [Office插件](SoftTuto/Plugins/OfficePlu/README.md)
+  * [VSCode插件](SoftTuto/Plugins/VSCodeExt/README.md)
+* [视频软件](SoftTuto/Video/README.md)
+  * [会声会影](SoftTuto/Video/VideoStudio/README.md)
 
 
-F4--> G12  --> D4
-F2--> G2   --> D4
-F2--> G3   --> D4
-F2--> G4   --> D3
-F2--> G5   --> D4
-F2--> G6   --> D4
-F2--> G10  --> D1
-F3--> G7   --> D4
-F3--> G6   --> D4
-F3--> G2   --> D4
-F3--> G10  --> D1
-F3--> G6   --> D4
-F3--> G11  --> D4
 
-F5--> G13  --> D4
-F5--> G14  --> D4
-F5--> G15  --> D4
-F6--> G16  --> D1
-F6--> G17  --> D1
-F6--> G18  --> D1
-F6--> G19  --> D1
-F6--> G20  --> D1
-F6--> G21  --> D1
-F6--> G22  --> D1
-F6--> G23  --> D4
-F6--> G24  --> D4
-F6--> G25  --> D4
-F7--> G26  --> D4
-F7--> G27  --> D4
-F7--> G28  --> D4
-F8--> G29  --> D3
-F8--> G30  --> D4
-F8--> G31  --> D3
-F8--> G32  --> D4
-F8--> G33  --> D4
 
-class B1,B2,B3,B4,B5,B6,B7 A1
-class C1,C2,C3,C4,C5,C6,C7,C8,C9,C10,C11,C12 A2
-class C13,C14,C15,C16,C17,C18,C19,C20,C21,C22,C23,C24 A2
-class D1,D2,D3,D4,D5 A3
-class F2,F3,F4,F5,F6,F7,F8 A4
-```
 
-<div align="center">知识体系架构</div>
+
+
+
 
 
