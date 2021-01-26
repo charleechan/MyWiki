@@ -3,7 +3,8 @@
 * [Bash](Bash/index.html)
 * [CMD](CMD/index.html)
 * [JS](JS/index.html)
-  * [把博客园装饰得美丽大方](JS/把博客园装饰得美丽大方.html)
+  * [把博客园装饰得美丽大方
+](JS/DecorateYourCnblogs.html)
 * [Matlab](Matlab/index.html)
 * [PHP](PHP/index.html)
 * [Python](Python/index.html)
@@ -15,7 +16,8 @@
 * [Bash](Bash/index.html)
 * [CMD](CMD/index.html)
 * [JS](JS/index.html)
-  * [把博客园装饰得美丽大方](JS/把博客园装饰得美丽大方.html)
+  * [把博客园装饰得美丽大方
+](JS/DecorateYourCnblogs.html)
 * [Matlab](Matlab/index.html)
 * [PHP](PHP/index.html)
 * [Python](Python/index.html)

@@ -6,7 +6,8 @@
 * [ModelSim](ModelSim/index.html)
 * [MultiSim](MultiSim/index.html)
 * [Others](Others/index.html)
-  * [代码中插入字符画](Others/代码中插入字符画.html)
+  * [根据文字生成字符画
+](Others/InsertASCIIChartInCode.html)
 * [Qt](Qt/index.html)
 * [SolidWorks](SolidWorks/index.html)
 * [VisualStudio](VisualStudio/index.html)
@@ -21,7 +22,8 @@
 * [ModelSim](ModelSim/index.html)
 * [MultiSim](MultiSim/index.html)
 * [Others](Others/index.html)
-  * [代码中插入字符画](Others/代码中插入字符画.html)
+  * [根据文字生成字符画
+](Others/InsertASCIIChartInCode.html)
 * [Qt](Qt/index.html)
 * [SolidWorks](SolidWorks/index.html)
 * [VisualStudio](VisualStudio/index.html)

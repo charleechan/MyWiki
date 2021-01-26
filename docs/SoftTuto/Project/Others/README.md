@@ -1,8 +1,10 @@
 
 # 目录列表
-* [代码中插入字符画](代码中插入字符画.html)
+* [根据文字生成字符画
+](InsertASCIIChartInCode.html)
 
 
 ```mind:height=300,title=内容概要,color
-* [代码中插入字符画](代码中插入字符画.html)
+* [根据文字生成字符画
+](InsertASCIIChartInCode.html)
 ```

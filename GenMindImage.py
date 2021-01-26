@@ -46,16 +46,27 @@ def recu_list_dirs_by_file_type(path,dstfile,dstpath="", indent = 0, maxi = -1):
             dirs = [item for item in lsdir if os.path.isdir(os.path.join(path, item))]
             files = [item for item in lsdir if os.path.isfile(os.path.join(path, item))]
             for item in files:
-                if not item=="README.md":
-                    file_name = os.path.splitext(item)[0]
-
+                file_name,ext_name = os.path.splitext(item)
+                if (not item=="README.md") and (ext_name==".md"):
                     if dstpath == path:
                         trimPath = ""
                     else:
                         trimPath=path.replace(dstpath+"\\","")+"/"
                         trimPath=trimPath.replace("\\","/")
 
-                    dstStr = ' ' * indent + '* [' + file_name + "](" +trimPath+ file_name + ".html)"
+                    realPath = os.path.join(path,item)
+
+                    titleStr = ""
+                    with open(realPath,mode="r",encoding="utf_8") as f:
+                        for line_number, line in enumerate(f, 1):
+                            if (not line.isspace()):
+                                line = line.lstrip("#")
+                                line = line.lstrip(" ")
+                                line = line.rstrip(":")
+                                line = line.rstrip("：")
+                                titleStr = line
+                                break
+                    dstStr = ' ' * indent + '* [' + titleStr + "](" +trimPath+ file_name + ".html)"
                     # print(dstStr)
                     dstfile.write(dstStr+"\n")
             for item in dirs:
@@ -85,16 +96,27 @@ def recu_list_dirs_by_file_type1(path,dstfile,dstpath="", indent = 0, maxi = -1)
             dirs = [item for item in lsdir if os.path.isdir(os.path.join(path, item))]
             files = [item for item in lsdir if os.path.isfile(os.path.join(path, item))]
             for item in files:
-                if not item=="README.md":
-                    file_name = os.path.splitext(item)[0]
-
+                file_name,ext_name = os.path.splitext(item)
+                if (not item=="README.md") and (ext_name==".md"):
                     if dstpath == path:
                         trimPath = ""
                     else:
                         trimPath=path.replace(dstpath+"\\","")+"/"
                         trimPath=trimPath.replace("\\","/")
 
-                    dstStr = ' ' * indent + '* [' + file_name + "](" +trimPath+ file_name + ".html)"
+                    realPath = os.path.join(path,item)
+
+                    titleStr = ""
+                    with open(realPath,mode="r",encoding="utf_8") as f:
+                        for line_number, line in enumerate(f, 1):
+                            if (not line.isspace()):
+                                line = line.lstrip("#")
+                                line = line.lstrip(" ")
+                                line = line.rstrip(":")
+                                line = line.rstrip("：")
+                                titleStr = line
+                                break
+                    dstStr = ' ' * indent + '* [' + titleStr + "](" +trimPath+ file_name + ".html)"
                     # print(dstStr)
                     dstfile.write(dstStr+"\n")
             for item in dirs:
@@ -111,12 +133,14 @@ def recu_list_subdirs(path,retList,dstPath=""):
         # 连接文件名到路径     
         curPath = os.path.join(path, lists)
         # 如果是文件,且文件名匹配
+
         if os.path.isdir(curPath):
             
             trimPath=curPath.replace(dstPath+"\\","")+"/"
             trimPath=trimPath.replace("\\","/")
             retList.append(curPath)
             recu_list_subdirs(curPath,retList,dstPath)
+
 
 
 # 更新路径rootDir下的名字为filename的文件,内容包含本文件夹下的目录树
@@ -126,6 +150,7 @@ def Update(rootDir, filename):
     for lists in os.listdir(rootDir):  
         # 连接文件名到路径     
         path = os.path.join(rootDir, lists)
+
         # 如果是文件,且文件名匹配
         if os.path.isfile(path) and os.path.basename(path) == filename:
             try:
@@ -146,26 +171,33 @@ def Update(rootDir, filename):
 
             except:
                 print('error: ', path, '\n')
+
 def createNavPage(libList):
     filepath = __file__
     realpath = os.path.realpath(filepath)
     current_path = os.path.dirname(realpath)
     
+    
     for libdir in libList:
         cur_path = current_path+libdir
+        print("\n正在为路径{}的分类和子分类生成目录页README.md".format(cur_path))
         retList = []
         retList.append(cur_path)
         recu_list_subdirs(cur_path,retList)
         for item in retList:
             # print(item)
             Update(item, "README.md")
+        print("\n路径{}的(子)的分类和子分类目录页README.md已生成!".format(cur_path))
 
 
 def main():
     libList = []
+    
+    # 如果您已增加一级目录文件夹,请在下面添加
     libList.append('\\mds\\Coding')
     libList.append('\\mds\\SoftTuto')
-    libList.append('\\mds\\OtherLibs')
+    # 如果您已增加一级目录文件夹,请在上面添加
+    
     global langHead
     langHead = "mind:height=300,title=内容概要,color"
 

@@ -8,7 +8,9 @@
 @echo off
 
 call python GenMindImage.py
+call python GenSideBarNav.py
 
+echo=
 echo 正在复制 mermaid.min.js 文件...
 
 @xcopy /y .\mds\SoftTuto\Manage\Git\res\mermaid.min.js .\mds\node_modules\mermaid\dist >nul
