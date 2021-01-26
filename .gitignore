@@ -4,3 +4,4 @@
 # *.zip     忽略所有.zip文件
 
 /mds/node_modules/*
+/pythonlib/*

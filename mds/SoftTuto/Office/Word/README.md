@@ -9,6 +9,6 @@
 ```mind:height=300,title=内容概要,color
 * [中文学位论文参考文献格式配置
 ](CNPaperRefSetting.html)
-* <mark>res 资源</mark>
+* res 资源
   * [csl_modifyGB.png](res/csl_modifyGB.png)
 ```

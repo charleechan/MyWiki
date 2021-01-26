@@ -11,7 +11,6 @@
 ](Git/UpdateThisSite.html)
   * <mark>res 资源</mark>
     * [mermaid.min.js](Git/res/mermaid.min.js)
-    * [theme.js](Git/res/theme.js)
 * [Inlook](Inlook/index.html)
   * [Inlook - Your personal assistant
 ](Inlook/InlookIsReleased.html)
@@ -30,13 +29,12 @@
 ](Git/GithubUsage.html)
   * [本Wiki维护教程
 ](Git/UpdateThisSite.html)
-  * <mark>res 资源</mark>
+  * res 资源
     * [mermaid.min.js](Git/res/mermaid.min.js)
-    * [theme.js](Git/res/theme.js)
 * [Inlook](Inlook/index.html)
   * [Inlook - Your personal assistant
 ](Inlook/InlookIsReleased.html)
-  * <mark>res 资源</mark>
+  * res 资源
     * [screen_shot.png](Inlook/res/screen_shot.png)
 * [Outlook](Outlook/index.html)
 ```

@@ -15,7 +15,7 @@
 * [GIMP](GIMP/index.html)
   * [GIMP快速指南
 ](GIMP/GIMPDefaultKeys.html)
-  * <mark>res 资源</mark>
+  * res 资源
     * [GIMP-keys.pdf](GIMP/res/GIMP-keys.pdf)
 * [Mermaid](Mermaid/index.html)
 * [Origin](Origin/index.html)

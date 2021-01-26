@@ -1,5 +1,8 @@
 # 本Wiki维护教程
 
+
+
+
 1. 在<mark>已有分类</mark>的路径下添加markdown文件,需满足以下要求;
    * 请把文件名设置为 **英文开头，且只有英文和数字, 后缀名为.md**;
    * 文件内容的**第一个非空行将作为内容索引**, 因此:
@@ -13,3 +16,29 @@
    * 自动打开浏览器预览本地电子书.
 
 > <mark>警告</mark>: 使用脚本`GitbookResetReadMe.bat`会将**所有分类的目录页置为404页面**.
+
+**本站通过脚本自动生成目录(导航)页,但前提是有本地已经安装了**<mark>Python</mark>. 
+
+* 如果还没安装,需要把[pythonlib.zip](https://github.com/cherleechan/MyWiki/pythonlib.zip) 放在与脚本同一目录,并解压到当前文件夹.并修改`GitbookBuild.bat`的10~13行.
+
+```
+MyWiki
+  |--docs : gitbook build生成的网页,xxx.github.io从本文件夹读取生成Pages.
+  |--mds
+  |   |--README.md
+  |	  |--SUMMARY.md
+  |   |--node_modules
+  |   |--Coding
+  |   |--SoftTuto
+  |   |--img : 包含网页logo.
+  |
+  |--pythonlib : 
+  |   |--python.exe
+  |   |...
+  |
+  |--GitbookBuild.bat : 一键生成导航页的脚本,会使用脚本 GenMindImage.py 和 GenSideBarNav.py
+  |--GenMindImage.py, GenSideBarNav.py : python脚本,不可删除.
+  |--GitbookResetReadMe.bat : 一键置404,用处不大.
+
+```
+

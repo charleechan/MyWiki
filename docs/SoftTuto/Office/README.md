@@ -15,6 +15,6 @@
 * [Word](Word/index.html)
   * [中文学位论文参考文献格式配置
 ](Word/CNPaperRefSetting.html)
-  * <mark>res 资源</mark>
+  * res 资源
     * [csl_modifyGB.png](Word/res/csl_modifyGB.png)
 ```

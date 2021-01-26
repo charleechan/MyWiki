@@ -9,6 +9,6 @@
 ```mind:height=300,title=内容概要,color
 * [GIMP快速指南
 ](GIMPDefaultKeys.html)
-* <mark>res 资源</mark>
+* res 资源
   * [GIMP-keys.pdf](res/GIMP-keys.pdf)
 ```
