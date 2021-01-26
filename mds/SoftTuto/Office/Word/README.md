@@ -1,6 +1,7 @@
 
 # 资源列表
-* [中文学位论文参考文献格式配置
+
+[回到首页](https://charleechan.github.io/MyWiki)* [中文学位论文参考文献格式配置
 ](CNPaperRefSetting.html)
 * <mark>res 资源</mark>
   * [csl_modifyGB.png](res/csl_modifyGB.png)

@@ -193,7 +193,7 @@ def Update(rootDir, filename):
                 currentdir = os.path.dirname(realpath)
                 # 打开当前文件
                 with open(path,mode="w", encoding='utf_8') as f:
-                    f.write("\n# 资源列表\n")
+                    f.write("\n# 资源列表\n\n[回到首页](https://charleechan.github.io/MyWiki)")
                     # 简历资源列表清单
                     recu_list_dirs_by_file_type1(currentdir,f)
                     # 建立当前目录的脑图结构

@@ -19,7 +19,7 @@
 
 **本站通过脚本自动生成目录(导航)页,但前提是有本地已经安装了**<mark>Python</mark>. 
 
-* 如果还没安装,需要把[pythonlib.zip](https://github.com/cherleechan/MyWiki/pythonlib.zip) 放在与脚本同一目录,并解压到当前文件夹.并修改`GitbookBuild.bat`的10~13行.
+* 如果还没安装,需要把[pythonlib.zip](https://github.com/charleechan/MyWiki/blob/main/pythonlib.zip) 放在与脚本同一目录,并解压到当前文件夹.并修改`GitbookBuild.bat`的10~13行.
 
 ```
 MyWiki

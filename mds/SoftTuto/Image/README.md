@@ -1,6 +1,7 @@
 
 # 资源列表
-* [GIMP](GIMP/index.html)
+
+[回到首页](https://charleechan.github.io/MyWiki)* [GIMP](GIMP/index.html)
   * [GIMP快速指南
 ](GIMP/GIMPDefaultKeys.html)
   * <mark>res 资源</mark>
