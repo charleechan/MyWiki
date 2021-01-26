@@ -1,9 +1,10 @@
 
-# 目录列表
+# 资源列表
 * [GIMP](GIMP/index.html)
   * [GIMP快速指南
 ](GIMP/GIMPDefaultKeys.html)
-  * [res](res/index.html)
+  * <mark>res 资源</mark>
+    * [GIMP-keys.pdf](GIMP/res/GIMP-keys.pdf)
 * [Mermaid](Mermaid/index.html)
 * [Origin](Origin/index.html)
 * [Solidworks](Solidworks/index.html)
@@ -14,7 +15,8 @@
 * [GIMP](GIMP/index.html)
   * [GIMP快速指南
 ](GIMP/GIMPDefaultKeys.html)
-  * [res](res/index.html)
+  * <mark>res 资源</mark>
+    * [GIMP-keys.pdf](GIMP/res/GIMP-keys.pdf)
 * [Mermaid](Mermaid/index.html)
 * [Origin](Origin/index.html)
 * [Solidworks](Solidworks/index.html)

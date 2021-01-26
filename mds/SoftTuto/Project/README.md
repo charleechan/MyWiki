@@ -1,5 +1,5 @@
 
-# 目录列表
+# 资源列表
 * [AltiumDesigner](AltiumDesigner/index.html)
 * [CadenceSPB](CadenceSPB/index.html)
 * [KeilMDK](KeilMDK/index.html)

@@ -1,5 +1,5 @@
 
-# 目录列表
+# 资源列表
 * [Markdown支持绘制脑图啦
 ](PlotMindMap.html)
 * [使用WaveDrom画时序图或电路图

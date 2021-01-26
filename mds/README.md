@@ -2,6 +2,11 @@
 
 <mark>**按分类导航**</mark> |  [按平台导航](./nav1.html) | [软件教程导航](./nav2.html)
 
+[更新我的Wiki](SoftTuto/Manage/Git/UpdateThisSite.html)
+
+<mark>                                           </mark>
+本站资源一览
+<mark>                                           </mark>
 ```mermaid
 graph LR;
 classDef CSS3 fill:#20A162,stroke:#000000,color:#ffffff,stroke-width:0px;

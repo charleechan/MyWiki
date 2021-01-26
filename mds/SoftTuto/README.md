@@ -1,5 +1,5 @@
 
-# 目录列表
+# 资源列表
 * [Animation](Animation/index.html)
   * [HTML5](HTML5/index.html)
   * [PocketAnimation](PocketAnimation/index.html)
@@ -8,7 +8,8 @@
   * [GIMP](GIMP/index.html)
     * [GIMP快速指南
 ](Image/GIMP/GIMPDefaultKeys.html)
-    * [res](res/index.html)
+    * <mark>res 资源</mark>
+      * [GIMP-keys.pdf](Image/GIMP/res/GIMP-keys.pdf)
   * [Mermaid](Mermaid/index.html)
   * [Origin](Origin/index.html)
   * [Solidworks](Solidworks/index.html)
@@ -23,11 +24,14 @@
 ](Manage/Git/GithubUsage.html)
     * [本Wiki维护教程
 ](Manage/Git/UpdateThisSite.html)
-    * [res](res/index.html)
+    * <mark>res 资源</mark>
+      * [mermaid.min.js](Manage/Git/res/mermaid.min.js)
+      * [theme.js](Manage/Git/res/theme.js)
   * [Inlook](Inlook/index.html)
     * [Inlook - Your personal assistant
 ](Manage/Inlook/InlookIsReleased.html)
-    * [res](res/index.html)
+    * <mark>res 资源</mark>
+      * [screen_shot.png](Manage/Inlook/res/screen_shot.png)
   * [Outlook](Outlook/index.html)
 * [Office](Office/index.html)
   * [Excel](Excel/index.html)
@@ -35,12 +39,14 @@
   * [Word](Word/index.html)
     * [中文学位论文参考文献格式配置
 ](Office/Word/CNPaperRefSetting.html)
-    * [res](res/index.html)
+    * <mark>res 资源</mark>
+      * [csl_modifyGB.png](Office/Word/res/csl_modifyGB.png)
 * [Plugins](Plugins/index.html)
   * [ChromeExt](ChromeExt/index.html)
     * [Floccus配合坚果云同步书签教程
 ](Plugins/ChromeExt/FloccusSyncYourBookmarks.html)
-    * [res](res/index.html)
+    * <mark>res 资源</mark>
+      * [bookmarks.xbel](Plugins/ChromeExt/res/bookmarks.xbel)
   * [GIMPPlu](GIMPPlu/index.html)
   * [GitbookPlu](GitbookPlu/index.html)
   * [OfficePlu](OfficePlu/index.html)
@@ -72,7 +78,8 @@
   * [GIMP](GIMP/index.html)
     * [GIMP快速指南
 ](Image/GIMP/GIMPDefaultKeys.html)
-    * [res](res/index.html)
+    * <mark>res 资源</mark>
+      * [GIMP-keys.pdf](Image/GIMP/res/GIMP-keys.pdf)
   * [Mermaid](Mermaid/index.html)
   * [Origin](Origin/index.html)
   * [Solidworks](Solidworks/index.html)
@@ -87,11 +94,14 @@
 ](Manage/Git/GithubUsage.html)
     * [本Wiki维护教程
 ](Manage/Git/UpdateThisSite.html)
-    * [res](res/index.html)
+    * <mark>res 资源</mark>
+      * [mermaid.min.js](Manage/Git/res/mermaid.min.js)
+      * [theme.js](Manage/Git/res/theme.js)
   * [Inlook](Inlook/index.html)
     * [Inlook - Your personal assistant
 ](Manage/Inlook/InlookIsReleased.html)
-    * [res](res/index.html)
+    * <mark>res 资源</mark>
+      * [screen_shot.png](Manage/Inlook/res/screen_shot.png)
   * [Outlook](Outlook/index.html)
 * [Office](Office/index.html)
   * [Excel](Excel/index.html)
@@ -99,12 +109,14 @@
   * [Word](Word/index.html)
     * [中文学位论文参考文献格式配置
 ](Office/Word/CNPaperRefSetting.html)
-    * [res](res/index.html)
+    * <mark>res 资源</mark>
+      * [csl_modifyGB.png](Office/Word/res/csl_modifyGB.png)
 * [Plugins](Plugins/index.html)
   * [ChromeExt](ChromeExt/index.html)
     * [Floccus配合坚果云同步书签教程
 ](Plugins/ChromeExt/FloccusSyncYourBookmarks.html)
-    * [res](res/index.html)
+    * <mark>res 资源</mark>
+      * [bookmarks.xbel](Plugins/ChromeExt/res/bookmarks.xbel)
   * [GIMPPlu](GIMPPlu/index.html)
   * [GitbookPlu](GitbookPlu/index.html)
   * [OfficePlu](OfficePlu/index.html)

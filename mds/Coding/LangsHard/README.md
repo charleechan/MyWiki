@@ -1,5 +1,5 @@
 
-# 目录列表
+# 资源列表
 * [SV](SV/index.html)
 * [Verilog](Verilog/index.html)
 * [VHDL](VHDL/index.html)

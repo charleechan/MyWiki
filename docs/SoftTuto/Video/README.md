@@ -1,5 +1,5 @@
 
-# 目录列表
+# 资源列表
 * [VideoStudio](VideoStudio/index.html)
 
 

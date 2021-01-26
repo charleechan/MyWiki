@@ -1,9 +1,10 @@
 
-# 目录列表
+# 资源列表
 * [ChromeExt](ChromeExt/index.html)
   * [Floccus配合坚果云同步书签教程
 ](ChromeExt/FloccusSyncYourBookmarks.html)
-  * [res](res/index.html)
+  * <mark>res 资源</mark>
+    * [bookmarks.xbel](ChromeExt/res/bookmarks.xbel)
 * [GIMPPlu](GIMPPlu/index.html)
 * [GitbookPlu](GitbookPlu/index.html)
 * [OfficePlu](OfficePlu/index.html)
@@ -14,7 +15,8 @@
 * [ChromeExt](ChromeExt/index.html)
   * [Floccus配合坚果云同步书签教程
 ](ChromeExt/FloccusSyncYourBookmarks.html)
-  * [res](res/index.html)
+  * <mark>res 资源</mark>
+    * [bookmarks.xbel](ChromeExt/res/bookmarks.xbel)
 * [GIMPPlu](GIMPPlu/index.html)
 * [GitbookPlu](GitbookPlu/index.html)
 * [OfficePlu](OfficePlu/index.html)

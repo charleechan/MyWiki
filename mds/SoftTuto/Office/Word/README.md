@@ -1,12 +1,14 @@
 
-# 目录列表
+# 资源列表
 * [中文学位论文参考文献格式配置
 ](CNPaperRefSetting.html)
-* [res](res/index.html)
+* <mark>res 资源</mark>
+  * [csl_modifyGB.png](res/csl_modifyGB.png)
 
 
 ```mind:height=300,title=内容概要,color
 * [中文学位论文参考文献格式配置
 ](CNPaperRefSetting.html)
-* [res](res/index.html)
+* <mark>res 资源</mark>
+  * [csl_modifyGB.png](res/csl_modifyGB.png)
 ```

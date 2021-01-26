@@ -1,12 +1,14 @@
 
-# 目录列表
+# 资源列表
 * [Inlook - Your personal assistant
 ](InlookIsReleased.html)
-* [res](res/index.html)
+* <mark>res 资源</mark>
+  * [screen_shot.png](res/screen_shot.png)
 
 
 ```mind:height=300,title=内容概要,color
 * [Inlook - Your personal assistant
 ](InlookIsReleased.html)
-* [res](res/index.html)
+* <mark>res 资源</mark>
+  * [screen_shot.png](res/screen_shot.png)
 ```

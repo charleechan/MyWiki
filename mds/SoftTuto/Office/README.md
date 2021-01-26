@@ -1,11 +1,12 @@
 
-# 目录列表
+# 资源列表
 * [Excel](Excel/index.html)
 * [PPT](PPT/index.html)
 * [Word](Word/index.html)
   * [中文学位论文参考文献格式配置
 ](Word/CNPaperRefSetting.html)
-  * [res](res/index.html)
+  * <mark>res 资源</mark>
+    * [csl_modifyGB.png](Word/res/csl_modifyGB.png)
 
 
 ```mind:height=300,title=内容概要,color
@@ -14,5 +15,6 @@
 * [Word](Word/index.html)
   * [中文学位论文参考文献格式配置
 ](Word/CNPaperRefSetting.html)
-  * [res](res/index.html)
+  * <mark>res 资源</mark>
+    * [csl_modifyGB.png](Word/res/csl_modifyGB.png)
 ```

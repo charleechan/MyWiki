@@ -1,5 +1,5 @@
 
-# 目录列表
+# 资源列表
 * [Git](Git/index.html)
   * [Gitbook 插件
 ](Git/GitbookPluginsDev.html)
@@ -9,11 +9,14 @@
 ](Git/GithubUsage.html)
   * [本Wiki维护教程
 ](Git/UpdateThisSite.html)
-  * [res](res/index.html)
+  * <mark>res 资源</mark>
+    * [mermaid.min.js](Git/res/mermaid.min.js)
+    * [theme.js](Git/res/theme.js)
 * [Inlook](Inlook/index.html)
   * [Inlook - Your personal assistant
 ](Inlook/InlookIsReleased.html)
-  * [res](res/index.html)
+  * <mark>res 资源</mark>
+    * [screen_shot.png](Inlook/res/screen_shot.png)
 * [Outlook](Outlook/index.html)
 
 
@@ -27,10 +30,13 @@
 ](Git/GithubUsage.html)
   * [本Wiki维护教程
 ](Git/UpdateThisSite.html)
-  * [res](res/index.html)
+  * <mark>res 资源</mark>
+    * [mermaid.min.js](Git/res/mermaid.min.js)
+    * [theme.js](Git/res/theme.js)
 * [Inlook](Inlook/index.html)
   * [Inlook - Your personal assistant
 ](Inlook/InlookIsReleased.html)
-  * [res](res/index.html)
+  * <mark>res 资源</mark>
+    * [screen_shot.png](Inlook/res/screen_shot.png)
 * [Outlook](Outlook/index.html)
 ```

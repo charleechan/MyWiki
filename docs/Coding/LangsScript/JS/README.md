@@ -1,5 +1,5 @@
 
-# 目录列表
+# 资源列表
 * [把博客园装饰得美丽大方
 ](DecorateYourCnblogs.html)
 

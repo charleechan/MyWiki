@@ -1,5 +1,5 @@
 
-# 目录列表
+# 资源列表
 * [OpenCV](OpenCV/index.html)
   * [](OpenCV/B.html)
 * [Pytorch](Pytorch/index.html)

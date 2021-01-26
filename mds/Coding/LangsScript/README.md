@@ -1,5 +1,5 @@
 
-# 目录列表
+# 资源列表
 * [Bash](Bash/index.html)
 * [CMD](CMD/index.html)
 * [JS](JS/index.html)

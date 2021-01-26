@@ -1,5 +1,5 @@
 
-# 目录列表
+# 资源列表
 * [Ini](Ini/index.html)
 * [Json](Json/index.html)
 

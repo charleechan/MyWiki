@@ -69,11 +69,27 @@ def recu_list_dirs_by_file_type(path,dstfile,dstpath="", indent = 0, maxi = -1):
                     dstStr = ' ' * indent + '* [' + titleStr + "](" +trimPath+ file_name + ".html)"
                     # print(dstStr)
                     dstfile.write(dstStr+"\n")
+                elif (not item=="README.md"):
+                    if dstpath == path:
+                        trimPath = ""
+                    else:
+                        trimPath=path.replace(dstpath+"\\","")+"/"
+                        trimPath=trimPath.replace("\\","/")
+                    dstStr = ' ' * indent + '* [' + item + "](" +trimPath+ item+")"
+                    # print(dstStr)
+                    dstfile.write(dstStr+"\n")
             for item in dirs:
-                dstStr = ' ' * indent + '* [' + item + "](" + item + "/index.html)"
-                # print(dstStr)
-                dstfile.write(dstStr+"\n")
-                recu_list_dirs_by_file_type(os.path.join(path, item),dstfile,dstpath, indent + 2, maxi - 1)
+                if(os.path.exists(os.path.join(path, item,"README.md"))):
+                    dstStr = ' ' * indent + '* [' + item + "](" + item + "/index.html)"
+                    # print(dstStr)
+                    dstfile.write(dstStr+"\n")
+                    recu_list_dirs_by_file_type(os.path.join(path, item),dstfile,dstpath, indent + 2, maxi - 1)
+                else:
+                    # 如果不含readme.md,就是img或res文件夹,不进行超链接
+                    dstStr = ' ' * indent + '* <mark>' + item + " 资源</mark>"
+                    # dstStr = ' ' * indent + '* [' + item + "](" + item +")"
+                    dstfile.write(dstStr+"\n")
+                    recu_list_dirs_by_file_type(os.path.join(path, item),dstfile,dstpath, indent + 2, maxi - 1)
 
 
 def recu_list_dirs_by_file_type1(path,dstfile,dstpath="", indent = 0, maxi = -1):
@@ -119,11 +135,28 @@ def recu_list_dirs_by_file_type1(path,dstfile,dstpath="", indent = 0, maxi = -1)
                     dstStr = ' ' * indent + '* [' + titleStr + "](" +trimPath+ file_name + ".html)"
                     # print(dstStr)
                     dstfile.write(dstStr+"\n")
+                elif (not item=="README.md"):
+                    if dstpath == path:
+                        trimPath = ""
+                    else:
+                        trimPath=path.replace(dstpath+"\\","")+"/"
+                        trimPath=trimPath.replace("\\","/")
+                    dstStr = ' ' * indent + '* [' + item + "](" +trimPath+ item+")"
+                    # print(dstStr)
+                    dstfile.write(dstStr+"\n")
+
             for item in dirs:
-                dstStr = ' ' * indent + '* [' + item + "](" + item + "/index.html)"
-                # print(dstStr)
-                dstfile.write(dstStr+"\n")
-                recu_list_dirs_by_file_type1(os.path.join(path, item),dstfile,dstpath, indent + 2, maxi - 1)
+                if(os.path.exists(os.path.join(path, item,"README.md"))):
+                    dstStr = ' ' * indent + '* [' + item + "](" + item + "/index.html)"
+                    # print(dstStr)
+                    dstfile.write(dstStr+"\n")
+                    recu_list_dirs_by_file_type1(os.path.join(path, item),dstfile,dstpath, indent + 2, maxi - 1)
+                else:
+                    # 如果不含readme.md,就是img或res文件夹,不进行超链接
+                    dstStr = ' ' * indent + '* <mark>' + item + " 资源</mark>"
+                    # dstStr = ' ' * indent + '* [' + item + "](" + item +")"
+                    dstfile.write(dstStr+"\n")
+                    recu_list_dirs_by_file_type1(os.path.join(path, item),dstfile,dstpath, indent + 2, maxi - 1)
 
 def recu_list_subdirs(path,retList,dstPath=""):
     # 列出某目录下的文件
@@ -160,7 +193,7 @@ def Update(rootDir, filename):
                 currentdir = os.path.dirname(realpath)
                 # 打开当前文件
                 with open(path,mode="w", encoding='utf_8') as f:
-                    f.write("\n# 目录列表\n")
+                    f.write("\n# 资源列表\n")
                     recu_list_dirs_by_file_type1(currentdir,f)
                     # 建立当前目录的脑图结构
                     f.write("\n\n```"+ langHead +"\n")

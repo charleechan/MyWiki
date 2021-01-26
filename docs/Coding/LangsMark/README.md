@@ -1,5 +1,5 @@
 
-# 目录列表
+# 资源列表
 * [HTML](HTML/index.html)
 * [MD](MD/index.html)
   * [Markdown支持绘制脑图啦

@@ -1,5 +1,5 @@
 
-# 目录列表
+# 资源列表
 * [Gitbook 插件
 ](GitbookPluginsDev.html)
 * [结合Github Pages使用GitBook
@@ -8,7 +8,9 @@
 ](GithubUsage.html)
 * [本Wiki维护教程
 ](UpdateThisSite.html)
-* [res](res/index.html)
+* <mark>res 资源</mark>
+  * [mermaid.min.js](res/mermaid.min.js)
+  * [theme.js](res/theme.js)
 
 
 ```mind:height=300,title=内容概要,color
@@ -20,5 +22,7 @@
 ](GithubUsage.html)
 * [本Wiki维护教程
 ](UpdateThisSite.html)
-* [res](res/index.html)
+* <mark>res 资源</mark>
+  * [mermaid.min.js](res/mermaid.min.js)
+  * [theme.js](res/theme.js)
 ```
