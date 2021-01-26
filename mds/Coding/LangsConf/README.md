@@ -1,7 +1,9 @@
 
 # 资源列表
 
-[回到首页](https://charleechan.github.io/MyWiki)* [Ini](Ini/index.html)
+[回到首页](https://charleechan.github.io/MyWiki)
+
+* [Ini](Ini/index.html)
 * [Json](Json/index.html)
 
 

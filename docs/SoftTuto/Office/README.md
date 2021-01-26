@@ -1,7 +1,9 @@
 
 # 资源列表
 
-[回到首页](https://charleechan.github.io/MyWiki)* [Excel](Excel/index.html)
+[回到首页](https://charleechan.github.io/MyWiki)
+
+* [Excel](Excel/index.html)
 * [PPT](PPT/index.html)
 * [Word](Word/index.html)
   * [中文学位论文参考文献格式配置

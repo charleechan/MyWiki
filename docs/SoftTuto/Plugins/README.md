@@ -1,7 +1,9 @@
 
 # 资源列表
 
-[回到首页](https://charleechan.github.io/MyWiki)* [ChromeExt](ChromeExt/index.html)
+[回到首页](https://charleechan.github.io/MyWiki)
+
+* [ChromeExt](ChromeExt/index.html)
   * [Floccus配合坚果云同步书签教程
 ](ChromeExt/FloccusSyncYourBookmarks.html)
   * <mark>res 资源</mark>

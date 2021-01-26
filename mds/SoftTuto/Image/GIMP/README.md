@@ -1,7 +1,9 @@
 
 # 资源列表
 
-[回到首页](https://charleechan.github.io/MyWiki)* [GIMP快速指南
+[回到首页](https://charleechan.github.io/MyWiki)
+
+* [GIMP快速指南
 ](GIMPDefaultKeys.html)
 * <mark>res 资源</mark>
   * [GIMP-keys.pdf](res/GIMP-keys.pdf)

@@ -1,7 +1,9 @@
 
 # 资源列表
 
-[回到首页](https://charleechan.github.io/MyWiki)* [Animation](Animation/index.html)
+[回到首页](https://charleechan.github.io/MyWiki)
+
+* [Animation](Animation/index.html)
   * [HTML5](HTML5/index.html)
   * [PocketAnimation](PocketAnimation/index.html)
   * [SolidWorks](SolidWorks/index.html)

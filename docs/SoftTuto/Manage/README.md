@@ -1,7 +1,9 @@
 
 # 资源列表
 
-[回到首页](https://charleechan.github.io/MyWiki)* [Git](Git/index.html)
+[回到首页](https://charleechan.github.io/MyWiki)
+
+* [Git](Git/index.html)
   * [Gitbook 插件
 ](Git/GitbookPluginsDev.html)
   * [结合Github Pages使用GitBook

@@ -1,7 +1,9 @@
 
 # 资源列表
 
-[回到首页](https://charleechan.github.io/MyWiki)* [Floccus配合坚果云同步书签教程
+[回到首页](https://charleechan.github.io/MyWiki)
+
+* [Floccus配合坚果云同步书签教程
 ](FloccusSyncYourBookmarks.html)
 * <mark>res 资源</mark>
   * [bookmarks.xbel](res/bookmarks.xbel)

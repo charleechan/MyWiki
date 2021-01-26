@@ -1,7 +1,9 @@
 
 # 资源列表
 
-[回到首页](https://charleechan.github.io/MyWiki)* [Bash](Bash/index.html)
+[回到首页](https://charleechan.github.io/MyWiki)
+
+* [Bash](Bash/index.html)
 * [CMD](CMD/index.html)
 * [JS](JS/index.html)
   * [把博客园装饰得美丽大方
