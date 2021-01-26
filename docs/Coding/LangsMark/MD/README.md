@@ -9,6 +9,8 @@
 ](PlotTimingDiagram.html)
 * [使用mermaid绘制流程图/脑图
 ](PlotVariousChart.html)
+* [在Markdown中使用FontAwesome
+](UseFontAwesomeInMD.html)
 
 
 ```mind:height=300,title=内容概要,color
@@ -18,4 +20,6 @@
 ](PlotTimingDiagram.html)
 * [使用mermaid绘制流程图/脑图
 ](PlotVariousChart.html)
+* [在Markdown中使用FontAwesome
+](UseFontAwesomeInMD.html)
 ```

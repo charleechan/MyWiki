@@ -11,6 +11,8 @@
 ](MD/PlotTimingDiagram.html)
   * [使用mermaid绘制流程图/脑图
 ](MD/PlotVariousChart.html)
+  * [在Markdown中使用FontAwesome
+](MD/UseFontAwesomeInMD.html)
 * [QML](QML/index.html)
 * [XML](XML/index.html)
 
@@ -24,6 +26,8 @@
 ](MD/PlotTimingDiagram.html)
   * [使用mermaid绘制流程图/脑图
 ](MD/PlotVariousChart.html)
+  * [在Markdown中使用FontAwesome
+](MD/UseFontAwesomeInMD.html)
 * [QML](QML/index.html)
 * [XML](XML/index.html)
 ```

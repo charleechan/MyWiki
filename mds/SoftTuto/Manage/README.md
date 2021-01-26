@@ -12,12 +12,12 @@
 ](Git/GithubUsage.html)
   * [本Wiki维护教程
 ](Git/UpdateThisSite.html)
-  * <mark>res 资源</mark>
+  * res 资源<mark>(右键打开或下载)</mark>
     * [mermaid.min.js](Git/res/mermaid.min.js)
 * [Inlook](Inlook/index.html)
   * [Inlook - Your personal assistant
 ](Inlook/InlookIsReleased.html)
-  * <mark>res 资源</mark>
+  * res 资源<mark>(右键打开或下载)</mark>
     * [screen_shot.png](Inlook/res/screen_shot.png)
 * [Outlook](Outlook/index.html)
 

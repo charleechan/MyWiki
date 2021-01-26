@@ -5,7 +5,7 @@
 
 * [Floccus配合坚果云同步书签教程
 ](FloccusSyncYourBookmarks.html)
-* <mark>res 资源</mark>
+* res 资源<mark>(右键打开或下载)</mark>
   * [bookmarks.xbel](res/bookmarks.xbel)
 
 

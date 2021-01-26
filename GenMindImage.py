@@ -153,7 +153,7 @@ def recu_list_dirs_by_file_type1(path,dstfile,dstpath="", indent = 0, maxi = -1)
                     recu_list_dirs_by_file_type1(os.path.join(path, item),dstfile,dstpath, indent + 2, maxi - 1)
                 else:
                     # 如果不含readme.md,就是img或res文件夹,不进行超链接
-                    dstStr = ' ' * indent + '* <mark>' + item + " 资源</mark>"
+                    dstStr = ' ' * indent + '* ' + item + " 资源<mark>(右键打开或下载)</mark>"
                     # dstStr = ' ' * indent + '* [' + item + "](" + item +")"
                     dstfile.write(dstStr+"\n")
                     recu_list_dirs_by_file_type1(os.path.join(path, item),dstfile,dstpath, indent + 2, maxi - 1)

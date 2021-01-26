@@ -5,7 +5,7 @@
 
 * [GIMP快速指南
 ](GIMPDefaultKeys.html)
-* <mark>res 资源</mark>
+* res 资源<mark>(右键打开或下载)</mark>
   * [GIMP-keys.pdf](res/GIMP-keys.pdf)
 
 

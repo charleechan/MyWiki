@@ -11,7 +11,7 @@
 ](GithubUsage.html)
 * [本Wiki维护教程
 ](UpdateThisSite.html)
-* <mark>res 资源</mark>
+* res 资源<mark>(右键打开或下载)</mark>
   * [mermaid.min.js](res/mermaid.min.js)
 
 

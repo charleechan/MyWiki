@@ -8,7 +8,9 @@
 * [Word](Word/index.html)
   * [中文学位论文参考文献格式配置
 ](Word/CNPaperRefSetting.html)
-  * <mark>res 资源</mark>
+  * [在Word中使用FontAwesome图标
+](Word/UseFontAwesomeInWord.html)
+  * res 资源<mark>(右键打开或下载)</mark>
     * [csl_modifyGB.png](Word/res/csl_modifyGB.png)
 
 
@@ -18,6 +20,8 @@
 * [Word](Word/index.html)
   * [中文学位论文参考文献格式配置
 ](Word/CNPaperRefSetting.html)
+  * [在Word中使用FontAwesome图标
+](Word/UseFontAwesomeInWord.html)
   * res 资源
     * [csl_modifyGB.png](Word/res/csl_modifyGB.png)
 ```

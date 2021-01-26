@@ -6,7 +6,7 @@
 * [ChromeExt](ChromeExt/index.html)
   * [Floccus配合坚果云同步书签教程
 ](ChromeExt/FloccusSyncYourBookmarks.html)
-  * <mark>res 资源</mark>
+  * res 资源<mark>(右键打开或下载)</mark>
     * [bookmarks.xbel](ChromeExt/res/bookmarks.xbel)
 * [GIMPPlu](GIMPPlu/index.html)
 * [GitbookPlu](GitbookPlu/index.html)
