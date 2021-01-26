@@ -1,7 +1,7 @@
 # Summary
 
 ## 知识体系
-* [我的Wiki-编程语言](README.md)
+* [我的Wiki-一本正经地胡说八道](README.md)
 * [我的Wiki-编程平台](nav1.md)
 * [我的Wiki-软件教程](nav2.md)
 

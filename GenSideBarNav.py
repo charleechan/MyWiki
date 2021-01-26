@@ -54,7 +54,7 @@ def createNavPage(summaryFileDir,libDict,libList):
     summaryFile = summaryFileDir +"\\SUMMARY.md"
     
     with open(summaryFile,mode="w",encoding="utf_8") as sumFile:
-        sumFile.write("# Summary\n\n## 知识体系\n* [我的Wiki-编程语言](README.md)\n* [我的Wiki-编程平台](nav1.md)\n* [我的Wiki-软件教程](nav2.md)\n")
+        sumFile.write("# Summary\n\n## 知识体系\n* [我的Wiki-一本正经地胡说八道](README.md)\n* [我的Wiki-编程平台](nav1.md)\n* [我的Wiki-软件教程](nav2.md)\n")
         for libdir in libList:
             cur_path = summaryFileDir + libdir
             if(libDict.__contains__(libdir)):
