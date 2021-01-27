@@ -5,7 +5,7 @@
 [更新我的Wiki](SoftTuto/Manage/Git/UpdateThisSite.html)
 
 <mark>                                           </mark>
-本站资源一览
+![今日诗词](https://v2.jinrishici.com/one.svg)
 <mark>                                           </mark>
 ```mermaid
 graph LR;

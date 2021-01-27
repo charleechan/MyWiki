@@ -4,6 +4,8 @@
 [回到首页](https://charleechan.github.io/MyWiki)
 
 * [HTML](HTML/index.html)
+  * [HTML(Hyper Text Markup Language, 超文本标记语言)的基础知识
+](HTML/1_HTMLBasics.html)
 * [MD](MD/index.html)
   * [Markdown支持绘制脑图啦
 ](MD/PlotMindMap.html)
@@ -19,6 +21,8 @@
 
 ```mind:height=300,title=内容概要,color
 * [HTML](HTML/index.html)
+  * [HTML(Hyper Text Markup Language, 超文本标记语言)的基础知识
+](HTML/1_HTMLBasics.html)
 * [MD](MD/index.html)
   * [Markdown支持绘制脑图啦
 ](MD/PlotMindMap.html)

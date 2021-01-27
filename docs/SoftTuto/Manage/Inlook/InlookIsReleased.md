@@ -1,24 +1,19 @@
-# Inlook - Your personal assistant
+# Inlook - 你的个人工作助手
 
-中文版|[English version](https://github.com/charleechan/Inlook)
-
-## Introduction
 Inlook是为在桌面上直观地提醒用户收到未读邮件和日程安排而开发的软件。本发布版仅限Windows 10. 开发者可基于此项目自由开发其他平台的版本。
-
-## [User Guide](https://charleechan.github.io/Github_Gitbook_Cnblogs/inlook.html)
-
 
 <div align=center><img src= 'img/screen_shot.png'></div>
 <div align=center>使用截图</div>
 
-## Release
+## <mark>声明: 如无特大bug,本软件将暂时不再发布新版本.</mark>
 
-* [Click Me To Download The Release Version](https://pan.baidu.com/s/1gzzFjWwLh1hMKob9biTz0g) (a1b2)
-* 1.0.0.2 Fix some bugs.
-* 1.0.0.1 Add support for Chinese, fix some bugs.
-* 1.0.0.0 Initial release
+## 下载
 
-## Features
+* [点我下载](https://pan.baidu.com/s/1gzzFjWwLh1hMKob9biTz0g)  提取码 `a1b2`
+
+## [用户使用说明](https://charleechan.github.io/MyWiki/SoftTuto/Manage/Inlook/InlookUsage.html)
+
+## 功能特点
 
 * 新邮件到达时自动弹窗提醒.
 * 列出从昨天到未来6天的日程.
@@ -27,18 +22,24 @@ Inlook是为在桌面上直观地提醒用户收到未读邮件和日程安排�
 * 网速和占用RAM监控.
 * 支持鼠标穿透,提高工作效率.
 * 智能缩放,根据邮箱数目和日程项数自动规划窗口大小.
-* **支持中文界面!**
+* **支持中文界面!默认设置为中文.**
+* 每日一句古诗词,鼠标放上去可以查看自己的IP.
 
-## Change log
-* 2020.12.29 初始版本发布
-* 2021.01.15 增加对中文界面的支持.
-* 2021.01.19 增加用户登录账户验证功能, 修复Bug: 第二次网络中断后连接造成崩溃
+## 版本发布
 
-## Declaration of interest
+* 2021.01.27 1.0.0.3 在中文界面增加每日诗词.
+* 2021.01.19 1.0.0.2 增加用户登录账户验证功能, 修复Bug: 第二次网络中断后连接造成崩溃
+* 2021.01.15 1.0.0.1 增加对中文界面的支持.
+* 2020.12.29 1.0.0.0 初始版本发布
 
-[GNU General Public License v3.0]
 
-## Usage
+
+
+## 利益声明
+
+[GNU General Public License v3.0](https://github.com/charleechan/MyWiki/blob/main/LICENSE)
+
+## 用户提醒
 
 * 添加你的邮箱账户可以实现**新邮件提醒**, 你需要提前获取你的邮箱的IMAP的服务器信息，部分邮箱如**163，QQ邮箱登录时需要授权码而不是密码**。
 

@@ -30,10 +30,29 @@
     * res 资源<mark>(右键打开或下载)</mark>
       * [mermaid.min.js](Manage/Git/res/mermaid.min.js)
   * [Inlook](Inlook/index.html)
-    * [Inlook - Your personal assistant
+    * [Inlook - 你的个人工作助手
 ](Manage/Inlook/InlookIsReleased.html)
+    * [Inlook用户指南
+](Manage/Inlook/InlookUsage.html)
+    * img 资源<mark>(右键打开或下载)</mark>
+      * [addaccount.png](Manage/Inlook/img/addaccount.png)
+      * [addaccount2.png](Manage/Inlook/img/addaccount2.png)
+      * [addagenda.png](Manage/Inlook/img/addagenda.png)
+      * [button.png](Manage/Inlook/img/button.png)
+      * [changesize.png](Manage/Inlook/img/changesize.png)
+      * [install.png](Manage/Inlook/img/install.png)
+      * [installing.png](Manage/Inlook/img/installing.png)
+      * [login.png](Manage/Inlook/img/login.png)
+      * [loginsuccess.png](Manage/Inlook/img/loginsuccess.png)
+      * [loginsuccess2.png](Manage/Inlook/img/loginsuccess2.png)
+      * [mainWindow.png](Manage/Inlook/img/mainWindow.png)
+      * [mainWindow2.png](Manage/Inlook/img/mainWindow2.png)
+      * [screen_shot.png](Manage/Inlook/img/screen_shot.png)
+      * [sjadd1.png](Manage/Inlook/img/sjadd1.png)
+      * [sjadd2.png](Manage/Inlook/img/sjadd2.png)
+      * [switchExchange.png](Manage/Inlook/img/switchExchange.png)
+      * [tray.png](Manage/Inlook/img/tray.png)
     * res 资源<mark>(右键打开或下载)</mark>
-      * [screen_shot.png](Manage/Inlook/res/screen_shot.png)
   * [Outlook](Outlook/index.html)
 * [Office](Office/index.html)
   * [Excel](Excel/index.html)
@@ -101,10 +120,29 @@
     * res 资源
       * [mermaid.min.js](Manage/Git/res/mermaid.min.js)
   * [Inlook](Inlook/index.html)
-    * [Inlook - Your personal assistant
+    * [Inlook - 你的个人工作助手
 ](Manage/Inlook/InlookIsReleased.html)
+    * [Inlook用户指南
+](Manage/Inlook/InlookUsage.html)
+    * img 资源
+      * [addaccount.png](Manage/Inlook/img/addaccount.png)
+      * [addaccount2.png](Manage/Inlook/img/addaccount2.png)
+      * [addagenda.png](Manage/Inlook/img/addagenda.png)
+      * [button.png](Manage/Inlook/img/button.png)
+      * [changesize.png](Manage/Inlook/img/changesize.png)
+      * [install.png](Manage/Inlook/img/install.png)
+      * [installing.png](Manage/Inlook/img/installing.png)
+      * [login.png](Manage/Inlook/img/login.png)
+      * [loginsuccess.png](Manage/Inlook/img/loginsuccess.png)
+      * [loginsuccess2.png](Manage/Inlook/img/loginsuccess2.png)
+      * [mainWindow.png](Manage/Inlook/img/mainWindow.png)
+      * [mainWindow2.png](Manage/Inlook/img/mainWindow2.png)
+      * [screen_shot.png](Manage/Inlook/img/screen_shot.png)
+      * [sjadd1.png](Manage/Inlook/img/sjadd1.png)
+      * [sjadd2.png](Manage/Inlook/img/sjadd2.png)
+      * [switchExchange.png](Manage/Inlook/img/switchExchange.png)
+      * [tray.png](Manage/Inlook/img/tray.png)
     * res 资源
-      * [screen_shot.png](Manage/Inlook/res/screen_shot.png)
   * [Outlook](Outlook/index.html)
 * [Office](Office/index.html)
   * [Excel](Excel/index.html)
