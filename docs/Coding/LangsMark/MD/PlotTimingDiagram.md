@@ -277,6 +277,8 @@ config: { hscale: 3},
 ]}
 </script>
 ```
+
+<div align="center">
 <script type="WaveDrom">
 { assign:[
   ["out",
@@ -287,9 +289,10 @@ config: { hscale: 3},
   ]
 ]}
 </script>
+</div>
 
 
-```html
+```javascript
 <div align="center">
 <script type="Wavedrom">
 { assign:[
@@ -309,6 +312,7 @@ config: { hscale: 3},
 </script>
 </div>
 ```
+
 <div align="center">
 <script type="WaveDrom">
 { assign:[
