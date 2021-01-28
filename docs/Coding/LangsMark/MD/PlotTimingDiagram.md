@@ -4,7 +4,9 @@
 ### VS Code中的使用方法
 `VS Code`的`Markdown Preview Enhanced`插件已经支持`wavedrom`.可以直接使用代码块标识`wavedrom`使用.例如
 
-```json
+代码
+
+```javascript
 {signal: [
   {name: "Alfa", wave: "01.zx=ud.23.456789" },
   {name: 'clk', wave: 'p.....|P..'},
@@ -14,6 +16,7 @@
 ]}
 ```
 
+对应的效果
 
 ```wavedrom
 {signal: [
@@ -24,14 +27,15 @@
   {name: 'ack', wave: '1.....|01.'}
 ]}
 ```
+
 <div align="center">Gitbook网页端,不会显示本图.请使用<b>Gitbook中的使用方法</b></div>
 
 ### Gitbook中的使用方法
 
 
-在`Markdown`文件的末尾放入以下代码
+在`Markdown`文件的最后放入以下代码
 
-```html
+```javascript
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/skins/default.js" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/wavedrom.min.js" type="text/javascript"></script>
 <body onload="WaveDrom.ProcessAll()">
@@ -39,7 +43,7 @@
 
 在要插入时序图的位置,插入以下代码
 
-```html
+```javascript
 <script type="WaveDrom">
 {signal: [
   {name: "Alfa", wave: "01.zx=ud.23.456789" },
@@ -94,7 +98,7 @@ signal元素是波形图的数组,包含若干个波形.
 
 ### 综合
 
-```html
+```javascript
 <script type="WaveDrom">
 {signal: [
   {name: "Alfa", wave: "01.zx=ud.23.456789" },
@@ -105,7 +109,9 @@ signal元素是波形图的数组,包含若干个波形.
 ]}
 </script>
 ```
+
 的效果
+
 <script type="WaveDrom">
 {signal: [
   {name: "Alfa", wave: "01.zx=ud.23.456789" },
@@ -119,7 +125,7 @@ signal元素是波形图的数组,包含若干个波形.
 
 ### 信号分组
 
-```html
+```javascript
 <script type="WaveDrom">
 { signal: [
   {    name: 'clk',   wave: 'p..Pp..P'},
@@ -165,7 +171,7 @@ signal元素是波形图的数组,包含若干个波形.
 
 DDR Read transaction时序图的代码
 
-```html
+```javascript
 <script type="WaveDrom">
 { signal: [
   { name: "CK",   wave: "P.......",                                              period: 2  },
@@ -189,7 +195,7 @@ DDR Read transaction时序图的代码
 
 ### 标题,脚注和缩放
 
-```html
+```javascript
 <script type="WaveDrom">
 {signal: [
   {name:'clk',         wave: 'p....' },
@@ -229,7 +235,7 @@ config: { hscale: 3},
 
 ### 带箭头
 
-```html
+```javascript
 <script type="Wavedrom">
 { signal: [
   { name: 'A', wave: '01........0....',  node: '.a........j' },
@@ -265,7 +271,7 @@ config: { hscale: 3},
 
 ### 组合逻辑电路
 
-```html
+```javascript
 <script type="Wavedrom">
 { assign:[
   ["out",
@@ -288,8 +294,7 @@ config: { hscale: 3},
 ]}
 </script>
 
-
-```html
+```javascript
 <script type="Wavedrom">
 { assign:[
   ["out",

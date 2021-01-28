@@ -3,8 +3,6 @@
 
 [回到首页](https://charleechan.github.io/MyWiki)
 
-* [Gitbook 插件
-](GitbookPluginsDev.html)
 * [结合Github Pages使用GitBook
 ](GitbookUsage.html)
 * [使用Github的基本流程
@@ -16,8 +14,6 @@
 
 
 ```mind:height=300,title=内容概要,color
-* [Gitbook 插件
-](GitbookPluginsDev.html)
 * [结合Github Pages使用GitBook
 ](GitbookUsage.html)
 * [使用Github的基本流程
