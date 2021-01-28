@@ -290,6 +290,7 @@ config: { hscale: 3},
 
 
 ```html
+<div align="center">
 <script type="Wavedrom">
 { assign:[
   ["out",
@@ -306,8 +307,9 @@ config: { hscale: 3},
   ]
 ]}
 </script>
+</div>
 ```
-
+<div align="center">
 <script type="WaveDrom">
 { assign:[
   ["out",
@@ -324,6 +326,7 @@ config: { hscale: 3},
   ]
 ]}
 </script>
+</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/skins/default.js" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/wavedrom.min.js" type="text/javascript"></script>
