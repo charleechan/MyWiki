@@ -1,10 +1,10 @@
 ## 使用WaveDrom画时序图或电路图
 
-[WaveDrom.js](https://wavedrom.com/tutorial.html)是一个JS脚本.
+[WaveDrom.js](https://wavedrom.com/)是一个JS脚本.
 ### VS Code中的使用方法
 `VS Code`的`Markdown Preview Enhanced`插件已经支持`wavedrom`.可以直接使用代码块标识`wavedrom`使用.例如
 
-````
+```json
 {signal: [
   {name: "Alfa", wave: "01.zx=ud.23.456789" },
   {name: 'clk', wave: 'p.....|P..'},
@@ -12,7 +12,7 @@
   {name: 'req', wave: '0.1..0|1.0'},
   {name: 'ack', wave: '1.....|01.'}
 ]}
-````
+```
 
 
 ```wavedrom
@@ -31,16 +31,15 @@
 
 在`Markdown`文件的末尾放入以下代码
 
-````
+```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/skins/default.js" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/wavedrom.min.js" type="text/javascript"></script>
 <body onload="WaveDrom.ProcessAll()">
-````
+```
 
 在要插入时序图的位置,插入以下代码
 
-````
-<div align="center">
+```html
 <script type="WaveDrom">
 {signal: [
   {name: "Alfa", wave: "01.zx=ud.23.456789" },
@@ -50,11 +49,9 @@
   {name: 'ack', wave: '1.....|01.'}
 ]}
 </script>
-</div>
-````
+```
 
 渲染效果:
-<div align="center">
 <script type="WaveDrom">
 {signal: [
   {name: "Alfa", wave: "01.zx=ud.23.456789" },
@@ -64,7 +61,7 @@
   {name: 'ack', wave: '1.....|01.'}
 ]}
 </script>
-</div>
+
 
 ### 时序图语法
 
@@ -97,8 +94,7 @@ signal元素是波形图的数组,包含若干个波形.
 
 ### 综合
 
-````
-<div align="center">
+```html
 <script type="WaveDrom">
 {signal: [
   {name: "Alfa", wave: "01.zx=ud.23.456789" },
@@ -108,12 +104,8 @@ signal元素是波形图的数组,包含若干个波形.
   {name: 'ack', wave: '1.....|01.'}
 ]}
 </script>
-</div>
-````
-
+```
 的效果
-
-<div align="center">
 <script type="WaveDrom">
 {signal: [
   {name: "Alfa", wave: "01.zx=ud.23.456789" },
@@ -123,12 +115,11 @@ signal元素是波形图的数组,包含若干个波形.
   {name: 'ack', wave: '1.....|01.'}
 ]}
 </script>
-</div>
+
 
 ### 信号分组
 
-````
-<div align="center">
+```html
 <script type="WaveDrom">
 { signal: [
   {    name: 'clk',   wave: 'p..Pp..P'},
@@ -148,10 +139,8 @@ signal元素是波形图的数组,包含若干个波形.
   ]
 ]}
 </script>
-</div>
-````
+```
 
-<div align="center">
 <script type="WaveDrom">
 { signal: [
   {    name: 'clk',   wave: 'p..Pp..P'},
@@ -171,14 +160,12 @@ signal元素是波形图的数组,包含若干个波形.
   ]
 ]}
 </script>
-</div>
 
 ### 周期与相位控制
 
 DDR Read transaction时序图的代码
 
-````
-<div align="center">
+```html
 <script type="WaveDrom">
 { signal: [
   { name: "CK",   wave: "P.......",                                              period: 2  },
@@ -188,10 +175,8 @@ DDR Read transaction时序图的代码
   { name: "DQ",   wave: "z.........5555z.", data: "D0 D1 D2 D3" }
 ]}
 </script>
-</div>
-````
+```
 
-<div align="center">
 <script type="WaveDrom">
 { signal: [
   { name: "CK",   wave: "P.......",                                              period: 2  },
@@ -201,13 +186,10 @@ DDR Read transaction时序图的代码
   { name: "DQ",   wave: "z.........5555z.", data: "D0 D1 D2 D3" }
 ]}
 </script>
-</div>
-
 
 ### 标题,脚注和缩放
 
-````
-<div align="center">
+```html
 <script type="WaveDrom">
 {signal: [
   {name:'clk',         wave: 'p....' },
@@ -225,10 +207,8 @@ config: { hscale: 3},
  },
 }
 </script>
-</div>
-````
+```
 
-<div align="center">
 <script type="WaveDrom">
 {signal: [
   {name:'clk',         wave: 'p....' },
@@ -246,13 +226,10 @@ config: { hscale: 3},
  },
 }
 </script>
-</div>
-
 
 ### 带箭头
 
-````
-<div align="center">
+```html
 <script type="Wavedrom">
 { signal: [
   { name: 'A', wave: '01........0....',  node: '.a........j' },
@@ -267,10 +244,9 @@ config: { hscale: 3},
   ]
 }
 </script>
-</div>
-````
+```
 
-<div align="center">
+
 <script type="WaveDrom">
 { signal: [
   { name: 'A', wave: '01........0....',  node: '.a........j' },
@@ -285,12 +261,11 @@ config: { hscale: 3},
   ]
 }
 </script>
-</div>
+
 
 ### 组合逻辑电路
 
-````
-<div align="center">
+```html
 <script type="Wavedrom">
 { assign:[
   ["out",
@@ -301,9 +276,7 @@ config: { hscale: 3},
   ]
 ]}
 </script>
-</div>
-````
-<div align="center">
+```
 <script type="WaveDrom">
 { assign:[
   ["out",
@@ -314,10 +287,9 @@ config: { hscale: 3},
   ]
 ]}
 </script>
-</div>
 
-````
-<div align="center">
+
+```html
 <script type="Wavedrom">
 { assign:[
   ["out",
@@ -334,10 +306,8 @@ config: { hscale: 3},
   ]
 ]}
 </script>
-</div>
-````
+```
 
-<div align="center">
 <script type="WaveDrom">
 { assign:[
   ["out",
@@ -354,7 +324,6 @@ config: { hscale: 3},
   ]
 ]}
 </script>
-</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/skins/default.js" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/wavedrom.min.js" type="text/javascript"></script>
