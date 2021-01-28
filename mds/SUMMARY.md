@@ -25,6 +25,7 @@
     * [使用WaveDrom画时序图或电路图](Coding/LangsMark/MD/PlotTimingDiagram.md)
     * [使用mermaid绘制流程图/脑图](Coding/LangsMark/MD/PlotVariousChart.md)
     * [在Markdown中使用FontAwesome](Coding/LangsMark/MD/UseFontAwesomeInMD.md)
+    * [在Markdown中使用Javascript](Coding/LangsMark/MD/UseJavascriptInMD.md)
   * [QML](Coding/LangsMark/QML/README.md)
   * [XML](Coding/LangsMark/XML/README.md)
 * [脚本](Coding/LangsScript/README.md)

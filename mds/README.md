@@ -4,9 +4,6 @@
 
 [更新我的Wiki](SoftTuto/Manage/Git/UpdateThisSite.html)
 
-<mark>                                           </mark>
-![今日诗词](https://v2.jinrishici.com/one.svg)
-<mark>                                           </mark>
 ```mermaid
 graph LR;
 classDef CSS3 fill:#20A162,stroke:#000000,color:#ffffff,stroke-width:0px;

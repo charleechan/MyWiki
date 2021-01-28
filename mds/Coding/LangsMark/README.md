@@ -15,6 +15,8 @@
 ](MD/PlotVariousChart.html)
   * [在Markdown中使用FontAwesome
 ](MD/UseFontAwesomeInMD.html)
+  * [在Markdown中使用Javascript
+](MD/UseJavascriptInMD.html)
 * [QML](QML/index.html)
 * [XML](XML/index.html)
 
@@ -32,6 +34,8 @@
 ](MD/PlotVariousChart.html)
   * [在Markdown中使用FontAwesome
 ](MD/UseFontAwesomeInMD.html)
+  * [在Markdown中使用Javascript
+](MD/UseJavascriptInMD.html)
 * [QML](QML/index.html)
 * [XML](XML/index.html)
 ```

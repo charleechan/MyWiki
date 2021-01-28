@@ -11,6 +11,8 @@
 ](PlotVariousChart.html)
 * [在Markdown中使用FontAwesome
 ](UseFontAwesomeInMD.html)
+* [在Markdown中使用Javascript
+](UseJavascriptInMD.html)
 
 
 ```mind:height=300,title=内容概要,color
@@ -22,4 +24,6 @@
 ](PlotVariousChart.html)
 * [在Markdown中使用FontAwesome
 ](UseFontAwesomeInMD.html)
+* [在Markdown中使用Javascript
+](UseJavascriptInMD.html)
 ```

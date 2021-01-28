@@ -2,7 +2,7 @@
 
 Inlook是为在桌面上直观地提醒用户收到未读邮件和日程安排而开发的软件。本发布版仅限Windows 10. 开发者可基于此项目自由开发其他平台的版本。
 
-<div align=center><img src= 'img/screen_shot.png'></div>
+<div style='margin:0 auto;display:none;' align="center"><img src= 'img/screen_shot.png'></div>
 <div align=center>使用截图</div>
 
 ## <mark>声明: 如无特大bug,本软件将暂时不再发布新版本.</mark>

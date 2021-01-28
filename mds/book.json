@@ -1,6 +1,5 @@
 {
  "plugins": [
-     "wavedrom",
      "back-to-top-button",
      "splitter",
      "code",

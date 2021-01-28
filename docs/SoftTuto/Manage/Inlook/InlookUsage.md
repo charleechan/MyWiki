@@ -4,7 +4,7 @@
 * [点我下载](https://pan.baidu.com/s/1gzzFjWwLh1hMKob9biTz0g) (提取码 a1b2)
 * 双击`Inlook V1.0.0.3.exe`,选择`目标文件夹`到你想安装的目录(`建议路径不要有中文`)
 
-<div align="center"><img src="img/install.png"></div>
+<div style='margin:0 auto;display:none;' align="center"><img src="img/install.png"></div>
 
 * 点击`安装`.
 
