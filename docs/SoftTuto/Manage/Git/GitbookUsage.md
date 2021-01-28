@@ -320,56 +320,54 @@ npm install gitbook-plugin-forkmegithub-cn
 
 4. 可以修改`node_modules\gitbook-plugin-tbfed-pagefooter\index.js`,在页脚添加自定义内容:
 
-   ```javascript
-   var moment = require('moment');
-   module.exports = {
-     book: {
-       assets: './assets',
-       css: [
-         'footer.css'
-       ],
-     },
-     hooks: {
-   	
-   	'page:before': function(page) {
-         var _label = 'File Modify: ',
-             _format = 'YYYY-MM-DD HH:mm:ss',
-             _copy = 'powered by Gitbook'
-         if(this.options.pluginsConfig['tbfed-pagefooter']) {
-           _label = this.options.pluginsConfig['tbfed-pagefooter']['modify_label'] || _label;
-           _format = this.options.pluginsConfig['tbfed-pagefooter']['modify_format'] || _format;
-   
-           var _c = this.options.pluginsConfig['tbfed-pagefooter']['copyright'];
-           _copy = _c ? _c + ' all right reserved，' + _copy : _copy;
-         }
-   	  
-   	  var myscript = '\n\n<hr/><span id="jinrishici-sentence" style="font-size:18px;text-align:center;display:block;">正在加载今日诗词....</span><hr/>'+
-   		'<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>';
-   		
-   		
-         var _copy = '<span class="copyright">'+_copy+'</span>'
-         var str = ' \n\n<footer class="page-footer">' + _copy +
-           '<span class="footer-modification">' +
-           _label +
-           '\n{{file.mtime | date("' + _format +
-           '")}}\n</span></footer>'
-         page.content = page.content + myscript + str;
-         return page;
-   	}
-   
-     },
-     filters: {
-       date: function(d, format) {
-         return moment(d).format(format)
-       }
-     }
-   };
+````
+var moment = require('moment');
+module.exports = {
+  book: {
+    assets: './assets',
+    css: [
+      'footer.css'
+    ],
+  },
+  hooks: {
+	
+	'page:before': function(page) {
+      var _label = 'File Modify: ',
+          _format = 'YYYY-MM-DD HH:mm:ss',
+          _copy = 'powered by Gitbook'
+      if(this.options.pluginsConfig['tbfed-pagefooter']) {
+        _label = this.options.pluginsConfig['tbfed-pagefooter']['modify_label'] || _label;
+        _format = this.options.pluginsConfig['tbfed-pagefooter']['modify_format'] || _format;
 
-   ```
+        var _c = this.options.pluginsConfig['tbfed-pagefooter']['copyright'];
+        _copy = _c ? _c + ' all right reserved，' + _copy : _copy;
+      }
+	  
+	  var myscript = '\n\n<hr/><span id="jinrishici-sentence" style="font-size:18px;text-align:center;display:block;">正在加载今日诗词....</span><hr/>'+
+		'<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>';
+		
+		
+      var _copy = '<span class="copyright">'+_copy+'</span>'
+      var str = ' \n\n<footer class="page-footer">' + _copy +
+        '<span class="footer-modification">' +
+        _label +
+        '\n{{file.mtime | date("' + _format +
+        '")}}\n</span></footer>'
+      page.content = page.content + myscript + str;
+      return page;
+	}
+
+  },
+  filters: {
+    date: function(d, format) {
+      return moment(d).format(format)
+    }
+  }
+};
+````
    
    以上代码在页脚上方添加了横线,今日诗词的句子，横线.
 
-5. 使用{`% include "./test.md" %`}可以导入其他.md模块
    
 4. <mark>问题警告</mark>
    * gitbook 3.2.3版本生成的**本地HTML无法跳转**,而gitbook 2.6.7版本可以跳转.

@@ -4,7 +4,7 @@
 ### VS Code中的使用方法
 `VS Code`的`Markdown Preview Enhanced`插件已经支持`wavedrom`.可以直接使用代码块标识`wavedrom`使用.例如
 
-```json
+````
 {signal: [
   {name: "Alfa", wave: "01.zx=ud.23.456789" },
   {name: 'clk', wave: 'p.....|P..'},
@@ -12,7 +12,7 @@
   {name: 'req', wave: '0.1..0|1.0'},
   {name: 'ack', wave: '1.....|01.'}
 ]}
-```
+````
 
 
 ```wavedrom
