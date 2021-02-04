@@ -58,10 +58,26 @@
   * [Word](Word/index.html)
     * [中文学位论文参考文献格式配置
 ](Office/Word/CNPaperRefSetting.html)
+    * [Word中公式中自动编号的最终解决办法
+](Office/Word/EquationInWord.html)
+    * [跨行对齐公式与公式代码
+](Office/Word/EquationInWord2.html)
     * [在Word中使用FontAwesome图标
 ](Office/Word/UseFontAwesomeInWord.html)
     * res 资源<mark>(右键打开或下载)</mark>
       * [csl_modifyGB.png](Office/Word/res/csl_modifyGB.png)
+      * [eq1.png](Office/Word/res/eq1.png)
+      * [eq10.png](Office/Word/res/eq10.png)
+      * [eq2.png](Office/Word/res/eq2.png)
+      * [eq3.png](Office/Word/res/eq3.png)
+      * [eq4.png](Office/Word/res/eq4.png)
+      * [eq5.png](Office/Word/res/eq5.png)
+      * [eq6.png](Office/Word/res/eq6.png)
+      * [eq7.png](Office/Word/res/eq7.png)
+      * [eq8.png](Office/Word/res/eq8.png)
+      * [eq9.png](Office/Word/res/eq9.png)
+      * [FontAwesomeFree511.zip](Office/Word/res/FontAwesomeFree511.zip)
+      * [FontAwesomePro572.zip](Office/Word/res/FontAwesomePro572.zip)
 * [Plugins](Plugins/index.html)
   * [ChromeExt](ChromeExt/index.html)
     * [Floccus配合坚果云同步书签教程
@@ -146,10 +162,26 @@
   * [Word](Word/index.html)
     * [中文学位论文参考文献格式配置
 ](Office/Word/CNPaperRefSetting.html)
+    * [Word中公式中自动编号的最终解决办法
+](Office/Word/EquationInWord.html)
+    * [跨行对齐公式与公式代码
+](Office/Word/EquationInWord2.html)
     * [在Word中使用FontAwesome图标
 ](Office/Word/UseFontAwesomeInWord.html)
     * res 资源
       * [csl_modifyGB.png](Office/Word/res/csl_modifyGB.png)
+      * [eq1.png](Office/Word/res/eq1.png)
+      * [eq10.png](Office/Word/res/eq10.png)
+      * [eq2.png](Office/Word/res/eq2.png)
+      * [eq3.png](Office/Word/res/eq3.png)
+      * [eq4.png](Office/Word/res/eq4.png)
+      * [eq5.png](Office/Word/res/eq5.png)
+      * [eq6.png](Office/Word/res/eq6.png)
+      * [eq7.png](Office/Word/res/eq7.png)
+      * [eq8.png](Office/Word/res/eq8.png)
+      * [eq9.png](Office/Word/res/eq9.png)
+      * [FontAwesomeFree511.zip](Office/Word/res/FontAwesomeFree511.zip)
+      * [FontAwesomePro572.zip](Office/Word/res/FontAwesomePro572.zip)
 * [Plugins](Plugins/index.html)
   * [ChromeExt](ChromeExt/index.html)
     * [Floccus配合坚果云同步书签教程

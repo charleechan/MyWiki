@@ -75,6 +75,8 @@
   * [PPT](SoftTuto/Office/PPT/README.md)
   * [Word](SoftTuto/Office/Word/README.md)
     * [中文学位论文参考文献格式配置](SoftTuto/Office/Word/CNPaperRefSetting.md)
+    * [Word中公式中自动编号的最终解决办法](SoftTuto/Office/Word/EquationInWord.md)
+    * [跨行对齐公式与公式代码](SoftTuto/Office/Word/EquationInWord2.md)
     * [在Word中使用FontAwesome图标](SoftTuto/Office/Word/UseFontAwesomeInWord.md)
 * [插件类](SoftTuto/Plugins/README.md)
   * [Chrome插件](SoftTuto/Plugins/ChromeExt/README.md)
