@@ -4,8 +4,6 @@
 [回到首页](https://charleechan.github.io/MyWiki)
 
 * [Git](Git/index.html)
-  * [结合Github Pages使用GitBook
-](Git/GitbookUsage.html)
   * [使用Github的基本流程
 ](Git/GithubUsage.html)
   * [本Wiki维护教程
@@ -41,8 +39,6 @@
 
 ```mind:height=300,title=内容概要,color
 * [Git](Git/index.html)
-  * [结合Github Pages使用GitBook
-](Git/GitbookUsage.html)
   * [使用Github的基本流程
 ](Git/GithubUsage.html)
   * [本Wiki维护教程

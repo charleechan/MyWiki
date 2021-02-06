@@ -62,7 +62,6 @@
   * [Visio](SoftTuto/Image/Visio/README.md)
 * [管理类软件](SoftTuto/Manage/README.md)
   * [Git](SoftTuto/Manage/Git/README.md)
-    * [结合Github Pages使用GitBook](SoftTuto/Manage/Git/GitbookUsage.md)
     * [使用Github的基本流程](SoftTuto/Manage/Git/GithubUsage.md)
     * [本Wiki维护教程](SoftTuto/Manage/Git/UpdateThisSite.md)
   * [Inlook](SoftTuto/Manage/Inlook/README.md)
@@ -99,8 +98,3 @@
   * [会声会影](SoftTuto/Video/VideoStudio/README.md)
 
 ## 知识世界
-* [物理学类](KnowWorld/Physics/README.md)
-* [信号与系统](KnowWorld/SigASys/README.md)
-  * [图像处理](KnowWorld/SigASys/ImgProc/README.md)
-  * [信号处理](KnowWorld/SigASys/SigProc/README.md)
-    * [傅里叶级数与傅里叶变换(Fourier Transform)](KnowWorld/SigASys/SigProc/FourierTransform.md)

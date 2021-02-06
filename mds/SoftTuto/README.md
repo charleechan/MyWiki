@@ -19,8 +19,6 @@
   * [Visio](Visio/index.html)
 * [Manage](Manage/index.html)
   * [Git](Git/index.html)
-    * [结合Github Pages使用GitBook
-](Manage/Git/GitbookUsage.html)
     * [使用Github的基本流程
 ](Manage/Git/GithubUsage.html)
     * [本Wiki维护教程
@@ -117,8 +115,6 @@
   * [Visio](Visio/index.html)
 * [Manage](Manage/index.html)
   * [Git](Git/index.html)
-    * [结合Github Pages使用GitBook
-](Manage/Git/GitbookUsage.html)
     * [使用Github的基本流程
 ](Manage/Git/GithubUsage.html)
     * [本Wiki维护教程
