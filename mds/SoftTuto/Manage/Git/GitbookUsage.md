@@ -322,7 +322,7 @@ npm install gitbook-plugin-auto-scroll-table
    * gitbook build 之前, 将文件[mermaid.min.js](./res/mermaid.min.js)分别拷贝到`\node_modules\gitbook-plugin-mermaid-gb3\dist\mermaid`和`\node_modules\mermaid\dist`目录,进行文件替换.
      > 命令已经写入文件[GitbookBuild.bat](https://charleechan.github.io/MyWiki/GitbookBuild.bat),因此在不用每次执行.
 
-4. 可以修改`node_modules\gitbook-plugin-tbfed-pagefooter\index.js`,在页脚添加自定义内容,可以修改为[文件index.js](res/index.js)的内容。
+4. 可以修改`node_modules\gitbook-plugin-tbfed-pagefooter\index.js`,在页脚添加自定义内容,可以修改为[文件index.js](https://charleechan.github.io/MyWiki/SoftTuto/Manage/Git/res/index.js)的内容。
    
 5. <mark>问题警告</mark>
    * gitbook 3.2.3版本生成的**本地HTML无法跳转**,而gitbook 2.6.7版本可以跳转.
