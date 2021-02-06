@@ -140,7 +140,7 @@
 |$\left\{\dfrac{1}{2}\right\}$|`\left\{\dfrac{1}{2}\right\}`|
 |$\left\langle\dfrac{1}{2}\right\rangle$|`\left\langle\dfrac{1}{2}\right\rangle`|
 |$\left\vert\dfrac{1}{2}\right\vert$|`\left\vert\dfrac{1}{2}\right\vert`|
-|$\left\|\dfrac{1}{2}\right\|$|`\left\|\dfrac{1}{2}\right\|`|
+|$\left\|\dfrac{1}{2}\right\|$|<span style="font-family:Consolas; background:#eee; color:#000">\\left\\&#124;\\dfrac{1}{2}\\right\\&#124;</span>|
 |$\left\lfloor\dfrac{1}{2}\right\rfloor$|`\left\lfloor\dfrac{1}{2}\right\rfloor`|
 |$\left\lceil\dfrac{1}{2}\right\rceil$|`\left\lceil\dfrac{1}{2}\right\rceil`|
 |$\left/\dfrac{1}{2}\right/$|`\left/\dfrac{1}{2}\right/`|
