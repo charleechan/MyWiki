@@ -1,38 +1,5 @@
 # 在Markdown中使用Javascript
 在VS code的Markdown Preview Enhanced中,不会实时渲染,但是在`Gitbook`生成的`html`中已经可以实时渲染.
-## 樱花特效
-在Markdown文件的最后放入以下代码
-```html
-<script type="text/javascript">
-    //樱花
-    var system = {};
-    var p = navigator.platform;
-    system.win = p.indexOf("Win") == 0;
-    system.mac = p.indexOf("Mac") == 0;
-    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
-        if (system.win || system.mac || system.xll) {//如果是电脑
-
-        $.getScript("https://amayaliu.cn/PersonalHabits/AmayaBlossoms.js");
-    } else { //如果是手机
-
-    }
-</script>
-```
-
-<script type="text/javascript">
-    //樱花
-    var system = {};
-    var p = navigator.platform;
-    system.win = p.indexOf("Win") == 0;
-    system.mac = p.indexOf("Mac") == 0;
-    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
-        if (system.win || system.mac || system.xll) {//如果是电脑
-
-        $.getScript("https://amayaliu.cn/PersonalHabits/AmayaBlossoms.js");
-    } else { //如果是手机
-
-    }
-</script>
 
 ## 插入wavedrom时序图
 

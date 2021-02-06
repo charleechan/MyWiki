@@ -15,9 +15,10 @@
      "tbfed-pagefooter",
      "mind-maps",
      "hide-element",
-     "mathjax",
+     "mathjax-single-dollar",
      "forkmegithub",
-     "mermaid-gb3"
+     "mermaid-gb3",
+	 "auto-scroll-table"
  ],
  "pluginsConfig": {
      "insert-logo": {

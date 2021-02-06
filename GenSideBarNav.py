@@ -73,6 +73,7 @@ def main():
     # 在vvvv下面vvvv添加一级文件夹vvvvvvv
     libList.append('\\Coding')
     libList.append('\\SoftTuto')
+    libList.append('\\KnowWorld')
     # 在^^^^上面^^^^添加一级文件夹^^^^^^^
     
     
@@ -167,9 +168,13 @@ def main():
 
     libDict["\\SoftTuto\\Video"]               ="视频软件"
     libDict["\\SoftTuto\\Video\\VideoStudio"]  ="会声会影"
+    
+    
     # 在^^^^下面^^^^添加各级文件夹^^^
-    
-    
+    libDict["\\KnowWorld"]                ="知识世界"
+    libDict["\\KnowWorld\\Sig&Sys"]       ="信号与系统"
+    libDict["\\KnowWorld\\Sig&Sys\\SigProc"]  ="信号处理"
+    libDict["\\KnowWorld\\Sig&Sys\\ImgProc"]  ="图像处理"
     
     summaryFileDir = "\\mds"
 

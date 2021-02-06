@@ -7,6 +7,8 @@
   * [HTML(Hyper Text Markup Language, 超文本标记语言)的基础知识
 ](HTML/1_HTMLBasics.html)
 * [MD](MD/index.html)
+  * [Markdown公式代码大全
+](MD/EquationInMD.html)
   * [Markdown支持绘制脑图啦
 ](MD/PlotMindMap.html)
   * [使用WaveDrom画时序图或电路图
@@ -36,6 +38,8 @@
   * [HTML(Hyper Text Markup Language, 超文本标记语言)的基础知识
 ](HTML/1_HTMLBasics.html)
 * [MD](MD/index.html)
+  * [Markdown公式代码大全
+](MD/EquationInMD.html)
   * [Markdown支持绘制脑图啦
 ](MD/PlotMindMap.html)
   * [使用WaveDrom画时序图或电路图

@@ -3,6 +3,8 @@
 
 [回到首页](https://charleechan.github.io/MyWiki)
 
+* [Markdown公式代码大全
+](EquationInMD.html)
 * [Markdown支持绘制脑图啦
 ](PlotMindMap.html)
 * [使用WaveDrom画时序图或电路图
@@ -16,6 +18,8 @@
 
 
 ```mind:height=300,title=内容概要,color
+* [Markdown公式代码大全
+](EquationInMD.html)
 * [Markdown支持绘制脑图啦
 ](PlotMindMap.html)
 * [使用WaveDrom画时序图或电路图

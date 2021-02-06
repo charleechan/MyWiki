@@ -37,7 +37,7 @@ npm config set cache "D:\Program\nodejs\node_modules\node_cache"
 
 3. 执行下面命令，查看 `gitbook-cli` 的版本，以确定其是否成功安装。
     ```
-    $ gitbook -V
+    gitbook -V
     CLI version: 2.3.2
     gitbook version: 3.2.3
     ```
@@ -196,7 +196,7 @@ git push origin master
 ```
 
 最后选择仓库的`setting`,`Pages`,选择分支`main`-`docs`作为主目录,就可以在`[username].github.io/[repository name]`看到书啦.
-> 将 `_book` 目录推送到 `GitHub` 仓库的 `gh-pages` 分支:`$ git subtree push --prefix=_book origin gh-pages`也可以。
+> 将 `_book` 目录推送到 `GitHub` 仓库的 `gh-pages` 分支:`git subtree push --prefix=_book origin gh-pages`也可以。
 
 ## 更进一步: 使用Gitbook插件定制化页面
 
@@ -206,24 +206,25 @@ GitBook使用[基于Node.Js的Gitbook插件](https://www.npmjs.com/)对Markdown�
 ```json
 {
     "plugins": [
-        "back-to-top-button",
-        "chapter-fold",
-        "splitter",
-        "code",
-        "-lunr",
-        "-search",
-        "-sharing",
-        "sharing-plus",
-        "search-pro",
-        "insert-logo",
-        "custom-favicon",
-        "pageview-count",
-        "tbfed-pagefooter",
-        "mind-maps",
-        "hide-element",
-        "mathjax",
-        "forkmegithub",
-        "mermaid-gb3"
+		"back-to-top-button",
+		"splitter",
+		"code",
+		"-lunr",
+		"-search",
+		"-sharing",
+		"toggle-chapters",
+		"sharing-plus",
+		"search-pro",
+		"insert-logo",
+		"custom-favicon",
+		"pageview-count",
+		"tbfed-pagefooter",
+		"mind-maps",
+		"hide-element",
+		"mathjax-single-dollar",
+		"forkmegithub",
+		"mermaid-gb3",
+		"auto-scroll-table"
     ],
     "pluginsConfig": {
         "insert-logo": {
@@ -304,24 +305,65 @@ npm install gitbook-plugin-mind-maps
 # 隐藏元素
 npm install gitbook-plugin-hide-element 
 # 支持mathjax公式
-npm install mathjax@2.7.6 
-npm install gitbook-plugin-mathjax
+npm install gitbook-plugin-mathjax-single-dollar
 # 右上角添加fork me 丝带
 npm install gitbook-plugin-forkmegithub-cn 
+# 表格自动加滚动条
+npm install gitbook-plugin-auto-scroll-table
+
 # 可以复制本代码块到cmd中,会自动安装
 ```
 
 
 
 3. 由于插件年久失修, 需要执行以下操作来使插件生效.
-   * 使用以下命令将mathjax包降级,`npm install mathjax@2.7.6`
    * gitbook build 之前, 将文件[mermaid.min.js](./res/mermaid.min.js)分别拷贝到`\node_modules\gitbook-plugin-mermaid-gb3\dist\mermaid`和`\node_modules\mermaid\dist`目录,进行文件替换.
-   * 以上命令已经写入文件[md2docs.bat](https://charleechan.github.io/MyWiki/md2docs.bat),因此在不用每次执行.
+     > 命令已经写入文件[GitbookBuild.bat](https://charleechan.github.io/MyWiki/GitbookBuild.bat),因此在不用每次执行.
 
 4. 可以修改`node_modules\gitbook-plugin-tbfed-pagefooter\index.js`,在页脚添加自定义内容.
 
+```
+var moment = require('moment');
+module.exports = {
+  book: {
+    assets: './assets',
+    css: [
+      'footer.css'
+    ],
+  },
+  hooks: {
+    'page:before': function(page) {
+      var _label = 'File Modify: ',
+          _format = 'YYYY-MM-DD HH:mm:ss',
+          _copy = 'powered by Gitbook'
+      if(this.options.pluginsConfig['tbfed-pagefooter']) {
+        _label = this.options.pluginsConfig['tbfed-pagefooter']['modify_label'] || _label;
+        _format = this.options.pluginsConfig['tbfed-pagefooter']['modify_format'] || _format;
+
+        var _c = this.options.pluginsConfig['tbfed-pagefooter']['copyright'];
+        _copy = _c ? _c + ' all right reserved，' + _copy : _copy;
+      }
+	  var str1 = ' \n\n<hr><div align="center" id="jinrishici-sentence">正在加载今日诗词....</div>'+
+		'<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script><hr> \n\n'
+      var _copy = '<span class="copyright">'+_copy+'</span>'
+      var str = ' \n\n<footer class="page-footer">' + _copy +
+        '<span class="footer-modification">' +
+        _label +
+        '\n{{file.mtime | date("' + _format +
+        '")}}\n</span></footer>'
+      page.content = page.content + str1 + str;
+      return page;
+    }
+  },
+  filters: {
+    date: function(d, format) {
+      return moment(d).format(format)
+    }
+  }
+};
+```
    
-4. <mark>问题警告</mark>
+5. <mark>问题警告</mark>
    * gitbook 3.2.3版本生成的**本地HTML无法跳转**,而gitbook 2.6.7版本可以跳转.
    * gitbook 2.6.7版本**不能使用search-pro**插件,因此不能使用中文搜索功能.
    综上, 强烈建议使用gitbook 3.2.3版本, 网站端HTML可以正常跳转的.
