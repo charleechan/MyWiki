@@ -8,6 +8,10 @@
 * [Word](Word/index.html)
   * [中文学位论文参考文献格式配置
 ](Word/CNPaperRefSetting.html)
+  * [Word中公式中自动编号的最终解决办法
+](Word/EquationInWord.html)
+  * [跨行对齐公式与公式代码
+](Word/EquationInWord2.html)
   * [在Word中使用FontAwesome图标
 ](Word/UseFontAwesomeInWord.html)
   * res 资源<mark>(右键打开或下载)</mark>
@@ -30,6 +34,10 @@
 * [Word](Word/index.html)
   * [中文学位论文参考文献格式配置
 ](Word/CNPaperRefSetting.html)
+  * [Word中公式中自动编号的最终解决办法
+](Word/EquationInWord.html)
+  * [跨行对齐公式与公式代码
+](Word/EquationInWord2.html)
   * [在Word中使用FontAwesome图标
 ](Word/UseFontAwesomeInWord.html)
   * res 资源
