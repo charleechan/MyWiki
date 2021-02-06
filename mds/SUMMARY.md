@@ -62,6 +62,7 @@
   * [Visio](SoftTuto/Image/Visio/README.md)
 * [管理类软件](SoftTuto/Manage/README.md)
   * [Git](SoftTuto/Manage/Git/README.md)
+    * [结合Github Pages使用GitBook](SoftTuto/Manage/Git/GitbookUsage.md)
     * [使用Github的基本流程](SoftTuto/Manage/Git/GithubUsage.md)
     * [本Wiki维护教程](SoftTuto/Manage/Git/UpdateThisSite.md)
   * [Inlook](SoftTuto/Manage/Inlook/README.md)
