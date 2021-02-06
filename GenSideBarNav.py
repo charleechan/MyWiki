@@ -176,6 +176,8 @@ def main():
     libDict["\\KnowWorld\\SigASys\\SigProc"]  ="信号处理"
     libDict["\\KnowWorld\\SigASys\\ImgProc"]  ="图像处理"
     
+    libDict["\\KnowWorld\\Physics"]       ="物理学类"
+    
     summaryFileDir = "\\mds"
 
     print("\n正在为生成侧边栏导航,输出文件为SUMMARY.md...")
