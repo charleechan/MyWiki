@@ -10,6 +10,7 @@
 * [本Wiki维护教程
 ](UpdateThisSite.html)
 * res 资源<mark>(右键打开或下载)</mark>
+  * [index.js](res/index.js)
   * [mermaid.min.js](res/mermaid.min.js)
 
 
@@ -21,5 +22,6 @@
 * [本Wiki维护教程
 ](UpdateThisSite.html)
 * res 资源
+  * [index.js](res/index.js)
   * [mermaid.min.js](res/mermaid.min.js)
 ```

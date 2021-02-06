@@ -322,48 +322,7 @@ npm install gitbook-plugin-auto-scroll-table
    * gitbook build 之前, 将文件[mermaid.min.js](./res/mermaid.min.js)分别拷贝到`\node_modules\gitbook-plugin-mermaid-gb3\dist\mermaid`和`\node_modules\mermaid\dist`目录,进行文件替换.
      > 命令已经写入文件[GitbookBuild.bat](https://charleechan.github.io/MyWiki/GitbookBuild.bat),因此在不用每次执行.
 
-4. 可以修改`node_modules\gitbook-plugin-tbfed-pagefooter\index.js`,在页脚添加自定义内容.
-
-```
-var moment = require('moment');
-module.exports = {
-  book: {
-    assets: './assets',
-    css: [
-      'footer.css'
-    ],
-  },
-  hooks: {
-    'page:before': function(page) {
-      var _label = 'File Modify: ',
-          _format = 'YYYY-MM-DD HH:mm:ss',
-          _copy = 'powered by Gitbook'
-      if(this.options.pluginsConfig['tbfed-pagefooter']) {
-        _label = this.options.pluginsConfig['tbfed-pagefooter']['modify_label'] || _label;
-        _format = this.options.pluginsConfig['tbfed-pagefooter']['modify_format'] || _format;
-
-        var _c = this.options.pluginsConfig['tbfed-pagefooter']['copyright'];
-        _copy = _c ? _c + ' all right reserved，' + _copy : _copy;
-      }
-	  var str1 = ' \n\n<hr><div align="center" id="jinrishici-sentence">正在加载今日诗词....</div>'+
-		'<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script><hr> \n\n'
-      var _copy = '<span class="copyright">'+_copy+'</span>'
-      var str = ' \n\n<footer class="page-footer">' + _copy +
-        '<span class="footer-modification">' +
-        _label +
-        '\n{{file.mtime | date("' + _format +
-        '")}}\n</span></footer>'
-      page.content = page.content + str1 + str;
-      return page;
-    }
-  },
-  filters: {
-    date: function(d, format) {
-      return moment(d).format(format)
-    }
-  }
-};
-```
+4. 可以修改`node_modules\gitbook-plugin-tbfed-pagefooter\index.js`,在页脚添加自定义内容,可以修改为[文件index.js](res/index.js)的内容。
    
 5. <mark>问题警告</mark>
    * gitbook 3.2.3版本生成的**本地HTML无法跳转**,而gitbook 2.6.7版本可以跳转.

@@ -26,6 +26,7 @@
     * [本Wiki维护教程
 ](Manage/Git/UpdateThisSite.html)
     * res 资源<mark>(右键打开或下载)</mark>
+      * [index.js](Manage/Git/res/index.js)
       * [mermaid.min.js](Manage/Git/res/mermaid.min.js)
   * [Inlook](Inlook/index.html)
     * [Inlook - 你的个人工作助手
@@ -124,6 +125,7 @@
     * [本Wiki维护教程
 ](Manage/Git/UpdateThisSite.html)
     * res 资源
+      * [index.js](Manage/Git/res/index.js)
       * [mermaid.min.js](Manage/Git/res/mermaid.min.js)
   * [Inlook](Inlook/index.html)
     * [Inlook - 你的个人工作助手
