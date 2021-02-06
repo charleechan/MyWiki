@@ -58,10 +58,6 @@
   * [Word](Word/index.html)
     * [中文学位论文参考文献格式配置
 ](Office/Word/CNPaperRefSetting.html)
-    * [Word中公式中自动编号的最终解决办法
-](Office/Word/EquationInWord.html)
-    * [跨行对齐公式与公式代码
-](Office/Word/EquationInWord2.html)
     * [在Word中使用FontAwesome图标
 ](Office/Word/UseFontAwesomeInWord.html)
     * res 资源<mark>(右键打开或下载)</mark>
@@ -160,10 +156,6 @@
   * [Word](Word/index.html)
     * [中文学位论文参考文献格式配置
 ](Office/Word/CNPaperRefSetting.html)
-    * [Word中公式中自动编号的最终解决办法
-](Office/Word/EquationInWord.html)
-    * [跨行对齐公式与公式代码
-](Office/Word/EquationInWord2.html)
     * [在Word中使用FontAwesome图标
 ](Office/Word/UseFontAwesomeInWord.html)
     * res 资源

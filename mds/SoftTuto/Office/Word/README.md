@@ -5,10 +5,6 @@
 
 * [中文学位论文参考文献格式配置
 ](CNPaperRefSetting.html)
-* [Word中公式中自动编号的最终解决办法
-](EquationInWord.html)
-* [跨行对齐公式与公式代码
-](EquationInWord2.html)
 * [在Word中使用FontAwesome图标
 ](UseFontAwesomeInWord.html)
 * res 资源<mark>(右键打开或下载)</mark>
@@ -28,10 +24,6 @@
 ```mind:height=300,title=内容概要,color
 * [中文学位论文参考文献格式配置
 ](CNPaperRefSetting.html)
-* [Word中公式中自动编号的最终解决办法
-](EquationInWord.html)
-* [跨行对齐公式与公式代码
-](EquationInWord2.html)
 * [在Word中使用FontAwesome图标
 ](UseFontAwesomeInWord.html)
 * res 资源
