@@ -22,20 +22,20 @@
 
 下面列出了Word中常用的公式：
 
-|Markdown中公式代码|Word中Latex代码|公式效果|
+|公式效果|Word中Latex代码|Markdown中公式代码|
 |:-:|:-:|:-:|
-|`\overrightarrow{abc}`|`\vec{abc}`|$\overrightarrow{abc}$|
-|`\widehat{abc}`|`\hat{abc}`|$\widehat{abc}$|
-|`\overline{abc}`|`\overbar{abc}`|$\overline{abc}$|
-|`\overbrace{abc}`|`\overbrace{abc}`|$\overbrace{abc}$|
-|`\left\{a+\frac{b}{c}\right\}`|`\left{a+\frac{b}{c}\right}`|$\left\{a+\frac{b}{c}\right\}$|
-|`\left(a+\frac{b}{c}\right)`|`\left(a+\frac{b}{c}\right)`|$\left(a+\frac{b}{c}\right)$|
-|`\left\{\frac{b}{c}\left\vert x+y\right\vert\right\}`|<span style="font-family:Consolas; background:#eee; color:#000">\\left{\\frac{b}{c}&#124;x+y&#124;\\right}</span>|$\left\{\frac{b}{c}\left\vert x+y\right\vert\right\}$|
-|`\frac{b}{a+c}`|`\frac{b}{a+c}`|$\frac{b}{a+c}$|
-|`{_a^b}x{_c^d}`|`{_a^b}x{_c^d}`|${_a^b}x{_c^d}$|
-|`\lim_{n\rightarrow\infty}{n}`|`\lim\below{n\rightarrow\infty}{n}`|$\lim_{n\rightarrow\infty}{n}$|
-|`\begin{matrix}a&b&\cr&c&d\cr\end{matrix}`|`\matrix{a&b&\cr&c&d\cr}`|$\begin{matrix}a&b&\cr&c&d\cr\end{matrix}$|
-|`\iint_{a=0}^{\infty}{a}`|`\iint_{a=0}^{\infty}{a}`|$\iint_{a=0}^{\infty}{a}$|
-|`\sqrt[5]{a^2}`|`\sqrt[5]{a^2}`|$\sqrt[5]{a^2}$|
+|$\overrightarrow{abc}$|`\vec{abc}`|`\overrightarrow{abc}`|
+|$\widehat{abc}$|`\hat{abc}`|`\widehat{abc}`|
+|$\overline{abc}$|`\overbar{abc}`|`\overline{abc}`|
+|$\overbrace{abc}$|`\overbrace{abc}`|`\overbrace{abc}`|
+|$\left\{a+\frac{b}{c}\right\}$|`\left{a+\frac{b}{c}\right}`|`\left\{a+\frac{b}{c}\right\}`|
+|$\left(a+\frac{b}{c}\right)$|`\left(a+\frac{b}{c}\right)`|`\left(a+\frac{b}{c}\right)`|
+|$\left\{\frac{b}{c}\left\vert x+y\right\vert\right\}$|<span style="font-family:Consolas; background:#eee; color:#000">\\left{\\frac{b}{c}&#124;x+y&#124;\\right}</span>|`\left\{\frac{b}{c}\left\vert x+y\right\vert\right\}`|
+|$\frac{b}{a+c}$|`\frac{b}{a+c}`|`\frac{b}{a+c}`|
+|${_a^b}x{_c^d}$|`{_a^b}x{_c^d}`|`{_a^b}x{_c^d}`|
+|$\lim_{n\rightarrow\infty}{n}$|`\lim\below{n\rightarrow\infty}{n}`|`\lim_{n\rightarrow\infty}{n}`|
+|$\begin{matrix}a&b&\cr&c&d\cr\end{matrix}$|`\matrix{a&b&\cr&c&d\cr}`|`\begin{matrix}a&b&\cr&c&d\cr\end{matrix}`|
+|$\iint_{a=0}^{\infty}{a}$|`\iint_{a=0}^{\infty}{a}`|`\iint_{a=0}^{\infty}{a}`|
+|$\sqrt[5]{a^2}$|`\sqrt[5]{a^2}`|`\sqrt[5]{a^2}`|
 
 
