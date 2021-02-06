@@ -104,7 +104,7 @@
   * [会声会影](SoftTuto/Video/VideoStudio/README.md)
 
 ## 知识世界
-* [信号与系统](KnowWorld/Sig&Sys/README.md)
-  * [图像处理](KnowWorld/Sig&Sys/ImgProc/README.md)
-  * [信号处理](KnowWorld/Sig&Sys/SigProc/README.md)
-    * [傅里叶级数与傅里叶变换(Fourier Transform)](KnowWorld/Sig&Sys/SigProc/FourierTransform.md)
+* [信号与系统](KnowWorld/SigASys/README.md)
+  * [图像处理](KnowWorld/SigASys/ImgProc/README.md)
+  * [信号处理](KnowWorld/SigASys/SigProc/README.md)
+    * [傅里叶级数与傅里叶变换(Fourier Transform)](KnowWorld/SigASys/SigProc/FourierTransform.md)

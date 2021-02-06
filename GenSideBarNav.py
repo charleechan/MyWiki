@@ -172,9 +172,9 @@ def main():
     
     # 在^^^^下面^^^^添加各级文件夹^^^
     libDict["\\KnowWorld"]                ="知识世界"
-    libDict["\\KnowWorld\\Sig&Sys"]       ="信号与系统"
-    libDict["\\KnowWorld\\Sig&Sys\\SigProc"]  ="信号处理"
-    libDict["\\KnowWorld\\Sig&Sys\\ImgProc"]  ="图像处理"
+    libDict["\\KnowWorld\\SigASys"]       ="信号与系统"
+    libDict["\\KnowWorld\\SigASys\\SigProc"]  ="信号处理"
+    libDict["\\KnowWorld\\SigASys\\ImgProc"]  ="图像处理"
     
     summaryFileDir = "\\mds"
 
