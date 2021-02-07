@@ -49,6 +49,7 @@
   * [OpenCV](Coding/OtherLibs/OpenCV/README.md)
     * [](Coding/OtherLibs/OpenCV/B.md)
   * [Pytorch](Coding/OtherLibs/Pytorch/README.md)
+    * [使用autograd.grad()计算导数与偏导](Coding/OtherLibs/Pytorch/autograd_gradientInPytorch.md)
   * [Tensorflow](Coding/OtherLibs/Tensorflow/README.md)
 
 ## 软件教程
