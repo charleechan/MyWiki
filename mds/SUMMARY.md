@@ -40,7 +40,9 @@
   * [Matlab](Coding/LangsScript/Matlab/README.md)
   * [PHP](Coding/LangsScript/PHP/README.md)
   * [Python](Coding/LangsScript/Python/README.md)
+    * [Python开发环境的配置](Coding/LangsScript/Python/DevEnvDeploy.md)
     * [pyplot在一个坐标系里画多个子图](Coding/LangsScript/Python/Matplotlib_Usage.md)
+    * [](Coding/LangsScript/Python/ReleasePython.md)
   * [SQL](Coding/LangsScript/SQL/README.md)
   * [TCL](Coding/LangsScript/TCL/README.md)
 * [样式表](Coding/LangsStyle/README.md)
@@ -50,7 +52,9 @@
     * [](Coding/OtherLibs/OpenCV/B.md)
   * [Pytorch](Coding/OtherLibs/Pytorch/README.md)
     * [使用autograd.grad()计算导数与偏导](Coding/OtherLibs/Pytorch/autograd_gradientInPytorch.md)
+    * [Pytorch开发环境搭建](Coding/OtherLibs/Pytorch/DevEnvDeploy.md)
   * [Tensorflow](Coding/OtherLibs/Tensorflow/README.md)
+    * [Tensorflow开发环境搭建](Coding/OtherLibs/Tensorflow/DevEnvDeploy.md)
 
 ## 软件教程
 * [动画制作软件](SoftTuto/Animation/README.md)
