@@ -105,7 +105,23 @@ pip install pipreqs #分析python文件依赖关系
   index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
-在安装完成基础模块之后，你可能会想
+5. 在VS Code中开发Python
+
+* 打开`VS Code`，点击左侧插件按钮，安装插件`Python`；
+* 安装`Pylance`之后，在`VS Code`中按`Ctrl`+`,`键，打开设置，输入`python auto complete`搜索，点击`Edit in setting.json`，在 "python.analysis.extraPaths"`的方括号中添加以下两行，加入Python路径:
+
+```json
+    "python.analysis.extraPaths": [
+        "D:\\Program\\Python\\Scripts",
+        "D:\\Program\\Python\\Lib\\site-packages"
+    ]
+```
+
+* 代码出错提示：打开命令行，输入 `pip install flake8`，安装`flake8`成功后，打开`VScode`，按`Ctrl`+`,`键，打开设置，输入`python linting flake8 enabled`，勾选选项。
+* 自动格式化代码：打开命令行，输入`pip install yapf`，安装`yapf`之后，打开`VScode`，按`Ctrl`+`,`键，打开设置，输入`python formatting provider`，后面编辑Python代码时，在`VScode`中按`Alt+Shift+F`即可自动格式化代码。
+---
+
+在安装完成基础环境之后，你可能会想
 
 1. [安装Tensorflow开发环境](Coding/OtherLibs/Tensorflow/DevEnvDeploy.html)。
 2. [安装Pytorch开发环境](Coding/OtherLibs/Pytorch/DevEnvDeploy.html)。

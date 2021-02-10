@@ -61,7 +61,7 @@ $$
 对于周期为$T$的信号$f(t)$，可以计算分量的振幅为
 
 $$
-A_k=\frac{1}{T} \int_{t_0}^{t_0+T}f(t) e^{-ik\omega t} dt\tag{7}
+A_k=\frac{1}{T} \int_{-\frac{T}{2}}^{\frac{T}{2}}f(t) e^{-ik\omega t} dt\tag{7}
 $$
 
 ## 傅里叶变换
@@ -120,7 +120,7 @@ $$
 如果$F_{s}(\omega)$的频率取值区间为$[\omega_{1},\omega_{2}]$，则有
 
 $$
-F_{s}(\omega_{1}+\Delta\omega)=\frac{T}{N}\sum_{n=0}^{N-1}f(t_{1}+n\Delta t) e^{-i(\omega_{1}+k\Delta\omega) (t_{1}+n\Delta t)} \tag{12}
+F_{s}(\omega_{1}+k\Delta\omega)=\frac{T}{N}\sum_{n=0}^{N-1}f(t_{1}+n\Delta t) e^{-i(\omega_{1}+k\Delta\omega) (t_{1}+n\Delta t)} \tag{12}
 $$
 
 其中, $\Delta\omega = \frac{\Omega}{K}$表示频域抽样间隔，$\Omega=\omega_{2}-\omega_{1}$表示带宽。
@@ -158,53 +158,102 @@ $$
 Python代码如下：
 
 ```python
+# -*- using: utf-8 -*-
 import numpy as np
 import matplotlib.pyplot as plt
 
-T=2   #时域区间长度
-N=200 #时域抽样点数
-t=np.linspace(-T/2,T/2-T/N,N) #时域抽样点
-f=np.zeros_like(t) #初始化f
-mlist = [i for i in range(len(t)) if(t[i]<1/2 and t[i]>-1/2)]
 
-
-f[mlist]=1 #设置好f
-print(f)
-OMG = 16*np.pi #频域区间长度
-K = 100 #频域抽样点数
-omg = np.linspace(-OMG/2,OMG/2-OMG/K,K) #频域抽样点
-F = 0.*omg # 初始化频谱
-
-for k in range(K):
-    for n in range(N):
-        F[k] = F[k] + T/N*f[n]*np.exp(complex(0,-1)*omg[k]*t[n])
-
-fs = np.zeros_like(t)
-for n in range(N):
+def fourierTrans(f_t, t, omg):
+    """
+    return signal in the frequency domain
+    Paras:
+    f_t: input signal
+    t: a list of sample points in time domain
+    omg: a list of sample points in frequency domain, omg = 2 * pi * f
+    """
+    T = t[-1] - t[0]
+    N = len(t)
+    # OMG = omg[-1] - omg[0]
+    K = len(omg)
+    F_omg = np.zeros_like(omg, dtype=complex)  # 初始化频谱
     for k in range(K):
-        fs[n] = fs[n] + OMG/2/np.pi/K*F[k]*np.exp(complex(0,1)*omg[k]*t[n])
+        for n in range(N):
+            F_omg[k] = F_omg[k] + T / N * f_t[n] * np.exp(
+                complex(0, -1) * omg[k] * t[n])
+    return F_omg
 
-plt.figure(figsize=(12,6))
-ax1 = plt.subplot(1,2,1)
-plt.plot(t,f,color='blue',linestyle='-',label='f')
-plt.plot(t,fs.real,color='red',linestyle=':',label='fs')
-ax1.set_xlabel('t')
-ax1.set_ylabel('f')
-ax1.set_xlim(-1,1)
-ax1.set_ylim(-0.3,1.2)
-ax1.legend(loc='upper right')
 
-ax2=plt.subplot(1,2,2)
-plt.plot(omg,F.real,'k-')
-ax2.set_xlabel('$\omega$')
-ax2.set_ylabel('F')
-ax2.set_xlim(-8*np.pi,8*np.pi)
-ax2.set_ylim(-0.3,1.2)
+def ifourierTrans(F_omg, t, omg):
+    """
+    return signal in the time domain
+    Paras:
+    F_omg: input, the amplitude in frequency domain
+    t: a list of sample points in time domain
+    omg: a list of sample points in frequency domain
+    """
+    # T = t[-1] - t[0]
+    N = len(t)
+    OMG = omg[-1] - omg[0]
+    K = len(omg)
+    fs = np.zeros_like(t, dtype=complex)
+    for n in range(N):
+        for k in range(K):
+            fs[n] = fs[n] + OMG / 2 / np.pi / K * F_omg[k] * np.exp(
+                complex(0, 1) * omg[k] * t[n])
+    return fs
 
-plt.show()
+
+def main():
+    T = 4  # 时域区间长度
+    N = 201  # 时域抽样点数
+    t = np.linspace(-T / 2, T / 2, N)  # 时域抽样点
+    OMG = 16 * np.pi  # 频域区间长度
+    K = 101  # 频域抽样点数
+    omg = np.linspace(-OMG / 2, OMG / 2, K)  # 频域抽样点
+    f_t = np.zeros_like(t)  # 初始化f
+    mlist = [i for i in range(len(t)) if (t[i] < 1 and t[i] > -1)]
+    f_t[mlist] = 1  # 设置好f
+
+    F_omg = fourierTrans(f_t, t, omg)
+    fs = ifourierTrans(F_omg, t, omg)
+
+    plt.figure(figsize=(12, 4))
+    ax1 = plt.subplot(1, 2, 1)
+    plt.plot(t, f_t, color='blue', linestyle='-', label='f')
+    plt.plot(t, fs.real, color='red', linestyle=':', label="f'")
+    ax1.set_xlabel('$t$')
+    ax1.set_ylabel('$f(t)$')
+    ax1.legend(loc='upper right')
+
+    ax2 = plt.subplot(1, 2, 2)
+    plt.plot(omg, F_omg.real, 'k-')
+    ax2.set_xlabel('$\omega$')
+    ax2.set_ylabel('$F(\omega)$')
+    plt.show()
+
+
+if __name__ == "__main__":
+    main()
 ```
 
 做出的图为
 
 <div align="center"><img src="res/fourier2.jpg"></div>
 
+## 快速傅里叶变换
+
+傅里叶变换中，包含了大量的乘方运算，导致计算时间较长。在实际应用中，很难实时地处理问题。于是要加速傅里叶变换，涌现了一批能够执行快速傅里叶变换的算法，统称为快速傅里叶变换(Fast Fourier Transform,FFT)。
+
+$$
+F_{s}(\omega_{1}+k\Delta\omega)=\frac{T}{N}\sum_{n=0}^{N-1}f(t_{1}+n\Delta t) e^{-i(\omega_{1}+k\Delta\omega) (t_{1}+n\Delta t)} \tag{12}
+$$
+
+直接按这个定义求值需要 O(KN) 次运算：F 共有 K 个输出，每个输出需要 N 项求和。直接使用DFT运算需使用N个复数乘法(4N 个实数乘法)与N-1个复数加法(2N-2个实数加法)，因此，如果认为N与K相当，则计算使用DFT所有K点的值需要K * N =N * N复数乘法与N * N - N 个复数加法。FFT则是能够用更少次操作计算出相同结果的任何方法。更准确的说，所有已知的FFT算法都需要 O(N log N) 次运算（技术上O只标记上界），虽然还没有已知的证据证明更低的复杂度是不可能的。
+
+要说明FFT节省时间的方式，就得考虑复数相乘和相加的次数。直接计算DFT的值涉及到 N2 次复数相乘和 N(N−1) 次复数相加（可以通过削去琐碎运算（如乘以1）来节省 O(N) 次运算）。众所周知的基2库利-图基算法，N 为2的幂，可以只用 (N/2)log2(N) 次复数乘法（再次忽略乘以1的简化）和 Nlog2(N) 次加法就可以得到相同结果。在实际中，现代计算机通常的实际性能通常不受算术运算的速度和对复杂主体的分析主导，但是从 O(N2) 到 O(N log N) 的总体改进仍然能够体现出来。
+
+FFT算法很多，根据实现运算过程是否有指数因子K,N可分为有、无指数因子的两类算法。
+### 有指数因子的算法
+经典库利-图基算法 当输入序列的长度N不是素数(素数只能被1而它本身整除）而是可以高度分解的复合数，即N=N1N2N3…Nr时，若N1=N2=…=Nr=2，N=2则N点DFT的计算可分解为N=2×N/2，即两个N/2点DFT计算的组合，而N/2点DFT的计算又可分解为N/2=2×N/4，即两个N/4点DFT计算的组合。依此类推，使DFT的计算形成有规则的模式，故称之为以2为基底的FFT算法。同理，当N=4时，则称之为以4为基底的FFT算法。当N=N1·N2时，称为以N1和N2为基底的混合基算法。
+在这些算法中，基2算法用得最普遍。通常按序列在时域或在频域分解过程的不同，又可分为两种：一种是时间抽取FFT算法（DIT），将N点DFT输入序列x(n)、在时域分解成2个N/2点序列而x1(n)和x2(n)。前者是从原序列中按偶数序号抽取而成，而后者则按奇数序号抽取而成。DIT就是这样有规律地按奇、偶次序逐次进行分解所构成的一种快速算法。
+分裂基算法(RSFFT) 1984年由P．杜哈美尔和H．赫尔曼等导出的一种比库利图基算法更加有效的改进算法，其基本思想是在变换式的偶部采用基2算法，在变换式的奇部采用基4算法。优点是具有相对简单的结构，非常适用于实对称数据，对长度N=2能获得最少的运算量(乘法和加法），所以是选用固定基算法中的一种最佳折衷算法。
