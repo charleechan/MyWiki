@@ -15,6 +15,7 @@
 ](UseFontAwesomeInMD.html)
 * [在Markdown中使用Javascript
 ](UseJavascriptInMD.html)
+* res 资源<mark>(右键打开或下载)</mark>
 
 
 ```mind:height=300,title=内容概要,color
@@ -30,4 +31,5 @@
 ](UseFontAwesomeInMD.html)
 * [在Markdown中使用Javascript
 ](UseJavascriptInMD.html)
+* res 资源
 ```

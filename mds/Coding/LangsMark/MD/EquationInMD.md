@@ -87,6 +87,8 @@
 |$\leftrightharpoons \rightleftharpoons$|`\leftrightharpoons \rightleftharpoons`|
 |$\twoheadrightarrow \twoheadleftarrow$|`\twoheadrightarrow \twoheadleftarrow`|
 |$\xleftarrow{left} \xrightarrow{right} $|`\xleftarrow{left} \xrightarrow{right} `|
+|$\xleftrightarrow{left\& right}$|`\xleftrightarrow{left\& right}`|
+|$\xlongequal[cond1]{cond2}$|`\xlongequal[cond1]{cond2}`|
 |$\amalg \% \dagger \ddagger \ldots \cdots$|`\amalg \% \dagger \ddagger \ldots \cdots`|
 |$\diamondsuit \heartsuit \clubsuit \spadesuit $|`\diamondsuit \heartsuit \clubsuit \spadesuit `|
 |$\Game \flat \natural \sharp$|`\Game \flat \natural \sharp`|
@@ -154,6 +156,35 @@
 |$x\quad y$|`x\quad y`|
 |$\qquad y$|`\qquad y`|
 |$x=\dfrac{-b\pm\sqrt{\color{Red}b^2-4ac}}{\color{Blue}2a}$|`x=\dfrac{-b\pm\sqrt{\color{Red}b^2-4ac}}{\color{Blue}2a}`|
-|$\boxed{\sum\limits_{i = 1}^{n} i = \dfrac{n(n - 1)}{2}}$|`\boxed{\sum\limits_{i = 1}^{n} i = \dfrac{n(n - 1)}{2}}`|    
+|$\boxed{\sum\limits_{i = 1}^{n} i = \dfrac{n(n - 1)}{2}}$|`\boxed{\sum\limits_{i = 1}^{n} i = \dfrac{n(n - 1)}{2}}`|
+|$\color{Blue}\colorbox{Yellow}{LaTeX公式大全}$|`$\color{Blue}\colorbox{Yellow}{LaTeX公式大全}$`|
                 
 
+另外，表格：
+
+$$
+\begin{array}
+{|c|c||c|}
+x&y&z\\
+8&2&4\\
+2&3&9\\
+10&\dfrac{3}{4}&\sqrt{3}\\
+a&b&c
+\end{array}
+$$
+
+的代码
+```
+\begin{array}
+{|c|c||c|}
+x&y&z\\
+8&2&4\\
+2&3&9\\
+10&\dfrac{3}{4}&\sqrt{3}\\
+a&b&c
+\end{array}
+```
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({ TeX: { extensions: ["extpfeil.js","color.js","mhchem.js"] }});
+</script>

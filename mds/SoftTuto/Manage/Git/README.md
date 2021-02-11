@@ -12,6 +12,7 @@
 * res 资源<mark>(右键打开或下载)</mark>
   * [index.js](res/index.js)
   * [mermaid.min.js](res/mermaid.min.js)
+  * [mj-single.js](res/mj-single.js)
 
 
 ```mind:height=300,title=内容概要,color
@@ -24,4 +25,5 @@
 * res 资源
   * [index.js](res/index.js)
   * [mermaid.min.js](res/mermaid.min.js)
+  * [mj-single.js](res/mj-single.js)
 ```

@@ -218,3 +218,6 @@ $$
 4. [小波变换和motion信号处理（一）](http://www.eepw.com.cn/article/201612/327996.htm)
 4. [小波变换和motion信号处理：第二篇](http://www.eepw.com.cn/article/247254.htm)
 
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ TeX: { extensions: ["extpfeil.js"] }});
+</script>

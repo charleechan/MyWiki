@@ -19,6 +19,7 @@
 ](MD/UseFontAwesomeInMD.html)
   * [在Markdown中使用Javascript
 ](MD/UseJavascriptInMD.html)
+  * res 资源<mark>(右键打开或下载)</mark>
 * [QML](QML/index.html)
   * [Qt Quick开发教程1:安卓开发环境的配置
 ](QML/QtQuickTutorial_1_DevEnvDeploy.html)
@@ -50,6 +51,7 @@
 ](MD/UseFontAwesomeInMD.html)
   * [在Markdown中使用Javascript
 ](MD/UseJavascriptInMD.html)
+  * res 资源
 * [QML](QML/index.html)
   * [Qt Quick开发教程1:安卓开发环境的配置
 ](QML/QtQuickTutorial_1_DevEnvDeploy.html)

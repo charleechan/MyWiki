@@ -28,6 +28,7 @@
     * res 资源<mark>(右键打开或下载)</mark>
       * [index.js](Manage/Git/res/index.js)
       * [mermaid.min.js](Manage/Git/res/mermaid.min.js)
+      * [mj-single.js](Manage/Git/res/mj-single.js)
   * [Inlook](Inlook/index.html)
     * [Inlook - 你的个人工作助手
 ](Manage/Inlook/InlookIsReleased.html)
@@ -131,6 +132,7 @@
     * res 资源
       * [index.js](Manage/Git/res/index.js)
       * [mermaid.min.js](Manage/Git/res/mermaid.min.js)
+      * [mj-single.js](Manage/Git/res/mj-single.js)
   * [Inlook](Inlook/index.html)
     * [Inlook - 你的个人工作助手
 ](Manage/Inlook/InlookIsReleased.html)

@@ -20,6 +20,7 @@ echo 正在复制 mermaid.min.js 文件...
 echo=
 echo 复制 mermaid.min.js 文件完成!
 echo=
+
 echo 正在编译你的 Gitbook ...
 echo=
 @call gitbook build ./mds/. ./docs

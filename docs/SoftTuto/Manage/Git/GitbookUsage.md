@@ -316,11 +316,17 @@ npm install gitbook-plugin-auto-scroll-table
 # 可以复制本代码块到cmd中,会自动安装
 ```
 
-
-
 3. 由于插件年久失修, 需要执行以下操作来使插件生效.
    * gitbook build 之前, 将文件[mermaid.min.js](./res/mermaid.min.js)分别拷贝到`\node_modules\gitbook-plugin-mermaid-gb3\dist\mermaid`和`\node_modules\mermaid\dist`目录,进行文件替换.
-     > 命令已经写入文件[GitbookBuild.bat](https://charleechan.github.io/MyWiki/GitbookBuild.bat),因此在不用每次执行.
+     >  本命令已经写入文件[GitbookBuild.bat](https://charleechan.github.io/MyWiki/GitbookBuild.bat),因此在不用每次执行.
+   * 如果公式中加了**化学方程式**，**长等号，长箭头**，**colorbox**等，则要在`.md`的最底部加入以下代码
+   
+     ```
+     <script type="text/x-mathjax-config">
+     MathJax.Hub.Config({ TeX: { extensions: ["extpfeil.js","color.js","mhchem.js"] }});
+     </script>
+     ```
+    
 
 4. 可以修改`node_modules\gitbook-plugin-tbfed-pagefooter\index.js`,在页脚添加自定义内容,可以修改为[文件index.js](https://charleechan.github.io/MyWiki/SoftTuto/Manage/Git/res/index.js)的内容。
    
