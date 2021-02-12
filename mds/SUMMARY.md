@@ -113,6 +113,7 @@
 * [信号与系统](KnowWorld/SigASys/README.md)
   * [图像处理](KnowWorld/SigASys/ImgProc/README.md)
   * [信号处理](KnowWorld/SigASys/SigProc/README.md)
+    * [理解卷积](KnowWorld/SigASys/SigProc/conv1.md)
     * [傅里叶级数与傅里叶变换(Fourier Transform)](KnowWorld/SigASys/SigProc/FourierTransform.md)
     * [小波变换(一): 为什么需要小波?](KnowWorld/SigASys/SigProc/wavelet1.md)
     * [小波变换(二): 小波基函数,母小波和父小波](KnowWorld/SigASys/SigProc/wavelet2.md)

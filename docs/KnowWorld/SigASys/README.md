@@ -5,6 +5,8 @@
 
 * [ImgProc](ImgProc/index.html)
 * [SigProc](SigProc/index.html)
+  * [理解卷积
+](SigProc/conv1.html)
   * [傅里叶级数与傅里叶变换(Fourier Transform)
 ](SigProc/FourierTransform.html)
   * [小波变换(一): 为什么需要小波?
@@ -22,6 +24,12 @@
   * .vscode 资源<mark>(右键打开或下载)</mark>
     * [settings.json](SigProc/.vscode/settings.json)
   * res 资源<mark>(右键打开或下载)</mark>
+    * [conv1.png](SigProc/res/conv1.png)
+    * [conv2.png](SigProc/res/conv2.png)
+    * [conv3.png](SigProc/res/conv3.png)
+    * [conv4.png](SigProc/res/conv4.png)
+    * [conv5.png](SigProc/res/conv5.png)
+    * [conv6.png](SigProc/res/conv6.png)
     * [fourier.jpg](SigProc/res/fourier.jpg)
     * [fourier2.jpg](SigProc/res/fourier2.jpg)
     * [sigGen.py](SigProc/res/sigGen.py)
@@ -56,6 +64,8 @@
 ```mind:height=300,title=内容概要,color
 * [ImgProc](ImgProc/index.html)
 * [SigProc](SigProc/index.html)
+  * [理解卷积
+](SigProc/conv1.html)
   * [傅里叶级数与傅里叶变换(Fourier Transform)
 ](SigProc/FourierTransform.html)
   * [小波变换(一): 为什么需要小波?
@@ -73,6 +83,12 @@
   * .vscode 资源
     * [settings.json](SigProc/.vscode/settings.json)
   * res 资源
+    * [conv1.png](SigProc/res/conv1.png)
+    * [conv2.png](SigProc/res/conv2.png)
+    * [conv3.png](SigProc/res/conv3.png)
+    * [conv4.png](SigProc/res/conv4.png)
+    * [conv5.png](SigProc/res/conv5.png)
+    * [conv6.png](SigProc/res/conv6.png)
     * [fourier.jpg](SigProc/res/fourier.jpg)
     * [fourier2.jpg](SigProc/res/fourier2.jpg)
     * [sigGen.py](SigProc/res/sigGen.py)

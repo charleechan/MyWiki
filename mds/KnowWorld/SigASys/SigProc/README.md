@@ -3,6 +3,8 @@
 
 [回到首页](https://charleechan.github.io/MyWiki)
 
+* [理解卷积
+](conv1.html)
 * [傅里叶级数与傅里叶变换(Fourier Transform)
 ](FourierTransform.html)
 * [小波变换(一): 为什么需要小波?
@@ -20,6 +22,12 @@
 * .vscode 资源<mark>(右键打开或下载)</mark>
   * [settings.json](.vscode/settings.json)
 * res 资源<mark>(右键打开或下载)</mark>
+  * [conv1.png](res/conv1.png)
+  * [conv2.png](res/conv2.png)
+  * [conv3.png](res/conv3.png)
+  * [conv4.png](res/conv4.png)
+  * [conv5.png](res/conv5.png)
+  * [conv6.png](res/conv6.png)
   * [fourier.jpg](res/fourier.jpg)
   * [fourier2.jpg](res/fourier2.jpg)
   * [sigGen.py](res/sigGen.py)
@@ -52,6 +60,8 @@
 
 
 ```mind:height=300,title=内容概要,color
+* [理解卷积
+](conv1.html)
 * [傅里叶级数与傅里叶变换(Fourier Transform)
 ](FourierTransform.html)
 * [小波变换(一): 为什么需要小波?
@@ -69,6 +79,12 @@
 * .vscode 资源
   * [settings.json](.vscode/settings.json)
 * res 资源
+  * [conv1.png](res/conv1.png)
+  * [conv2.png](res/conv2.png)
+  * [conv3.png](res/conv3.png)
+  * [conv4.png](res/conv4.png)
+  * [conv5.png](res/conv5.png)
+  * [conv6.png](res/conv6.png)
   * [fourier.jpg](res/fourier.jpg)
   * [fourier2.jpg](res/fourier2.jpg)
   * [sigGen.py](res/sigGen.py)
