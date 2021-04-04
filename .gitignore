@@ -4,4 +4,8 @@
 # *.zip     忽略所有.zip文件
 
 /mds/node_modules/*
+/docs/IME/EDA/res/PingFangSC.zip
+/docs/node_modules.zip
+/mds/node_modules.zip
+/mds/IME/EDA/res/PingFangSC.zip
 /pythonlib/*
