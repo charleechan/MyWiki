@@ -12,6 +12,8 @@
 ](Word/EquationInWord.html)
   * [跨行对齐公式与公式代码
 ](Word/EquationInWord2.html)
+  * [Office 2019的ISO制作,安装,与激活
+](Word/MakeOfficeISO.html)
   * [在Word中使用FontAwesome图标
 ](Word/UseFontAwesomeInWord.html)
   * res 资源<mark>(右键打开或下载)</mark>
@@ -38,6 +40,8 @@
 ](Word/EquationInWord.html)
   * [跨行对齐公式与公式代码
 ](Word/EquationInWord2.html)
+  * [Office 2019的ISO制作,安装,与激活
+](Word/MakeOfficeISO.html)
   * [在Word中使用FontAwesome图标
 ](Word/UseFontAwesomeInWord.html)
   * res 资源

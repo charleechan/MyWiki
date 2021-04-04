@@ -10,6 +10,8 @@
     * [GIMP-keys.pdf](GIMP/res/GIMP-keys.pdf)
 * [Mermaid](Mermaid/index.html)
 * [Origin](Origin/index.html)
+  * [使用Graph Anim插件绘制动图
+](Origin/PlotGif.html)
 * [Solidworks](Solidworks/index.html)
 * [Visio](Visio/index.html)
 
@@ -22,6 +24,8 @@
     * [GIMP-keys.pdf](GIMP/res/GIMP-keys.pdf)
 * [Mermaid](Mermaid/index.html)
 * [Origin](Origin/index.html)
+  * [使用Graph Anim插件绘制动图
+](Origin/PlotGif.html)
 * [Solidworks](Solidworks/index.html)
 * [Visio](Visio/index.html)
 ```

@@ -19,30 +19,36 @@ GitBook 工作在 Node.js 环境下，因此，你需要确保你已经配置好
 
 3. 在cmd中设置node.js的文件夹
 ```
-npm config set prefix "D:\Program\nodejs\node_modules\node_global"
-npm config set cache "D:\Program\nodejs\node_modules\node_cache"
+npm config set prefix "C:\Program Files\nodejs\node_modules\node_global"
+npm config set cache "C:\Program Files\nodejs\node_modules\node_cache"
 ```
+   
 
-4. 新增用户环境变量`NODE_PATH`,值为`D:\Program\nodejs\node_global\node_modules`;
+4. 新增用户环境变量`NODE_PATH`,值为`C:\Program Files\nodejs\node_modules\node_global`;
 
-5. 设置用户环境变量`PATH`,把其中node的路径值改成`D:\Program\nodejs\node_modules\node_global`
+5. 设置用户环境变量`PATH`,把其中node的路径值改成`C:\Program Files\nodejs\node_modules\node_global`
 
+6. 如果是公司网络需要设置代理，则设置npm代理和git代理:
+   * 设置npm代理: `npm config set proxy http://127.0.0.1:1080`,`npm config set https-proxy http://127.0.0.1:1080`;
+   * 代理需要认证的话:`npm config set proxy http://username:password@server:port`,`npm config set https-proxy http://username:pawword@server:port`;
+   * 设置git代理: `git config --global http.proxy http://127.0.0.1:1080`,`git config --global https.proxy https://127.0.0.1:1080`
+
+   
 ## 安装 gitbook-cli
 
 
-1. 通过cmd调用窗口，进入安装nodeJs的目录，输入命令全局安装gitbook：`npm install gitbook-cli -g`
-
+1. 通过cmd调用窗口，进入安装nodeJs的目录，输入命令全局**安装gitbook gitbook-cli**：`npm install gitbook-cli -g`
+   > 如果报错`rollbackFailedOptional verb npm-session `,则需要把npm代理和git代理去掉:`npm config rm proxy`,`npm config rm https-proxy`;`git config --global --unset http.proxy`,`git config --global --unset https.proxy`.然后设置镜像源: `npm config set registry http://registry.npm.taobao.org`,最后检查镜像源`npm config get registry`.
 2. 输入命令：`mkdir MyWiki`，创建文件夹
 
 
-3. 执行下面命令，查看 `gitbook-cli` 的版本，以确定其是否成功安装。
+3. 执行下面命令，查看 `gitbook` 的版本，会自动安装`Gitbook 3.2.3`。
     ```
     gitbook -V
     CLI version: 2.3.2
     gitbook version: 3.2.3
     ```
-4. 可能会报错`if (cb) cb.apply(this, arguments)`,　打开`polyfills.js`文件，在第62-64行调用了这个函数,因此把62-64行注释掉.
-5. 4不报错也注释掉.
+4. 可能会报错`if (cb) cb.apply(this, arguments)`,　打开`polyfills.js`文件，在第62-64行调用了这个函数,因此把62-64行注释掉,注释掉之后重新执行`gitbook -V`查看版本.时间较长,需要耐心等待!
 	
 ## 开始
 

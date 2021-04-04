@@ -13,12 +13,15 @@
 * [Python](Python/index.html)
   * [Python开发环境的配置
 ](Python/DevEnvDeploy.html)
+  * [使用Matplotlib绘制动图
+](Python/MakeAGif.html)
   * [pyplot在一个坐标系里画多个子图
-](Python/Matplotlib_Usage.html)
+](Python/MultiPlotInAAxes.html)
   * [](Python/ReleasePython.html)
   * res 资源<mark>(右键打开或下载)</mark>
     * [1.png](Python/res/1.png)
     * [get-pip.py](Python/res/get-pip.py)
+    * [MakeGif.py](Python/res/MakeGif.py)
 * [SQL](SQL/index.html)
 * [TCL](TCL/index.html)
 
@@ -34,12 +37,15 @@
 * [Python](Python/index.html)
   * [Python开发环境的配置
 ](Python/DevEnvDeploy.html)
+  * [使用Matplotlib绘制动图
+](Python/MakeAGif.html)
   * [pyplot在一个坐标系里画多个子图
-](Python/Matplotlib_Usage.html)
+](Python/MultiPlotInAAxes.html)
   * [](Python/ReleasePython.html)
   * res 资源
     * [1.png](Python/res/1.png)
     * [get-pip.py](Python/res/get-pip.py)
+    * [MakeGif.py](Python/res/MakeGif.py)
 * [SQL](SQL/index.html)
 * [TCL](TCL/index.html)
 ```

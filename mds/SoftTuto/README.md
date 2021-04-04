@@ -15,6 +15,8 @@
       * [GIMP-keys.pdf](Image/GIMP/res/GIMP-keys.pdf)
   * [Mermaid](Mermaid/index.html)
   * [Origin](Origin/index.html)
+    * [使用Graph Anim插件绘制动图
+](Image/Origin/PlotGif.html)
   * [Solidworks](Solidworks/index.html)
   * [Visio](Visio/index.html)
 * [Manage](Manage/index.html)
@@ -64,6 +66,8 @@
 ](Office/Word/EquationInWord.html)
     * [跨行对齐公式与公式代码
 ](Office/Word/EquationInWord2.html)
+    * [Office 2019的ISO制作,安装,与激活
+](Office/Word/MakeOfficeISO.html)
     * [在Word中使用FontAwesome图标
 ](Office/Word/UseFontAwesomeInWord.html)
     * res 资源<mark>(右键打开或下载)</mark>
@@ -119,6 +123,8 @@
       * [GIMP-keys.pdf](Image/GIMP/res/GIMP-keys.pdf)
   * [Mermaid](Mermaid/index.html)
   * [Origin](Origin/index.html)
+    * [使用Graph Anim插件绘制动图
+](Image/Origin/PlotGif.html)
   * [Solidworks](Solidworks/index.html)
   * [Visio](Visio/index.html)
 * [Manage](Manage/index.html)
@@ -168,6 +174,8 @@
 ](Office/Word/EquationInWord.html)
     * [跨行对齐公式与公式代码
 ](Office/Word/EquationInWord2.html)
+    * [Office 2019的ISO制作,安装,与激活
+](Office/Word/MakeOfficeISO.html)
     * [在Word中使用FontAwesome图标
 ](Office/Word/UseFontAwesomeInWord.html)
     * res 资源
