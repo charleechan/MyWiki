@@ -1,7 +1,7 @@
 
-# 资源列表
+# 内容列表
 
-[回到首页](https://charleechan.github.io/MyWiki)
+[回到主页](https://charleechan.github.io/MyWiki)
 
 * [HTML(Hyper Text Markup Language, 超文本标记语言)的基础知识
 ](1_HTMLBasics.html)

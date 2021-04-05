@@ -1,7 +1,7 @@
 
-# 资源列表
+# 内容列表
 
-[回到首页](https://charleechan.github.io/MyWiki)
+[回到主页](https://charleechan.github.io/MyWiki)
 
 * [C](C/index.html)
 * [Cpp](Cpp/index.html)

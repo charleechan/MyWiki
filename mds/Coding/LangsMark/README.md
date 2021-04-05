@@ -1,7 +1,7 @@
 
-# 资源列表
+# 内容列表
 
-[回到首页](https://charleechan.github.io/MyWiki)
+[回到主页](https://charleechan.github.io/MyWiki)
 
 * [HTML](HTML/index.html)
   * [HTML(Hyper Text Markup Language, 超文本标记语言)的基础知识
@@ -29,8 +29,6 @@
 ](QML/QtQuickTutorial_3_QML_CPP.html)
   * [QtQuickTutorial_4_QML_DesignRules.pdf](QML/QtQuickTutorial_4_QML_DesignRules.pdf)
   * assets 资源<mark>(右键打开或下载)</mark>
-    * [sshot-1.png](QML/assets/sshot-1.png)
-    * [sshot-2.png](QML/assets/sshot-2.png)
 * [XML](XML/index.html)
 
 
@@ -61,7 +59,5 @@
 ](QML/QtQuickTutorial_3_QML_CPP.html)
   * [QtQuickTutorial_4_QML_DesignRules.pdf](QML/QtQuickTutorial_4_QML_DesignRules.pdf)
   * assets 资源
-    * [sshot-1.png](QML/assets/sshot-1.png)
-    * [sshot-2.png](QML/assets/sshot-2.png)
 * [XML](XML/index.html)
 ```

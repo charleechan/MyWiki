@@ -1,7 +1,7 @@
 
-# 资源列表
+# 内容列表
 
-[回到首页](https://charleechan.github.io/MyWiki)
+[回到主页](https://charleechan.github.io/MyWiki)
 
 * [Bash](Bash/index.html)
 * [CMD](CMD/index.html)
@@ -19,7 +19,6 @@
 ](Python/MultiPlotInAAxes.html)
   * [](Python/ReleasePython.html)
   * res 资源<mark>(右键打开或下载)</mark>
-    * [1.png](Python/res/1.png)
     * [get-pip.py](Python/res/get-pip.py)
     * [MakeGif.py](Python/res/MakeGif.py)
 * [SQL](SQL/index.html)
@@ -43,7 +42,6 @@
 ](Python/MultiPlotInAAxes.html)
   * [](Python/ReleasePython.html)
   * res 资源
-    * [1.png](Python/res/1.png)
     * [get-pip.py](Python/res/get-pip.py)
     * [MakeGif.py](Python/res/MakeGif.py)
 * [SQL](SQL/index.html)

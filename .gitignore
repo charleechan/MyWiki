@@ -4,6 +4,7 @@
 # *.zip     忽略所有.zip文件
 
 /mds/node_modules/*
+/mds/IME/EDA/res/libstdc++.so.6.0.26
 /docs/IME/EDA/res/PingFangSC.zip
 /docs/node_modules.zip
 /mds/node_modules.zip

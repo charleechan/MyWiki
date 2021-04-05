@@ -1,7 +1,7 @@
 
-# 资源列表
+# 内容列表
 
-[回到首页](https://charleechan.github.io/MyWiki)
+[回到主页](https://charleechan.github.io/MyWiki)
 
 * [Animation](Animation/index.html)
   * [HTML5](HTML5/index.html)
@@ -37,23 +37,6 @@
     * [Inlook用户指南
 ](Manage/Inlook/InlookUsage.html)
     * img 资源<mark>(右键打开或下载)</mark>
-      * [addaccount.png](Manage/Inlook/img/addaccount.png)
-      * [addaccount2.png](Manage/Inlook/img/addaccount2.png)
-      * [addagenda.png](Manage/Inlook/img/addagenda.png)
-      * [button.png](Manage/Inlook/img/button.png)
-      * [changesize.png](Manage/Inlook/img/changesize.png)
-      * [install.png](Manage/Inlook/img/install.png)
-      * [installing.png](Manage/Inlook/img/installing.png)
-      * [login.png](Manage/Inlook/img/login.png)
-      * [loginsuccess.png](Manage/Inlook/img/loginsuccess.png)
-      * [loginsuccess2.png](Manage/Inlook/img/loginsuccess2.png)
-      * [mainWindow.png](Manage/Inlook/img/mainWindow.png)
-      * [mainWindow2.png](Manage/Inlook/img/mainWindow2.png)
-      * [screen_shot.png](Manage/Inlook/img/screen_shot.png)
-      * [sjadd1.png](Manage/Inlook/img/sjadd1.png)
-      * [sjadd2.png](Manage/Inlook/img/sjadd2.png)
-      * [switchExchange.png](Manage/Inlook/img/switchExchange.png)
-      * [tray.png](Manage/Inlook/img/tray.png)
     * res 资源<mark>(右键打开或下载)</mark>
   * [Outlook](Outlook/index.html)
 * [Office](Office/index.html)
@@ -71,15 +54,6 @@
     * [在Word中使用FontAwesome图标
 ](Office/Word/UseFontAwesomeInWord.html)
     * res 资源<mark>(右键打开或下载)</mark>
-      * [csl_modifyGB.png](Office/Word/res/csl_modifyGB.png)
-      * [eq1.png](Office/Word/res/eq1.png)
-      * [eq2.png](Office/Word/res/eq2.png)
-      * [eq3.png](Office/Word/res/eq3.png)
-      * [eq4.png](Office/Word/res/eq4.png)
-      * [eq5.png](Office/Word/res/eq5.png)
-      * [eq6.png](Office/Word/res/eq6.png)
-      * [eq7.png](Office/Word/res/eq7.png)
-      * [eq8.png](Office/Word/res/eq8.png)
       * [FontAwesomeFree511.zip](Office/Word/res/FontAwesomeFree511.zip)
       * [FontAwesomePro572.zip](Office/Word/res/FontAwesomePro572.zip)
 * [Plugins](Plugins/index.html)
@@ -145,23 +119,6 @@
     * [Inlook用户指南
 ](Manage/Inlook/InlookUsage.html)
     * img 资源
-      * [addaccount.png](Manage/Inlook/img/addaccount.png)
-      * [addaccount2.png](Manage/Inlook/img/addaccount2.png)
-      * [addagenda.png](Manage/Inlook/img/addagenda.png)
-      * [button.png](Manage/Inlook/img/button.png)
-      * [changesize.png](Manage/Inlook/img/changesize.png)
-      * [install.png](Manage/Inlook/img/install.png)
-      * [installing.png](Manage/Inlook/img/installing.png)
-      * [login.png](Manage/Inlook/img/login.png)
-      * [loginsuccess.png](Manage/Inlook/img/loginsuccess.png)
-      * [loginsuccess2.png](Manage/Inlook/img/loginsuccess2.png)
-      * [mainWindow.png](Manage/Inlook/img/mainWindow.png)
-      * [mainWindow2.png](Manage/Inlook/img/mainWindow2.png)
-      * [screen_shot.png](Manage/Inlook/img/screen_shot.png)
-      * [sjadd1.png](Manage/Inlook/img/sjadd1.png)
-      * [sjadd2.png](Manage/Inlook/img/sjadd2.png)
-      * [switchExchange.png](Manage/Inlook/img/switchExchange.png)
-      * [tray.png](Manage/Inlook/img/tray.png)
     * res 资源
   * [Outlook](Outlook/index.html)
 * [Office](Office/index.html)
@@ -179,15 +136,6 @@
     * [在Word中使用FontAwesome图标
 ](Office/Word/UseFontAwesomeInWord.html)
     * res 资源
-      * [csl_modifyGB.png](Office/Word/res/csl_modifyGB.png)
-      * [eq1.png](Office/Word/res/eq1.png)
-      * [eq2.png](Office/Word/res/eq2.png)
-      * [eq3.png](Office/Word/res/eq3.png)
-      * [eq4.png](Office/Word/res/eq4.png)
-      * [eq5.png](Office/Word/res/eq5.png)
-      * [eq6.png](Office/Word/res/eq6.png)
-      * [eq7.png](Office/Word/res/eq7.png)
-      * [eq8.png](Office/Word/res/eq8.png)
       * [FontAwesomeFree511.zip](Office/Word/res/FontAwesomeFree511.zip)
       * [FontAwesomePro572.zip](Office/Word/res/FontAwesomePro572.zip)
 * [Plugins](Plugins/index.html)

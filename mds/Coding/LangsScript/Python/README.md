@@ -1,7 +1,7 @@
 
-# 资源列表
+# 内容列表
 
-[回到首页](https://charleechan.github.io/MyWiki)
+[回到主页](https://charleechan.github.io/MyWiki)
 
 * [Python开发环境的配置
 ](DevEnvDeploy.html)
@@ -11,7 +11,6 @@
 ](MultiPlotInAAxes.html)
 * [](ReleasePython.html)
 * res 资源<mark>(右键打开或下载)</mark>
-  * [1.png](res/1.png)
   * [get-pip.py](res/get-pip.py)
   * [MakeGif.py](res/MakeGif.py)
 
@@ -25,7 +24,6 @@
 ](MultiPlotInAAxes.html)
 * [](ReleasePython.html)
 * res 资源
-  * [1.png](res/1.png)
   * [get-pip.py](res/get-pip.py)
   * [MakeGif.py](res/MakeGif.py)
 ```
