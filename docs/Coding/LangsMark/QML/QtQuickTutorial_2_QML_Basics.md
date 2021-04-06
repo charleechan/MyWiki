@@ -1,5 +1,7 @@
 # Qt Quick开发教程2:QML语法
 
+**可以下载**[教程示例工程](./assets/QML_tutorials.zip)**同步学习**.
+
 ```xml
 // 下面是导入语句
 import QtQuick 2.9

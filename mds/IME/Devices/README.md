@@ -22,6 +22,7 @@
 * [半导体器件2-MOS管
 ](9_MOS.html)
 * res 资源<mark>(右键打开或下载)</mark>
+  * [1.pdf](res/1.pdf)
   * [Ant.pptx](res/Ant.pptx)
   * [kulun.vsdx](res/kulun.vsdx)
   * [Res.pptx](res/Res.pptx)
@@ -47,6 +48,7 @@
 * [半导体器件2-MOS管
 ](9_MOS.html)
 * res 资源
+  * [1.pdf](res/1.pdf)
   * [Ant.pptx](res/Ant.pptx)
   * [kulun.vsdx](res/kulun.vsdx)
   * [Res.pptx](res/Res.pptx)

@@ -27,8 +27,13 @@
 ](QML/QtQuickTutorial_2_QML_Basics.html)
   * [Qt Quick开发教程3:导出C++到QML
 ](QML/QtQuickTutorial_3_QML_CPP.html)
+  * [QML设计规则与流程
+](QML/QtQuickTutorial_4_QML_DesignRules.html)
   * [QtQuickTutorial_4_QML_DesignRules.pdf](QML/QtQuickTutorial_4_QML_DesignRules.pdf)
+  * [QML中动画的实现方式
+](QML/QtQuickTutorial_5_QML_Animation.html)
   * assets 资源<mark>(右键打开或下载)</mark>
+    * [QML_tutorials.zip](QML/assets/QML_tutorials.zip)
 * [XML](XML/index.html)
 
 
@@ -57,7 +62,12 @@
 ](QML/QtQuickTutorial_2_QML_Basics.html)
   * [Qt Quick开发教程3:导出C++到QML
 ](QML/QtQuickTutorial_3_QML_CPP.html)
+  * [QML设计规则与流程
+](QML/QtQuickTutorial_4_QML_DesignRules.html)
   * [QtQuickTutorial_4_QML_DesignRules.pdf](QML/QtQuickTutorial_4_QML_DesignRules.pdf)
+  * [QML中动画的实现方式
+](QML/QtQuickTutorial_5_QML_Animation.html)
   * assets 资源
+    * [QML_tutorials.zip](QML/assets/QML_tutorials.zip)
 * [XML](XML/index.html)
 ```

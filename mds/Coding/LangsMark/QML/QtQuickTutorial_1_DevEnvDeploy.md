@@ -85,5 +85,10 @@ Window {
   - 如果出现要下载gradle-3.4-bin.zip的情况，将其复制到C:\Users\CharleeChan\.gradle\wrapper\dists\gradle-3.4-bin\aeufj4znodijbvwfbsq3044r0。
   - 如果你的手机是Android 9版本，可以按以下设置。
 ![sshot-2](assets/sshot-2.png)
+
+
+**可以下载**[教程示例工程](./assets/QML_tutorials.zip)**同步学习**.
+
+
 [^1]: [https://doc.qt.io/qtcreator/creator-developing-android.html](https://doc.qt.io/qtcreator/creator-developing-android.html)
 [^2]: [https://gradle.org/install/](https://gradle.org/install/)

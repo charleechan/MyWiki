@@ -178,6 +178,9 @@ def main():
     libDict["\\IME\\SigCirSys"]       ="信号与电路系统"
     libDict["\\IME\\SigCirSys\\SigProc"]  ="信号处理"
     libDict["\\IME\\SigCirSys\\ImgProc"]  ="图像处理"
+    libDict["\\IME\\EDA"]       ="EDA实践"
+    libDict["\\IME\\EDA\\Install"]       ="EDA全套安装教程"
+    
     
     summaryFileDir = "\\mds"
 
