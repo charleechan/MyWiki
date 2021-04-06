@@ -1,4 +1,4 @@
-# QML中动画的实现方式
+# Qt Quick开发教程5:动画
 
 ## 第一种-`Behavior on property`
 

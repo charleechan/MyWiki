@@ -22,10 +22,10 @@
  ],
  "pluginsConfig": {
      "insert-logo": {
-         "url": "https://charleechan.github.io/MyWiki/img/logo.png",
+         "url": "https://charleechan.github.io/MyWiki/img/Avatar-100.png",
          "style": "background: none; max-height: 30px; min-height: 30px"
      },
-     "favicon": "https://charleechan.github.io/MyWiki/img/inlook.ico",
+     "favicon": "https://charleechan.github.io/MyWiki/img/Avatar.ico",
      "tbfed-pagefooter": {
          "copyright": "Copyright &copy charleechan 2021",
          "modify_label": "Updated At: ",

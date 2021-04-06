@@ -1,4 +1,4 @@
-# QML设计规则与流程
+# Qt Quick开发教程4:设计规则与流程
 
 ## QML支持的函数:
 1. Math.round(5*1.3),Qt.quit(),qsTr(“myButton”),console.log("hello"),Screen.width,
