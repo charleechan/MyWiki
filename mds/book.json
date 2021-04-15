@@ -23,7 +23,7 @@
  "pluginsConfig": {
      "insert-logo": {
          "url": "https://charleechan.github.io/MyWiki/img/Avatar-100.png",
-         "style": "background: none; max-height: 30px; min-height: 30px"
+         "style": "background: none; max-height: 100px; min-height: 100px"
      },
      "favicon": "https://charleechan.github.io/MyWiki/img/Avatar.ico",
      "tbfed-pagefooter": {

@@ -4,7 +4,7 @@
 [回到主页](https://charleechan.github.io/MyWiki)
 
 * [HTML](HTML/index.html)
-  * [HTML(Hyper Text Markup Language, 超文本标记语言)的基础知识
+  * [HTML的基础知识
 ](HTML/1_HTMLBasics.html)
 * [MD](MD/index.html)
   * [Markdown公式代码大全
@@ -31,6 +31,10 @@
 ](QML/QtQuickTutorial_4_QML_DesignRules.html)
   * [Qt Quick开发教程5:动画
 ](QML/QtQuickTutorial_5_QML_Animation.html)
+  * [建立自己的QML Style Sheet文件
+](QML/QtQuickTutorial_6_QML_StyleSheet.html)
+  * [Qt 5.15在的部署过程
+](QML/QtQuickTutorial_7_DevEnvDeploy.html)
   * assets 资源<mark>(右键打开或下载)</mark>
     * [DesignRules_print.pdf](QML/assets/DesignRules_print.pdf)
     * [QML_tutorials.zip](QML/assets/QML_tutorials.zip)
@@ -39,7 +43,7 @@
 
 ```mind:height=300,title=内容概要,color
 * [HTML](HTML/index.html)
-  * [HTML(Hyper Text Markup Language, 超文本标记语言)的基础知识
+  * [HTML的基础知识
 ](HTML/1_HTMLBasics.html)
 * [MD](MD/index.html)
   * [Markdown公式代码大全
@@ -66,6 +70,10 @@
 ](QML/QtQuickTutorial_4_QML_DesignRules.html)
   * [Qt Quick开发教程5:动画
 ](QML/QtQuickTutorial_5_QML_Animation.html)
+  * [建立自己的QML Style Sheet文件
+](QML/QtQuickTutorial_6_QML_StyleSheet.html)
+  * [Qt 5.15在的部署过程
+](QML/QtQuickTutorial_7_DevEnvDeploy.html)
   * assets 资源
     * [DesignRules_print.pdf](QML/assets/DesignRules_print.pdf)
     * [QML_tutorials.zip](QML/assets/QML_tutorials.zip)

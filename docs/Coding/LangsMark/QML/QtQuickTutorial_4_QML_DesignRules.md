@@ -16,7 +16,7 @@ QML 的**窗体**界面设计如下:
 1. `Window :window`: 主窗体
    * 属性 `W:640 H:480`
    * 方法 `onCompleted`,`window`创建完成时会调用,如`window.showMaximized`.
-2. `ScrollView:mainView`: 主窗体的视图格式,可以是`ScrollView`,`Stacked View`
+2. `ScrollView:mainView`: 主窗体的视图格式,可以是`ScrollView`,`Stacked View`,`Flickable`.
    * 属性 `W:1.W H:1.H`
 3. `Item:mainContent`:
    * 属性 `W:1.W H:6.H+7.H+200 `
@@ -29,6 +29,125 @@ QML 的**窗体**界面设计如下:
 7. `Column:mainLayout`:
    * 属性 `Anchors{top,topMargin,left,right},spacing`
    * 其他 `Grid:subLayout,spacing,columns`
+
+```javascript
+import QtQuick 2.12
+import QtQuick.Window 2.12
+import QtQuick.Controls 2.14
+import "flatui" as Flat //import the ui library
+
+//Platform  Title1  Title2  NromalText  marginWidth spacing        Screen.Size
+//Win       50      30      18          100         50             1920*1080
+//Android   30      24      16          5           30             ****
+//层次如下: Window >> Flickable/ScrollView >> Item(mainContent) >> header+leftMargin+rightMargin+Column(mainLayout)
+//mainLayout中尽量只使用Flow布局和Column布局,如果需要使用Row布局,其中尽可能只包含一个Child,避免安卓上的不适配
+
+Window {
+    id: window
+    visible: true
+    width: 680
+    height: 480
+
+    property int title1Size: (Qt.platform.os == "android")?30:50
+    property int title2Size: (Qt.platform.os == "android")?24:30
+    property int normalTextSize: (Qt.platform.os == "android")?16:18
+    property int spacingSize: (Qt.platform.os == "android")?30:50
+
+    Flickable{
+        width: mainContent.width
+        height: window.height
+        contentHeight: mainContent.height
+        contentWidth: Math.min(window.width,Screen.width)
+
+        Item {
+            id: mainContent
+            width: Math.min(window.width,Screen.width)
+            height: header.height + mainLayout.height + 200
+
+            readonly property int marginWidth: (Qt.platform.os == "android")?5:100
+            Item {
+                id: leftMargin
+                anchors.left: parent.left
+                anchors.top: parent.top
+                anchors.bottom: parent.bottom
+                width: parent.marginWidth
+            }
+
+            Item {
+                id: rightMargin
+                anchors.right: parent.right
+                anchors.top: parent.top
+                anchors.bottom: parent.bottom
+                width: parent.marginWidth
+            }
+
+            Text {
+                id: header
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.top: parent.top
+                anchors.bottomMargin: 10
+
+                text: "Flat UI"
+                width: contentWidth
+                height: contentHeight
+                color: Flat.FlatUI.midnightBlue
+                font {
+                    family: Flat.FlatUI.latoBlackFont.name
+                    bold: true
+                    pointSize: window.title1Size
+                }
+            }
+
+            Column {
+                id: mainLayout
+                anchors.top: header.bottom
+                anchors.topMargin: 30
+                anchors.left: leftMargin.right
+                anchors.right: rightMargin.left
+                spacing: window.spacingSize
+
+                Text {
+                    text: "Basic elements"
+                    width: contentWidth
+                    height: contentHeight
+                    color: Flat.FlatUI.midnightBlue
+                    font {
+                        family: Flat.FlatUI.latoRegularFont.name
+                        bold: true
+                        pointSize: window.title2Size
+                    }
+                }
+
+                Text {
+                    text: "Buttons"
+                    width: contentWidth
+                    height: contentHeight
+                    color: Flat.FlatUI.midnightBlue
+                    font {
+                        family: Flat.FlatUI.latoRegularFont.name
+                        bold: true
+                        pointSize: window.normalTextSize
+                    }
+                }
+
+                //Flow's Usage: Must Specify the width so that it can wrap.
+                Flow{
+                    layoutDirection: Qt.LeftToRight
+                    spacing: window.spacingSize
+                    width: parent.width
+                    //flow:  width > height ? GridLayout.LeftToRight : GridLayout.TopToBottom
+
+                    Flat.PrimaryButton {
+                        text: "FileDialog"
+                    }
+                    Flat.PrimaryButton{}
+                }
+            }
+        }
+    }
+}
+```
+
 
 ## 常用的控件类及其属性、信号、方法等
 

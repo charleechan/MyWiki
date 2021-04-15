@@ -8,6 +8,8 @@
 * [JS](JS/index.html)
   * [把博客园装饰得美丽大方
 ](JS/DecorateYourCnblogs.html)
+  * [HBuilderX 1-引言
+](JS/HBuilderXTutorial_1_Introduction.html)
 * [Matlab](Matlab/index.html)
 * [PHP](PHP/index.html)
 * [Python](Python/index.html)
@@ -31,6 +33,8 @@
 * [JS](JS/index.html)
   * [把博客园装饰得美丽大方
 ](JS/DecorateYourCnblogs.html)
+  * [HBuilderX 1-引言
+](JS/HBuilderXTutorial_1_Introduction.html)
 * [Matlab](Matlab/index.html)
 * [PHP](PHP/index.html)
 * [Python](Python/index.html)

@@ -379,7 +379,7 @@
                 <a href="../HTML/1_HTMLBasics.html">
             
                     
-                    HTML(Hyper Text Markup Language, 超文本标记语言)的基础知识
+                    HTML的基础知识
             
                 </a>
             
@@ -568,6 +568,32 @@
             
         </li>
     
+        <li class="chapter " data-level="2.4.3.6" data-path="QtQuickTutorial_6_QML_StyleSheet.html">
+            
+                <a href="QtQuickTutorial_6_QML_StyleSheet.html">
+            
+                    
+                    建立自己的QML Style Sheet文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3.7" data-path="QtQuickTutorial_7_DevEnvDeploy.html">
+            
+                <a href="QtQuickTutorial_7_DevEnvDeploy.html">
+            
+                    
+                    Qt 5.15在的部署过程
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -651,6 +677,19 @@
             
                     
                     把博客园装饰得美丽大方
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.3.2" data-path="../../LangsScript/JS/HBuilderXTutorial_1_Introduction.html">
+            
+                <a href="../../LangsScript/JS/HBuilderXTutorial_1_Introduction.html">
+            
+                    
+                    HBuilderX 1-引言
             
                 </a>
             
@@ -2048,7 +2087,7 @@
 <li>&#x65B9;&#x6CD5; <code>onCompleted</code>,<code>window</code>&#x521B;&#x5EFA;&#x5B8C;&#x6210;&#x65F6;&#x4F1A;&#x8C03;&#x7528;,&#x5982;<code>window.showMaximized</code>.</li>
 </ul>
 </li>
-<li><code>ScrollView:mainView</code>: &#x4E3B;&#x7A97;&#x4F53;&#x7684;&#x89C6;&#x56FE;&#x683C;&#x5F0F;,&#x53EF;&#x4EE5;&#x662F;<code>ScrollView</code>,<code>Stacked View</code><ul>
+<li><code>ScrollView:mainView</code>: &#x4E3B;&#x7A97;&#x4F53;&#x7684;&#x89C6;&#x56FE;&#x683C;&#x5F0F;,&#x53EF;&#x4EE5;&#x662F;<code>ScrollView</code>,<code>Stacked View</code>,<code>Flickable</code>.<ul>
 <li>&#x5C5E;&#x6027; <code>W:1.W H:1.H</code></li>
 </ul>
 </li>
@@ -2074,6 +2113,122 @@
 </ul>
 </li>
 </ol>
+<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> QtQuick <span class="hljs-number">2.12</span>
+<span class="hljs-keyword">import</span> QtQuick.Window <span class="hljs-number">2.12</span>
+<span class="hljs-keyword">import</span> QtQuick.Controls <span class="hljs-number">2.14</span>
+<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;flatui&quot;</span> <span class="hljs-keyword">as</span> Flat <span class="hljs-comment">//import the ui library</span>
+
+<span class="hljs-comment">//Platform  Title1  Title2  NromalText  marginWidth spacing        Screen.Size</span>
+<span class="hljs-comment">//Win       50      30      18          100         50             1920*1080</span>
+<span class="hljs-comment">//Android   30      24      16          5           30             ****</span>
+<span class="hljs-comment">//&#x5C42;&#x6B21;&#x5982;&#x4E0B;: Window &gt;&gt; Flickable/ScrollView &gt;&gt; Item(mainContent) &gt;&gt; header+leftMargin+rightMargin+Column(mainLayout)</span>
+<span class="hljs-comment">//mainLayout&#x4E2D;&#x5C3D;&#x91CF;&#x53EA;&#x4F7F;&#x7528;Flow&#x5E03;&#x5C40;&#x548C;Column&#x5E03;&#x5C40;,&#x5982;&#x679C;&#x9700;&#x8981;&#x4F7F;&#x7528;Row&#x5E03;&#x5C40;,&#x5176;&#x4E2D;&#x5C3D;&#x53EF;&#x80FD;&#x53EA;&#x5305;&#x542B;&#x4E00;&#x4E2A;Child,&#x907F;&#x514D;&#x5B89;&#x5353;&#x4E0A;&#x7684;&#x4E0D;&#x9002;&#x914D;</span>
+
+Window {
+    id: <span class="hljs-built_in">window</span>
+    visible: <span class="hljs-literal">true</span>
+    width: <span class="hljs-number">680</span>
+    height: <span class="hljs-number">480</span>
+
+    property int title1Size: (Qt.platform.os == <span class="hljs-string">&quot;android&quot;</span>)?<span class="hljs-number">30</span>:<span class="hljs-number">50</span>
+    property int title2Size: (Qt.platform.os == <span class="hljs-string">&quot;android&quot;</span>)?<span class="hljs-number">24</span>:<span class="hljs-number">30</span>
+    property int normalTextSize: (Qt.platform.os == <span class="hljs-string">&quot;android&quot;</span>)?<span class="hljs-number">16</span>:<span class="hljs-number">18</span>
+    property int spacingSize: (Qt.platform.os == <span class="hljs-string">&quot;android&quot;</span>)?<span class="hljs-number">30</span>:<span class="hljs-number">50</span>
+
+    Flickable{
+        width: mainContent.width
+        height: <span class="hljs-built_in">window</span>.height
+        contentHeight: mainContent.height
+        contentWidth: <span class="hljs-built_in">Math</span>.min(<span class="hljs-built_in">window</span>.width,Screen.width)
+
+        Item {
+            id: mainContent
+            width: <span class="hljs-built_in">Math</span>.min(<span class="hljs-built_in">window</span>.width,Screen.width)
+            height: header.height + mainLayout.height + <span class="hljs-number">200</span>
+
+            readonly property int marginWidth: (Qt.platform.os == <span class="hljs-string">&quot;android&quot;</span>)?<span class="hljs-number">5</span>:<span class="hljs-number">100</span>
+            Item {
+                id: leftMargin
+                anchors.left: parent.left
+                anchors.top: parent.top
+                anchors.bottom: parent.bottom
+                width: parent.marginWidth
+            }
+
+            Item {
+                id: rightMargin
+                anchors.right: parent.right
+                anchors.top: parent.top
+                anchors.bottom: parent.bottom
+                width: parent.marginWidth
+            }
+
+            Text {
+                id: header
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.top: parent.top
+                anchors.bottomMargin: <span class="hljs-number">10</span>
+
+                text: <span class="hljs-string">&quot;Flat UI&quot;</span>
+                width: contentWidth
+                height: contentHeight
+                color: Flat.FlatUI.midnightBlue
+                font {
+                    family: Flat.FlatUI.latoBlackFont.name
+                    bold: <span class="hljs-literal">true</span>
+                    pointSize: <span class="hljs-built_in">window</span>.title1Size
+                }
+            }
+
+            Column {
+                id: mainLayout
+                anchors.top: header.bottom
+                anchors.topMargin: <span class="hljs-number">30</span>
+                anchors.left: leftMargin.right
+                anchors.right: rightMargin.left
+                spacing: <span class="hljs-built_in">window</span>.spacingSize
+
+                Text {
+                    text: <span class="hljs-string">&quot;Basic elements&quot;</span>
+                    width: contentWidth
+                    height: contentHeight
+                    color: Flat.FlatUI.midnightBlue
+                    font {
+                        family: Flat.FlatUI.latoRegularFont.name
+                        bold: <span class="hljs-literal">true</span>
+                        pointSize: <span class="hljs-built_in">window</span>.title2Size
+                    }
+                }
+
+                Text {
+                    text: <span class="hljs-string">&quot;Buttons&quot;</span>
+                    width: contentWidth
+                    height: contentHeight
+                    color: Flat.FlatUI.midnightBlue
+                    font {
+                        family: Flat.FlatUI.latoRegularFont.name
+                        bold: <span class="hljs-literal">true</span>
+                        pointSize: <span class="hljs-built_in">window</span>.normalTextSize
+                    }
+                }
+
+                <span class="hljs-comment">//Flow&apos;s Usage: Must Specify the width so that it can wrap.</span>
+                Flow{
+                    layoutDirection: Qt.LeftToRight
+                    spacing: <span class="hljs-built_in">window</span>.spacingSize
+                    width: parent.width
+                    <span class="hljs-comment">//flow:  width &gt; height ? GridLayout.LeftToRight : GridLayout.TopToBottom</span>
+
+                    Flat.PrimaryButton {
+                        text: <span class="hljs-string">&quot;FileDialog&quot;</span>
+                    }
+                    Flat.PrimaryButton{}
+                }
+            }
+        }
+    }
+}
+</code></pre>
 <h2 id="&#x5E38;&#x7528;&#x7684;&#x63A7;&#x4EF6;&#x7C7B;&#x53CA;&#x5176;&#x5C5E;&#x6027;&#x3001;&#x4FE1;&#x53F7;&#x3001;&#x65B9;&#x6CD5;&#x7B49;">&#x5E38;&#x7528;&#x7684;&#x63A7;&#x4EF6;&#x7C7B;&#x53CA;&#x5176;&#x5C5E;&#x6027;&#x3001;&#x4FE1;&#x53F7;&#x3001;&#x65B9;&#x6CD5;&#x7B49;</h2>
 <ul>
 <li><strong>Anchors</strong> includes: <code>top</code>, <code>topMargin</code>, <code>horizontalCenter</code></li>
@@ -2113,7 +2268,7 @@
 </code></pre>
 <p><hr><div align="center" id="jinrishici-sentence">&#x6B63;&#x5728;&#x52A0;&#x8F7D;&#x4ECA;&#x65E5;&#x8BD7;&#x8BCD;....</div><hr><script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script> </p>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; charleechan 2021 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Updated At: 
-2021-04-06 17:40:27
+2021-04-06 22:18:02
 </span></footer>
                                 
                                 </section>
@@ -2157,7 +2312,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Qt Quick开发教程4:设计规则与流程","level":"2.4.3.4","depth":3,"next":{"title":"Qt Quick开发教程5:动画","level":"2.4.3.5","depth":3,"path":"Coding/LangsMark/QML/QtQuickTutorial_5_QML_Animation.md","ref":"Coding/LangsMark/QML/QtQuickTutorial_5_QML_Animation.md","articles":[]},"previous":{"title":"Qt Quick开发教程3:导出C++到QML","level":"2.4.3.3","depth":3,"path":"Coding/LangsMark/QML/QtQuickTutorial_3_QML_CPP.md","ref":"Coding/LangsMark/QML/QtQuickTutorial_3_QML_CPP.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["back-to-top-button","splitter","code","-lunr","-search","-sharing","toggle-chapters","sharing-plus","search-pro","insert-logo","custom-favicon","pageview-count","tbfed-pagefooter","mind-maps","hide-element","mathjax-single-dollar","forkmegithub","mermaid-gb3","auto-scroll-table"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy charleechan 2021","modify_label":"Updated At: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"splitter":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"auto-scroll-table":{},"mathjax-single-dollar":{"forceSVG":false,"version":"2.6-latest"},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"mind-maps":{},"highlight":{},"mermaid-gb3":{},"favicon":"https://charleechan.github.io/MyWiki/img/Avatar.ico","back-to-top-button":{},"pageview-count":{},"custom-favicon":{},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"forkmegithub":{"color":"gray","url":"https://github.com/your/repo"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{},"insert-logo":{"style":"background: none; max-height: 30px; min-height: 30px","url":"https://charleechan.github.io/MyWiki/img/Avatar-100.png"}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Coding/LangsMark/QML/QtQuickTutorial_4_QML_DesignRules.md","mtime":"2021-04-06T09:40:27.375Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-04-06T09:40:52.346Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Qt Quick开发教程4:设计规则与流程","level":"2.4.3.4","depth":3,"next":{"title":"Qt Quick开发教程5:动画","level":"2.4.3.5","depth":3,"path":"Coding/LangsMark/QML/QtQuickTutorial_5_QML_Animation.md","ref":"Coding/LangsMark/QML/QtQuickTutorial_5_QML_Animation.md","articles":[]},"previous":{"title":"Qt Quick开发教程3:导出C++到QML","level":"2.4.3.3","depth":3,"path":"Coding/LangsMark/QML/QtQuickTutorial_3_QML_CPP.md","ref":"Coding/LangsMark/QML/QtQuickTutorial_3_QML_CPP.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["back-to-top-button","splitter","code","-lunr","-search","-sharing","toggle-chapters","sharing-plus","search-pro","insert-logo","custom-favicon","pageview-count","tbfed-pagefooter","mind-maps","hide-element","mathjax-single-dollar","forkmegithub","mermaid-gb3","auto-scroll-table"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy charleechan 2021","modify_label":"Updated At: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"splitter":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"auto-scroll-table":{},"mathjax-single-dollar":{"forceSVG":false,"version":"2.6-latest"},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"mind-maps":{},"highlight":{},"mermaid-gb3":{},"favicon":"https://charleechan.github.io/MyWiki/img/Avatar.ico","back-to-top-button":{},"pageview-count":{},"custom-favicon":{},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"forkmegithub":{"color":"gray","url":"https://github.com/your/repo"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{},"insert-logo":{"style":"background: none; max-height: 100px; min-height: 100px","url":"https://charleechan.github.io/MyWiki/img/Avatar-100.png"}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Coding/LangsMark/QML/QtQuickTutorial_4_QML_DesignRules.md","mtime":"2021-04-06T14:18:02.469Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-04-15T09:36:16.690Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>

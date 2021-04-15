@@ -13,6 +13,10 @@
 ](QtQuickTutorial_4_QML_DesignRules.html)
 * [Qt Quick开发教程5:动画
 ](QtQuickTutorial_5_QML_Animation.html)
+* [建立自己的QML Style Sheet文件
+](QtQuickTutorial_6_QML_StyleSheet.html)
+* [Qt 5.15在的部署过程
+](QtQuickTutorial_7_DevEnvDeploy.html)
 * assets 资源<mark>(右键打开或下载)</mark>
   * [DesignRules_print.pdf](assets/DesignRules_print.pdf)
   * [QML_tutorials.zip](assets/QML_tutorials.zip)
@@ -29,6 +33,10 @@
 ](QtQuickTutorial_4_QML_DesignRules.html)
 * [Qt Quick开发教程5:动画
 ](QtQuickTutorial_5_QML_Animation.html)
+* [建立自己的QML Style Sheet文件
+](QtQuickTutorial_6_QML_StyleSheet.html)
+* [Qt 5.15在的部署过程
+](QtQuickTutorial_7_DevEnvDeploy.html)
 * assets 资源
   * [DesignRules_print.pdf](assets/DesignRules_print.pdf)
   * [QML_tutorials.zip](assets/QML_tutorials.zip)
