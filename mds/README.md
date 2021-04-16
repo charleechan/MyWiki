@@ -14,48 +14,50 @@ flowchart TB
 subgraph 物理电子
 A1(电磁场与电磁波)-->A2(电子器件)-->A3(电路中的信号)
 end
-click A1 "./Hardware/Devices/index.html"
-click A2 "./Hardware/Devices/index.html"
-click A3 "./Hardware/SigCirSys/index.html"
+click A1 "./Hardware/1_Devices/index.html"
+click A2 "./Hardware/1_Devices/index.html"
+click A3 "./Hardware/2_SigCirSys/index.html"
 
 subgraph 板级电路
 B1(模拟电路基础)-->B2(数字电路基础)-->B3(PCB设计与应用) 
 B1-->B3
 end
-click B1 "./Hardware/AnalogCirciut/index.html"
-click B2 "./Hardware/DigitalCircuit/index.html"
-click B3 "./Hardware/PCB/index.html"
+click B1 "./Hardware/3_AnalogCirciut/index.html"
+click B2 "./Hardware/4_DigitalCircuit/index.html"
+click B3 "./Hardware/5_PCB/index.html"
 
 subgraph 芯片设计
 C1(模拟IC设计)-->C2(数字IC RTL设计)-->C3(CPU设计)-->C4(SoC设计)
 C1-->C4
 end
-click C1 "./Hardware/AnalogIC/index.html"
-click C2 "./Hardware/DigitalIC/index.html"
-click C3 "./Hardware/CPU/index.html"
-click C4 "./Hardware/SoC/index.html"
+click C1 "./Hardware/6_AnalogIC/index.html"
+click C2 "./Hardware/7_DigitalIC/index.html"
+click C3 "./Hardware/8_CPU/index.html"
+click C4 "./Hardware/9_SoC/index.html"
 
 subgraph 计算机组成与设计/软硬件接口
 D1(C程序与驱动开发)--> D2(CPP程序与Qt开发)
 end
-click D1 "./Software/CSTM32/index.html"
-click D2 "./Software/CppQt/index.html"
-
-subgraph HTML应用与开发
-E1(Markdown)-->E2(HTML/CSS/Javascript网站应用)-->E3(HTML5移动/桌面APP)
-E4(QML)
-end
-click E1 "./Software/MD/index.html"
-click E2 "./Software/HCJ/index.html"
-click E3 "./Software/H5App/index.html"
-click E4 "./Software/QML/index.html"
+click D1 "./Software/1_CSTM32/index.html"
+click D2 "./Software/2_CppQt/index.html"
 
 subgraph 算法
-F1(数据结构与数据库)-->F2(信号/图像处理)-->F3(Python与AI)
+E1(数据结构与数据库)-->E2(信号/图像处理)-->E3(Python与AI)
 end
-click F1 "./Software/Datas/index.html"
-click F2 "./Software/DSPISP/index.html"
-click F3 "./Software/PythonAI/index.html"
+click E1 "./Software/3_Datas/index.html"
+click E2 "./Software/4_DSPISP/index.html"
+click E3 "./Software/5_PythonAI/index.html"
+
+subgraph HTML应用与开发
+F1(Markdown)-->F2(HTML/CSS/Javascript网站应用)-->F3(HTML5移动/桌面APP)
+F4(QML)
+end
+click F1 "./Software/6_MD/index.html"
+click F2 "./Software/7_HCJ/index.html"
+click F3 "./Software/8_H5App/index.html"
+click F4 "./Software/9_QML/index.html"
+
+
 
 ```
 
