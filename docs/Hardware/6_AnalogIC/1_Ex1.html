@@ -1,0 +1,2200 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>实例1入门实验反相器的设计与仿真 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-mind-maps/mindmaps.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-forkmegithub/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-auto-scroll-table/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="2_Ex2.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">知识体系</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">微电子专业</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../1_Devices/">
+            
+                <a href="../1_Devices/">
+            
+                    
+                    电磁与电子器件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../1_Devices/1_StaticEM.html">
+            
+                <a href="../1_Devices/1_StaticEM.html">
+            
+                    
+                    静电场与静磁场
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../1_Devices/2_Cap.html">
+            
+                <a href="../1_Devices/2_Cap.html">
+            
+                    
+                    电容与电极化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../1_Devices/3_Res.html">
+            
+                <a href="../1_Devices/3_Res.html">
+            
+                    
+                    电阻的原理与设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../1_Devices/4_Ind.html">
+            
+                <a href="../1_Devices/4_Ind.html">
+            
+                    
+                    电感与磁极化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../1_Devices/5_Maxwell.html">
+            
+                <a href="../1_Devices/5_Maxwell.html">
+            
+                    
+                    经典电磁学理论基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../1_Devices/6_AntWave.html">
+            
+                <a href="../1_Devices/6_AntWave.html">
+            
+                    
+                    电磁波与天线
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../1_Devices/7_EMcircuit.html">
+            
+                <a href="../1_Devices/7_EMcircuit.html">
+            
+                    
+                    电磁学与电路的关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../1_Devices/8_BJT.html">
+            
+                <a href="../1_Devices/8_BJT.html">
+            
+                    
+                    半导体器件1-双极型晶体管(BJT)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../1_Devices/9_MOS.html">
+            
+                <a href="../1_Devices/9_MOS.html">
+            
+                    
+                    半导体器件2-MOS管
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../2_SigCirSys/">
+            
+                <a href="../2_SigCirSys/">
+            
+                    
+                    电路中的信号
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../2_SigCirSys/SigProc/conv1.html">
+            
+                <a href="../2_SigCirSys/SigProc/conv1.html">
+            
+                    
+                    理解卷积
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../2_SigCirSys/SigProc/FourierTransform.html">
+            
+                <a href="../2_SigCirSys/SigProc/FourierTransform.html">
+            
+                    
+                    傅里叶级数与傅里叶变换(Fourier Transform)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../2_SigCirSys/SigProc/wavelet1.html">
+            
+                <a href="../2_SigCirSys/SigProc/wavelet1.html">
+            
+                    
+                    小波变换(一): 为什么需要小波?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../2_SigCirSys/SigProc/wavelet2.html">
+            
+                <a href="../2_SigCirSys/SigProc/wavelet2.html">
+            
+                    
+                    小波变换(二): 小波基函数,母小波和父小波
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../2_SigCirSys/SigProc/wavelet3.html">
+            
+                <a href="../2_SigCirSys/SigProc/wavelet3.html">
+            
+                    
+                    小波变换(三): 从实例代码看Haar小波分解和重构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../2_SigCirSys/SigProc/wavelet4.html">
+            
+                <a href="../2_SigCirSys/SigProc/wavelet4.html">
+            
+                    
+                    小波变换(四): 常用小波特点及二维小波变换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="../2_SigCirSys/SigProc/wavelet5.html">
+            
+                <a href="../2_SigCirSys/SigProc/wavelet5.html">
+            
+                    
+                    小波变换(五): 小波变换与卷积
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.8" data-path="../2_SigCirSys/SigProc/wavelet6.html">
+            
+                <a href="../2_SigCirSys/SigProc/wavelet6.html">
+            
+                    
+                    小波变换彩蛋: Python中的小波变换库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../3_AnalogCirciut/">
+            
+                <a href="../3_AnalogCirciut/">
+            
+                    
+                    模拟电路基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../4_DigitalCircuit/">
+            
+                <a href="../4_DigitalCircuit/">
+            
+                    
+                    数字电路基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../5_PCB/">
+            
+                <a href="../5_PCB/">
+            
+                    
+                    PCB设计与应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    模拟IC设计
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="2.6.1" data-path="1_Ex1.html">
+            
+                <a href="1_Ex1.html">
+            
+                    
+                    实例1入门实验反相器的设计与仿真
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.2" data-path="2_Ex2.html">
+            
+                <a href="2_Ex2.html">
+            
+                    
+                    实例2_放大器的仿真
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../7_DigitalIC/">
+            
+                <a href="../7_DigitalIC/">
+            
+                    
+                    数字IC RTL设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../8_CPU/">
+            
+                <a href="../8_CPU/">
+            
+                    
+                    CPU设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../9_SoC/">
+            
+                <a href="../9_SoC/">
+            
+                    
+                    SoC设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../A_EDA/">
+            
+                <a href="../A_EDA/">
+            
+                    
+                    EDA安装
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.10.1" data-path="../A_EDA/1_Introduction.html">
+            
+                <a href="../A_EDA/1_Introduction.html">
+            
+                    
+                    本教程包含了以下EDA工具的安装说明。
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.2" data-path="../A_EDA/2_InstallCentOS.html">
+            
+                <a href="../A_EDA/2_InstallCentOS.html">
+            
+                    
+                    win10安装centos7双系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.3" data-path="../A_EDA/3_CentOSBiasicUsage.html">
+            
+                <a href="../A_EDA/3_CentOSBiasicUsage.html">
+            
+                    
+                    CentOS 使用基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.4" data-path="../A_EDA/4_InstallCDStools.html">
+            
+                <a href="../A_EDA/4_InstallCDStools.html">
+            
+                    
+                    Cadence工具安装I-模拟部分
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.5" data-path="../A_EDA/5_InstallCDStools2.html">
+            
+                <a href="../A_EDA/5_InstallCDStools2.html">
+            
+                    
+                    Cadence工具安装II-数字部分
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.6" data-path="../A_EDA/6_InstallSYNtools.html">
+            
+                <a href="../A_EDA/6_InstallSYNtools.html">
+            
+                    
+                    Synopsys工具安装II-数字前端
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.7" data-path="../A_EDA/7_InstallSYNtools2.html">
+            
+                <a href="../A_EDA/7_InstallSYNtools2.html">
+            
+                    
+                    Synopsys工具安装II-数字后端
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="../B_HDL/">
+            
+                <a href="../B_HDL/">
+            
+                    
+                    Verilog/SV
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">软件教程</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../Software/1_CSTM32/">
+            
+                <a href="../../Software/1_CSTM32/">
+            
+                    
+                    C程序与驱动开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../Software/2_CppQt/">
+            
+                <a href="../../Software/2_CppQt/">
+            
+                    
+                    CPP程序与Qt开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../../Software/3_Datas/">
+            
+                <a href="../../Software/3_Datas/">
+            
+                    
+                    数据结构与数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../../Software/4_DSPISP/">
+            
+                <a href="../../Software/4_DSPISP/">
+            
+                    
+                    信号/图像处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../../Software/5_PythonAI/">
+            
+                <a href="../../Software/5_PythonAI/">
+            
+                    
+                    Python与AI
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.5.1" data-path="../../Software/5_PythonAI/DevEnvDeploy.html">
+            
+                <a href="../../Software/5_PythonAI/DevEnvDeploy.html">
+            
+                    
+                    Python开发环境的配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.2" data-path="../../Software/5_PythonAI/MakeAGif.html">
+            
+                <a href="../../Software/5_PythonAI/MakeAGif.html">
+            
+                    
+                    使用Matplotlib绘制动图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.3" data-path="../../Software/5_PythonAI/MultiPlotInAAxes.html">
+            
+                <a href="../../Software/5_PythonAI/MultiPlotInAAxes.html">
+            
+                    
+                    pyplot在一个坐标系里画多个子图
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.5.3.1" data-path="../../Software/5_PythonAI/Pytorch/autograd_gradientInPytorch.html">
+            
+                <a href="../../Software/5_PythonAI/Pytorch/autograd_gradientInPytorch.html">
+            
+                    
+                    使用autograd.grad()计算导数与偏导
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.3.2" data-path="../../Software/5_PythonAI/Pytorch/DevEnvDeploy.html">
+            
+                <a href="../../Software/5_PythonAI/Pytorch/DevEnvDeploy.html">
+            
+                    
+                    Pytorch开发环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../../Software/6_MD/">
+            
+                <a href="../../Software/6_MD/">
+            
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.6.1" data-path="../../Software/6_MD/EquationInMD.html">
+            
+                <a href="../../Software/6_MD/EquationInMD.html">
+            
+                    
+                    Markdown公式代码大全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.2" data-path="../../Software/6_MD/PlotMindMap.html">
+            
+                <a href="../../Software/6_MD/PlotMindMap.html">
+            
+                    
+                    Markdown支持绘制脑图啦
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.3" data-path="../../Software/6_MD/PlotTimingDiagram.html">
+            
+                <a href="../../Software/6_MD/PlotTimingDiagram.html">
+            
+                    
+                    使用WaveDrom画时序图或电路图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.4" data-path="../../Software/6_MD/PlotVariousChart.html">
+            
+                <a href="../../Software/6_MD/PlotVariousChart.html">
+            
+                    
+                    使用mermaid绘制流程图/脑图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.5" data-path="../../Software/6_MD/UseFontAwesomeInMD.html">
+            
+                <a href="../../Software/6_MD/UseFontAwesomeInMD.html">
+            
+                    
+                    在Markdown中使用FontAwesome
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.6" data-path="../../Software/6_MD/UseJavascriptInMD.html">
+            
+                <a href="../../Software/6_MD/UseJavascriptInMD.html">
+            
+                    
+                    在Markdown中使用Javascript
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../../Software/7_HCJ/">
+            
+                <a href="../../Software/7_HCJ/">
+            
+                    
+                    HTML/CSS/Javascript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.7.1" data-path="../../Software/7_HCJ/1_HTMLBasics.html">
+            
+                <a href="../../Software/7_HCJ/1_HTMLBasics.html">
+            
+                    
+                    HTML的基础知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7.2" data-path="../../Software/7_HCJ/DecorateYourCnblogs.html">
+            
+                <a href="../../Software/7_HCJ/DecorateYourCnblogs.html">
+            
+                    
+                    把博客园装饰得美丽大方
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7.3" data-path="../../Software/7_HCJ/HBuilderXTutorial_1_Introduction.html">
+            
+                <a href="../../Software/7_HCJ/HBuilderXTutorial_1_Introduction.html">
+            
+                    
+                    HBuilderX 1-引言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="../../Software/8_H5App/">
+            
+                <a href="../../Software/8_H5App/">
+            
+                    
+                    HTML5移动/桌面APP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="../../Software/9_QML/">
+            
+                <a href="../../Software/9_QML/">
+            
+                    
+                    QML(不建议学习)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.9.1" data-path="../../Software/9_QML/QtQuickTutorial_1_DevEnvDeploy.html">
+            
+                <a href="../../Software/9_QML/QtQuickTutorial_1_DevEnvDeploy.html">
+            
+                    
+                    Qt Quick开发教程1:安卓开发环境的配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9.2" data-path="../../Software/9_QML/QtQuickTutorial_2_QML_Basics.html">
+            
+                <a href="../../Software/9_QML/QtQuickTutorial_2_QML_Basics.html">
+            
+                    
+                    Qt Quick开发教程2:QML语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9.3" data-path="../../Software/9_QML/QtQuickTutorial_3_QML_CPP.html">
+            
+                <a href="../../Software/9_QML/QtQuickTutorial_3_QML_CPP.html">
+            
+                    
+                    Qt Quick开发教程3:导出C++到QML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9.4" data-path="../../Software/9_QML/QtQuickTutorial_4_QML_DesignRules.html">
+            
+                <a href="../../Software/9_QML/QtQuickTutorial_4_QML_DesignRules.html">
+            
+                    
+                    Qt Quick开发教程4:设计规则与流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9.5" data-path="../../Software/9_QML/QtQuickTutorial_5_QML_Animation.html">
+            
+                <a href="../../Software/9_QML/QtQuickTutorial_5_QML_Animation.html">
+            
+                    
+                    Qt Quick开发教程5:动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9.6" data-path="../../Software/9_QML/QtQuickTutorial_6_QML_StyleSheet.html">
+            
+                <a href="../../Software/9_QML/QtQuickTutorial_6_QML_StyleSheet.html">
+            
+                    
+                    建立自己的QML Style Sheet文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9.7" data-path="../../Software/9_QML/QtQuickTutorial_7_DevEnvDeploy.html">
+            
+                <a href="../../Software/9_QML/QtQuickTutorial_7_DevEnvDeploy.html">
+            
+                    
+                    Qt 5.15在的部署过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">日积月累</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../../Tricks/Game/">
+            
+                <a href="../../Tricks/Game/">
+            
+                    
+                    游戏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../../Tricks/Image/">
+            
+                <a href="../../Tricks/Image/">
+            
+                    
+                    图像图表软件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="../../Tricks/Image/GIMP/">
+            
+                <a href="../../Tricks/Image/GIMP/">
+            
+                    
+                    GIMP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1.1" data-path="../../Tricks/Image/GIMP/GIMPDefaultKeys.html">
+            
+                <a href="../../Tricks/Image/GIMP/GIMPDefaultKeys.html">
+            
+                    
+                    GIMP快速指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.2" data-path="../../Tricks/Image/Origin/">
+            
+                <a href="../../Tricks/Image/Origin/">
+            
+                    
+                    Origin
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.2.1" data-path="../../Tricks/Image/Origin/PlotGif.html">
+            
+                <a href="../../Tricks/Image/Origin/PlotGif.html">
+            
+                    
+                    使用Graph Anim插件绘制动图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.3" data-path="../../Tricks/Image/Visio/">
+            
+                <a href="../../Tricks/Image/Visio/">
+            
+                    
+                    Visio
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../../Tricks/Manage/">
+            
+                <a href="../../Tricks/Manage/">
+            
+                    
+                    管理类软件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.3.1" data-path="../../Tricks/Manage/Git/">
+            
+                <a href="../../Tricks/Manage/Git/">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.3.1.1" data-path="../../Tricks/Manage/Git/GitbookUsage.html">
+            
+                <a href="../../Tricks/Manage/Git/GitbookUsage.html">
+            
+                    
+                    结合Github Pages使用GitBook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.1.2" data-path="../../Tricks/Manage/Git/GithubUsage.html">
+            
+                <a href="../../Tricks/Manage/Git/GithubUsage.html">
+            
+                    
+                    使用Github的基本流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.1.3" data-path="../../Tricks/Manage/Git/UpdateThisSite.html">
+            
+                <a href="../../Tricks/Manage/Git/UpdateThisSite.html">
+            
+                    
+                    本Wiki维护教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.2" data-path="../../Tricks/Manage/Inlook/">
+            
+                <a href="../../Tricks/Manage/Inlook/">
+            
+                    
+                    Inlook
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.3.2.1" data-path="../../Tricks/Manage/Inlook/InlookIsReleased.html">
+            
+                <a href="../../Tricks/Manage/Inlook/InlookIsReleased.html">
+            
+                    
+                    Inlook - 你的个人工作助手
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.2.2" data-path="../../Tricks/Manage/Inlook/InlookUsage.html">
+            
+                <a href="../../Tricks/Manage/Inlook/InlookUsage.html">
+            
+                    
+                    Inlook用户指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../../Tricks/Music/">
+            
+                <a href="../../Tricks/Music/">
+            
+                    
+                    音频软件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../../Tricks/Office/">
+            
+                <a href="../../Tricks/Office/">
+            
+                    
+                    办公软件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.5.1" data-path="../../Tricks/Office/Excel/">
+            
+                <a href="../../Tricks/Office/Excel/">
+            
+                    
+                    Excel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.2" data-path="../../Tricks/Office/PPT/">
+            
+                <a href="../../Tricks/Office/PPT/">
+            
+                    
+                    PPT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.3" data-path="../../Tricks/Office/Word/">
+            
+                <a href="../../Tricks/Office/Word/">
+            
+                    
+                    Word
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.5.3.1" data-path="../../Tricks/Office/Word/CNPaperRefSetting.html">
+            
+                <a href="../../Tricks/Office/Word/CNPaperRefSetting.html">
+            
+                    
+                    中文学位论文参考文献格式配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.3.2" data-path="../../Tricks/Office/Word/EquationInWord.html">
+            
+                <a href="../../Tricks/Office/Word/EquationInWord.html">
+            
+                    
+                    Word中公式中自动编号的最终解决办法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.3.3" data-path="../../Tricks/Office/Word/EquationInWord2.html">
+            
+                <a href="../../Tricks/Office/Word/EquationInWord2.html">
+            
+                    
+                    跨行对齐公式与公式代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.3.4" data-path="../../Tricks/Office/Word/MakeOfficeISO.html">
+            
+                <a href="../../Tricks/Office/Word/MakeOfficeISO.html">
+            
+                    
+                    Office 2019的ISO制作,安装,与激活
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.3.5" data-path="../../Tricks/Office/Word/UseFontAwesomeInWord.html">
+            
+                <a href="../../Tricks/Office/Word/UseFontAwesomeInWord.html">
+            
+                    
+                    在Word中使用FontAwesome图标
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../../Tricks/Plugins/">
+            
+                <a href="../../Tricks/Plugins/">
+            
+                    
+                    插件类
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.6.1" data-path="../../Tricks/Plugins/ChromeExt/">
+            
+                <a href="../../Tricks/Plugins/ChromeExt/">
+            
+                    
+                    Chrome插件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.6.1.1" data-path="../../Tricks/Plugins/ChromeExt/FloccusSyncYourBookmarks.html">
+            
+                <a href="../../Tricks/Plugins/ChromeExt/FloccusSyncYourBookmarks.html">
+            
+                    
+                    Floccus配合坚果云同步书签教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6.2" data-path="../../Tricks/Plugins/GIMPPlu/">
+            
+                <a href="../../Tricks/Plugins/GIMPPlu/">
+            
+                    
+                    GIMP插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6.3" data-path="../../Tricks/Plugins/GitbookPlu/">
+            
+                <a href="../../Tricks/Plugins/GitbookPlu/">
+            
+                    
+                    Gitbook插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6.4" data-path="../../Tricks/Plugins/OfficePlu/">
+            
+                <a href="../../Tricks/Plugins/OfficePlu/">
+            
+                    
+                    Office插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6.5" data-path="../../Tricks/Plugins/VSCodeExt/">
+            
+                <a href="../../Tricks/Plugins/VSCodeExt/">
+            
+                    
+                    VSCode插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="../../Tricks/Project/">
+            
+                <a href="../../Tricks/Project/">
+            
+                    
+                    工程/项目软件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.7.1" data-path="../../Tricks/Project/AltiumDesigner/">
+            
+                <a href="../../Tricks/Project/AltiumDesigner/">
+            
+                    
+                    Altium Designer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.2" data-path="../../Tricks/Project/CadenceSPB/">
+            
+                <a href="../../Tricks/Project/CadenceSPB/">
+            
+                    
+                    Cadence SPB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.3" data-path="../../Tricks/Project/KeilMDK/">
+            
+                <a href="../../Tricks/Project/KeilMDK/">
+            
+                    
+                    Keil MDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.4" data-path="../../Tricks/Project/ModelSim/">
+            
+                <a href="../../Tricks/Project/ModelSim/">
+            
+                    
+                    ModelSim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.5" data-path="../../Tricks/Project/MultiSim/">
+            
+                <a href="../../Tricks/Project/MultiSim/">
+            
+                    
+                    MultiSim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.6" data-path="../../Tricks/Project/Others/">
+            
+                <a href="../../Tricks/Project/Others/">
+            
+                    
+                    其他
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.7.6.1" data-path="../../Tricks/Project/Others/InsertASCIIChartInCode.html">
+            
+                <a href="../../Tricks/Project/Others/InsertASCIIChartInCode.html">
+            
+                    
+                    根据文字生成字符画
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.7" data-path="../../Tricks/Project/Qt/">
+            
+                <a href="../../Tricks/Project/Qt/">
+            
+                    
+                    Qt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.8" data-path="../../Tricks/Project/SolidWorks/">
+            
+                <a href="../../Tricks/Project/SolidWorks/">
+            
+                    
+                    SolidWorks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.9" data-path="../../Tricks/Project/VisualStudio/">
+            
+                <a href="../../Tricks/Project/VisualStudio/">
+            
+                    
+                    Visual Studio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.10" data-path="../../Tricks/Project/Vivado/">
+            
+                <a href="../../Tricks/Project/Vivado/">
+            
+                    
+                    Vivado
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.11" data-path="../../Tricks/Project/VSCode/">
+            
+                <a href="../../Tricks/Project/VSCode/">
+            
+                    
+                    VS Code
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="../../Tricks/Video/">
+            
+                <a href="../../Tricks/Video/">
+            
+                    
+                    视频软件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.8.1" data-path="../../Tricks/Video/VideoStudio/">
+            
+                <a href="../../Tricks/Video/VideoStudio/">
+            
+                    
+                    会声会影
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >实例1入门实验反相器的设计与仿真</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5B9E;&#x4F8B;1&#x5165;&#x95E8;&#x5B9E;&#x9A8C;&#x53CD;&#x76F8;&#x5668;&#x7684;&#x8BBE;&#x8BA1;&#x4E0E;&#x4EFF;&#x771F;">&#x5B9E;&#x4F8B;1<em>&#x5165;&#x95E8;&#x5B9E;&#x9A8C;</em>&#x53CD;&#x76F8;&#x5668;&#x7684;&#x8BBE;&#x8BA1;&#x4E0E;&#x4EFF;&#x771F;</h1>
+<p>&#x5728;&#x5B66;&#x4E60;&#x672C;&#x8282;&#x4E4B;&#x524D;,&#x5EFA;&#x8BAE;&#x5148;&#x5B66;&#x4E60;&#x7535;&#x963B;&#x3001;&#x7535;&#x5BB9;&#x7B49;&#x65E0;&#x6E90;&#x5668;&#x4EF6;&#x548C;&#x534A;&#x5BFC;&#x4F53;&#x5668;&#x4EF6;&#x7684;&#x76F8;&#x5173;&#x77E5;&#x8BC6;.</p>
+<div align="center"><img src="res/analogdesignflow.jpg"></div>
+
+<h2 id="&#x51C6;&#x5907;&#x5DE5;&#x4F5C;">&#x51C6;&#x5907;&#x5DE5;&#x4F5C;</h2>
+<ol>
+<li><p>&#x51C6;&#x5907;&#x5DE5;&#x827A;&#x5E93;&#x5B89;&#x88C5;&#x5305;
+<strong>&#x5B89;&#x88C5;&#x5DE5;&#x827A;&#x5E93;&#x662F;&#x9762;&#x5411;&#x5DE5;&#x7A0B;&#x7684;,&#x4F60;&#x6BCF;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x5DE5;&#x7A0B;&#x76EE;&#x5F55;,&#x5C31;&#x9700;&#x8981;&#x91CD;&#x65B0;&#x5B89;&#x88C5;&#x5DE5;&#x827A;&#x5E93;.</strong>
+ &#x590D;&#x5236;<code>SMIC 0.18um</code>&#x5DE5;&#x827A;&#x5E93;&#x5230;Linux&#x673A;&#x5668;.</p>
+<pre><code class="lang-bash"> <span class="hljs-comment"># &#x5728;/opt/eda/ &#x4E0B;&#x65B0;&#x5EFA;&#x76EE;&#x5F55;`smic18_pack`</span>
+ <span class="hljs-built_in">cd</span> [&#x5B89;&#x88C5;&#x5305;&#x76EE;&#x5F55;]
+ mkdir /opt/eda/smic18_pack/
+ cp ./SMIC0.18&#x5E93;/* /opt/eda/smic18_pack/
+ <span class="hljs-comment"># &#x5176;&#x4E2D;smic18d&#x662F;&#x6570;&#x5B57;&#x5DE5;&#x827A;&#x5E93;,smic18mmrf&#x662F;&#x6A21;&#x62DF;&#x548C;&#x5C04;&#x9891;&#x5DE5;&#x827A;&#x5E93;</span>
+ tar xvf smic18d.tar
+ rm -rf smic18d.tar
+ tar xvf smic18mmrf.tar
+ rm -rf smic18mmrf.tar
+</code></pre>
+</li>
+<li><p>&#x542F;&#x52A8;&#x8F6F;&#x4EF6;: <strong>&#x9996;&#x5148;&#x5728;&#x7EC8;&#x7AEF;&#x4E2D;&#x521B;&#x5EFA;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;</strong>,<code>mkdir -p ~/WorkSpace/smic18mmrf</code>,&#x7136;&#x540E;&#x8FDB;&#x5165;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;<code>cd ~/WorkSpace</code>, &#x8F93;&#x5165; <code>virtuoso&amp;</code>&#x6253;&#x5F00;Cadence ADE, &#x5176;&#x4E2D;<code>&amp;</code>&#x8868;&#x793A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x8FDB;&#x7A0B;&#x7528;&#x4E8E;&#x6267;&#x884C;<code>virtuoso</code>&#x800C;&#x4E0E;&#x5F53;&#x524D;&#x7EC8;&#x7AEF;&#x7684;&#x8FDB;&#x7A0B;&#x65E0;&#x7236;&#x5B50;&#x5173;&#x7CFB;. &#x5426;&#x5219;&#x5173;&#x95ED;&#x7EC8;&#x7AEF;&#x7A97;&#x53E3;&#x65F6;, virtuoso&#x4E5F;&#x4F1A;&#x5173;&#x95ED;. &#x4F1A;&#x6253;&#x5F00; <code>Log: /home/[username]/CDS.log</code>&#x7684;&#x547D;&#x4EE4;&#x7A97;&#x53E3;,&#x53EB;&#x505A;CIW(Command interpreter window).</p>
+</li>
+<li><p>&#x5B89;&#x88C5;&#x5DE5;&#x827A;&#x5E93;: &#x5728;CIW&#x7A97;&#x53E3;&#x8F93;&#x5165;<code>pwd</code>&#x67E5;&#x770B;&#x5F53;&#x524D;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;,&#x70B9;&#x51FB;<code>Tools</code>&gt;<code>Conversion Toolbox</code>&gt;&#x70B9;<code>CDB to OpenAccess Translator</code>&gt; &#x8BBE;&#x7F6E;&#x5305;&#x62EC;<code>cds.lib</code>&#x6587;&#x4EF6;&#x7684;&#x76EE;&#x5F55;<code>/opt/eda/smic18/smic18mmrf</code>,&#x7136;&#x540E;&#x70B9;<code>Apply</code>,&#x7B49;&#x5F85;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;,&#x4F1A;&#x81EA;&#x52A8;&#x5F39;&#x51FA;<code>Library Manager</code>&#x6846;,&#x91CC;&#x9762;&#x5DF2;&#x7ECF;&#x6709;&#x4E86;<code>smic18mmrf</code>&#x5E93;,&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x91CC;&#x9762;&#x7684;<code>Cell</code>&#x7535;&#x8DEF;&#x5355;&#x5143;&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5F39;&#x51FA;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;CIW&#x7A97;&#x53E3;&#x70B9;<code>Tools</code>&gt;<code>Library Manager</code>&#x67E5;&#x770B;. &#x5982;&#x679C;&#x5931;&#x8D25;,&#x5728;CIW&#x7684;Log&#x7A97;&#x53E3;&#x67E5;&#x770B;&#x65E5;&#x5FD7;. &#x7136;&#x540E;&#x628A;<code>/opt/eda/smic18_pack/</code>&#x4E2D;&#x7684;<code>models</code>&#x6587;&#x4EF6;&#x5939;&#x62F7;&#x8D1D;&#x5230;<code>WorkSpace</code>&#x76EE;&#x5F55;,&#x6B64;&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#x5305;&#x62EC;&#x4E86;&#x5DE5;&#x827A;&#x5E93;&#x6A21;&#x578B;&#x4FE1;&#x606F;,&#x5728;&#x540E;&#x9762;&#x4EFF;&#x771F;&#x8981;&#x7528;&#x5230;.</p>
+<blockquote>
+<p>&#x6CE8;&#x610F;, &#x8FD9;&#x91CC;&#x7684;<code>Cell</code>&#x662F;&#x6307;&#x7535;&#x8DEF;,&#x7535;&#x8DEF;&#x53EF;&#x4EE5;&#x7528;&#x5F88;&#x591A;&#x79CD;&#x5F62;&#x5F0F;&#x63CF;&#x8FF0;,&#x4F8B;&#x5982;&#x539F;&#x7406;&#x56FE;(Schematic),&#x7248;&#x56FE;(Layout),Spice&#x4EE3;&#x7801;(Spice)&#x7B49;,&#x6BCF;&#x4E00;&#x79CD;&#x5F62;&#x5F0F;&#x6709;&#x7740;&#x81EA;&#x5DF1;&#x7684;&#x4E00;&#x4E2A;&#x89C6;&#x56FE;(view) ,&#x56E0;&#x6B64;&#x5BF9;&#x4E8E;&#x4E00;&#x4E2A;<code>Cell</code>,&#x53EF;&#x4EE5;&#x6709;&#x5F88;&#x591A;<code>View</code>.</p>
+<p>&#x6CE8;&#x610F;: CDB to OpenAccess&#x5C06;&#x5DE5;&#x827A;&#x5E93;&#x8F6C;&#x6362;&#x6210;<code>smic18mmrf</code>&#x6587;&#x4EF6;&#x5939;,&#x4F1A;&#x653E;&#x5728;<strong>&#x5F53;&#x524D;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;</strong>&#x4E0B;.</p>
+</blockquote>
+</li>
+<li>&#x5728;<code>Library Manager</code>&gt;<code>Edit</code>&gt;<code>Library Path</code>,&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5F53;&#x524D;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#x4E0B;&#x7684;<code>cds.lib</code>&#x6587;&#x4EF6;&#x7684;&#x5185;&#x5BB9;:<pre><code> cdsDefTechLib $CDSHOME/tools/dfII/etc/cdsDefTechLib
+ smic18mmrf      ./smic18mmrf
+</code></pre> &#x518D;&#x6DFB;&#x52A0;&#x4EE5;&#x4E0B;&#x4E24;&#x884C;:<pre><code> basic         $CDSHOME/tools/dfII/etc/cdslib/basic
+ analogLib     $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+</code></pre> &#x7136;&#x540E;<code>File</code>&gt;<code>Exit</code>&#x9000;&#x51FA;<code>Library Path</code>&#x7A97;&#x53E3;.</li>
+</ol>
+<h2 id="&#x5B9E;&#x4F8B;-&#x53CD;&#x76F8;&#x5668;">&#x5B9E;&#x4F8B;-&#x53CD;&#x76F8;&#x5668;</h2>
+<ol>
+<li><p>&#x65B0;&#x5EFA;&#x5E93;&#xFF1A; &#x9996;&#x5148;&#x4F7F;&#x7528;&#x7EC8;&#x7AEF;&#x6253;&#x5F00;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;<code>~/WorkSpace</code>, &#x8F93;&#x5165;<code>virtuoso&amp;</code>&#x6253;&#x5F00;Cadence ADE, CIW&#x4E2D;<code>File</code> &gt; <code>New</code> &gt;<code>Library</code>. Name&#x586B;&#x5199;<code>ADE_test</code>,&#x76EE;&#x5F55;&#x9009;&#x62E9;&#x81EA;&#x5DF1;&#x7684;&#x5DE5;&#x4F5C;&#x7A7A;&#x95F4;<code>/home/[&#x4F60;&#x7684;&#x7528;&#x6237;&#x540D;]/WorkSpace</code>. &#x53F3;&#x4FA7;<code>Technology File</code>&#x9009;&#x62E9;<code>Attach to an existing technology library</code>, &#x70B9;&#x51FB;<code>Apply</code>&#xFF0C;&#x5728;&#x5F39;&#x51FA;&#x7684;<code>Attach to an existing technology library</code>&#x5BF9;&#x8BDD;&#x6846;&#x4E2D;,&#x9009;&#x62E9;<code>smic18mmrf</code>.&#x7136;&#x540E;&#x56DE;&#x5230;<code>New Library</code>&#x7A97;&#x53E3;&#x70B9;&#x51FB;<code>OK</code>,&#x76F4;&#x63A5;&#x5173;&#x95ED;&#x8BE5;<code>New Library</code>&#x7A97;&#x53E3;,&#x5728;CIW&#x7684;log&#x4E2D;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5DF2;&#x7ECF;&#x751F;&#x6210;.</p>
+<blockquote>
+<p>&#x6BCF;&#x6B21;&#x65B0;&#x5F00;&#x59CB;&#x4E00;&#x4E2A;&#x9879;&#x76EE;,&#x9700;&#x8981;&#x5728;&#x5DE5;&#x827A;&#x5E93;&#x7684;&#x57FA;&#x7840;&#x4E0A;,&#x5EFA;&#x7ACB;&#x81EA;&#x5DF1;&#x7684;&#x7535;&#x8DEF;&#x5143;&#x4EF6;&#x5E93;,&#x4F8B;&#x5982;&#x8FD9;&#x91CC;&#x6211;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;<code>ADE_test</code>&#x5E93;,&#x7528;&#x4E8E;&#x8BBE;&#x8BA1;&#x6A21;&#x62DF;&#x524D;&#x7AEF;&#x82AF;&#x7247;&#x4E2D;&#x7684;&#x7535;&#x8DEF;&#x5355;&#x5143;. </p>
+</blockquote>
+</li>
+<li><p>&#x5F00;&#x59CB;&#x753B;&#x539F;&#x7406;&#x56FE;:CIW&#x7A97;&#x53E3;&#x4E2D; <code>File</code> &gt; <code>New</code> &gt; <code>CellView</code>, &#x9009;&#x62E9;&#x5E93;&#x4E3A;<code>ADE_test</code>&#x8868;&#x793A;&#x5728;&#x5176;&#x4E2D;&#x65B0;&#x5EFA;&#x7535;&#x8DEF;, <code>Cell</code>&#x662F;&#x7535;&#x8DEF;&#x540D;,&#x586B;&#x5199;<code>inv</code>,<code>View</code>&#x662F;&#x89C6;&#x56FE;&#x7684;&#x540D;&#x79F0;,&#x586B;&#x5199;<code>Schematic</code>&#xFF0C;<code>Type</code>&#x662F;&#x89C6;&#x56FE;&#x7C7B;&#x578B;,&#x9009;&#x62E9;<code>Schematic</code>. &#x5DE5;&#x5177;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x7684;<code>Schematic Editor L</code>&#x5373;&#x53EF;. OK. &#x5F39;&#x51FA;&#x7535;&#x8DEF;&#x56FE;&#x5BF9;&#x8BDD;&#x6846;.</p>
+</li>
+<li><p>&#x5728;&#x5DE5;&#x4F5C;&#x533A;&#x53F3;&#x952E;,&#x6216;&#x4F7F;&#x7528;&#x5FEB;&#x6377;&#x952E;<code>I</code>&#xFF0C;&#x63D2;&#x5165;&#x7535;&#x8DEF;&#x5B9E;&#x4F8B;&#x3002;&#x8FD9;&#x91CC;&#x9009;&#x62E9;<code>smic18mmrf</code>&#x4E2D;&#x7684; <code>p18</code> &#x548C; <code>n18</code>&#xFF0C;<code>n18</code>&#x7684;<code>Total Width</code>&#x8BBE;&#x7F6E;&#x4E3A;<code>2u M</code>,<code>p18</code>&#x7684;<code>Total Width</code>&#x8BBE;&#x7F6E;&#x4E3A;<code>4u M</code>,&#x957F;&#x5EA6;&#x4FDD;&#x6301;<code>180n M</code>&#x4E0D;&#x53D8;,&#x653E;&#x7F6E;&#x8FDB;&#x53BB;,&#x6309;<code>Shift</code>+<code>x</code>&#x952E;<code>check and save</code>.</p>
+</li>
+<li><p>&#x7EE7;&#x7EED;&#x4F7F;&#x7528;<code>I</code>,&#x9009;&#x62E9;<code>analogLib</code>&#x5E93;,&#x63D2;&#x5165;<code>vdd</code>&#x548C;<code>gnda</code>,&#x7136;&#x540E;&#x4F7F;&#x7528;&#x5FEB;&#x6377;&#x952E;<code>p</code>&#xFF0C;&#x63D2;&#x5165;&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;&#x5F15;&#x811A;&#x3002;&#x6309;<code>Shift</code>+<code>x</code>&#x952E;<code>check and save</code>.</p>
+<blockquote>
+<p> &#x9009;&#x62E9;&#x5E93;&#x4E00;&#x822C;&#x53EA;&#x9700;&#x9009;&#x62E9;&#x5DE5;&#x827A;&#x5E93;<code>smic18mmrf</code>(&#x5B9E;&#x9645;&#x5E93;,&#x53EF;&#x4EE5;&#x5728;&#x5DE5;&#x827A;&#x5E93;&#x7684;&#x5B89;&#x88C5;&#x5305;&#x76EE;&#x5F55;&#x4E2D;&#x627E;&#x5230;<code>./docs/PDK_ReferenceManual_018MMRF_1833.pdf</code>&#x67E5;&#x770B;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;)&#x6216;<code>analogLib</code>&#x5E93;(&#x5305;&#x62EC;&#x7406;&#x60F3;&#x5143;&#x5668;&#x4EF6;&#x3001;&#x7535;&#x6E90;&#x3001;&#x6FC0;&#x52B1;&#x6E90;&#x3001;&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x7AEF;&#x53E3;&#x3001;&#x63A5;&#x5730;&#x7B26;&#x53F7;&#x7B49;)&#x3002;</p>
+</blockquote>
+</li>
+</ol>
+<p>&#x5F97;&#x5230;&#x4E0B;&#x9762;&#x7535;&#x8DEF;&#x56FE;,&#x6CE8;&#x610F;&#x8981;&#x5C06;pmos&#x548C;nmos&#x7684;&#x57FA;&#x6781;&#x4E5F;&#x8FDE;&#x4E0A;&#x3002;</p>
+<div align="center"><img src="res/invcircuit.png"></div>
+
+<ol>
+<li><p>&#x4EFF;&#x771F;&#x7535;&#x8DEF;&#x56FE;: </p>
+</li>
+<li><p>&#x5728;Schematic Editor&#x754C;&#x9762;&#x9009;&#x62E9;<code>Launch</code>&gt;<code>ADE L</code>,&#x542F;&#x52A8;<code>ADE</code>.</p>
+</li>
+<li><p><code>Setup</code>&gt;<code>Stimuli</code>&#x8BBE;&#x7F6E;&#x6FC0;&#x52B1;.&#x7136;&#x540E;&#x6309;&#x4E0B;&#x56FE;&#x8BBE;&#x7F6E;.</p>
+<div align="center"><img src="res/setstimuli.png"></div>
+<div align="center"><img src="res/dcStimuSetup.png"></div>
+</li>
+<li><p><code>Setup</code>&gt;<code>Model library</code>&#x8BBE;&#x7F6E;&#x5DE5;&#x827A;&#x5E93;&#x6A21;&#x578B;&#x548C;&#x5DE5;&#x827A;&#x89D2;.&#x7136;&#x540E;&#x6309;&#x4E0B;&#x56FE;&#x8BBE;&#x7F6E;.</p>
+</li>
+</ol>
+<div align="center"><img src="res/SetModelandTT.png"></div>
+
+<blockquote>
+<p>&#x5DE5;&#x827A;&#x5E93;&#x6A21;&#x578B;&#x7528;&#x4E8E;&#x63D2;&#x5165;&#x5DE5;&#x827A;&#x4E0A;&#x7684;&#x6A21;&#x578B;&#x4FE1;&#x606F;,&#x56E0;&#x4E3A;&#x5B9E;&#x9645;&#x4F7F;&#x7528;&#x65F6;,&#x82AF;&#x7247;&#x56DB;&#x89D2;&#x548C;&#x4E2D;&#x5FC3;&#x7684;&#x6E29;&#x5EA6;&#x4E0D;&#x540C;,&#x5668;&#x4EF6;&#x7684;&#x6027;&#x80FD;&#x4E5F;&#x4E0D;&#x4E00;&#x6837;. &#x56E0;&#x6B64;&#x8981;&#x8BBE;&#x7F6E; <strong>&#x5DE5;&#x827A;&#x89D2;</strong> , FF&#x8868;&#x793A; Fast NMOS, Fast PMOS,&#x901F;&#x5EA6;&#x8F83;&#x5FEB;, TT&#x8868;&#x793A;Typical NMOS&#x548C;Typical PMOS,&#x901F;&#x5EA6;&#x4E00;&#x822C;.&#x800C;SS&#x8868;&#x793A;Slow NMOS&#x548C;SLOW PMOS,&#x901F;&#x5EA6;&#x8F83;&#x6162;.</p>
+</blockquote>
+<ul>
+<li><p><code>Analyses</code>&gt;<code>Choose</code>&#x8BBE;&#x7F6E;&#x4EFF;&#x771F;&#x7C7B;&#x578B;,&#x9009;&#x62E9;<code>trans</code>&#x8FDB;&#x884C;&#x77AC;&#x6001;&#x4EFF;&#x771F;.&#x6309;&#x4E0B;&#x56FE;&#x8BBE;&#x7F6E;.</p>
+<div align="center"><img src="res/transsimsetup.png"></div>
+</li>
+<li><p>&#x9009;&#x62E9;<code>Output</code>&gt;<code>To be Plotted</code>&gt;<code>Select On Schematic</code>&#x547D;&#x4EE4;,&#x5728;&#x7535;&#x8DEF;&#x56FE;&#x4E2D;&#x5355;&#x51FB;&#x53CD;&#x76F8;&#x5668;&#x7684;&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;&#x7684;&#x8FDE;&#x7EBF;,&#x6DFB;&#x52A0;&#x5230;Output&#x7684;&#x680F;&#x4E2D;.</p>
+</li>
+<li><p><code>Stimulation</code>&gt;<code>Netlist and Run</code>,&#x5F00;&#x59CB;&#x4EFF;&#x771F;.</p>
+</li>
+</ul>
+<p>&#x4EFF;&#x771F;&#x5B8C;&#x6210;&#x540E;&#x76F4;&#x63A5;&#x5F39;&#x51FA;&#x4EFF;&#x771F;&#x6CE2;&#x5F62;&#x56FE;.</p>
+<div align="center"><img src="res/simresin.png"></div>
+<div align="center"><img src="res/simresout.png"></div>
+
+<h2 id="&#x9644;-analoglib&#x4E2D;&#x7684;&#x5E38;&#x7528;&#x5143;&#x4EF6;&#x548C;&#x7535;&#x6E90;">&#x9644; analogLib&#x4E2D;&#x7684;&#x5E38;&#x7528;&#x5143;&#x4EF6;&#x548C;&#x7535;&#x6E90;</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x7C7B;&#x578B;</th>
+<th style="text-align:center">Cell&#x540D;&#x79F0;</th>
+<th style="text-align:center">&#x7C7B;&#x578B;</th>
+<th style="text-align:center">Cell&#x540D;&#x79F0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">&#x7535;&#x963B;</td>
+<td style="text-align:center">res</td>
+<td style="text-align:center">&#x7535;&#x6E90;</td>
+<td style="text-align:center">vdd</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x7535;&#x5BB9;</td>
+<td style="text-align:center">cap</td>
+<td style="text-align:center">&#x5730;</td>
+<td style="text-align:center">gnd</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x7535;&#x611F;</td>
+<td style="text-align:center">ind</td>
+<td style="text-align:center">&#x76F4;&#x6D41;&#x7535;&#x6D41;&#x6E90;</td>
+<td style="text-align:center">idc</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x4E8C;&#x6781;&#x7BA1;</td>
+<td style="text-align:center">diode</td>
+<td style="text-align:center">&#x8109;&#x51B2;&#x7535;&#x6D41;&#x6E90;</td>
+<td style="text-align:center">ipulse</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x8096;&#x7279;&#x57FA;&#x4E8C;&#x6781;&#x7BA1;</td>
+<td style="text-align:center">schottky</td>
+<td style="text-align:center">&#x6B63;&#x5F26;&#x7535;&#x6D41;&#x6E90;</td>
+<td style="text-align:center">isin</td>
+</tr>
+<tr>
+<td style="text-align:center">npn&#x4E09;&#x6781;&#x7BA1;</td>
+<td style="text-align:center">npn</td>
+<td style="text-align:center">&#x7EBF;&#x6027;&#x7535;&#x6D41;&#x6E90;</td>
+<td style="text-align:center">ipwl</td>
+</tr>
+<tr>
+<td style="text-align:center">pnp&#x4E09;&#x6781;&#x7BA1;</td>
+<td style="text-align:center">pnp</td>
+<td style="text-align:center">&#x76F4;&#x6D41;&#x7535;&#x538B;&#x6E90;</td>
+<td style="text-align:center">vdc</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x56DB;&#x7AEF;&#x53E3;nmos</td>
+<td style="text-align:center">nmos4</td>
+<td style="text-align:center">&#x8109;&#x51B2;&#x7535;&#x538B;&#x6E90;</td>
+<td style="text-align:center">vpulse</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x56DB;&#x7AEF;&#x53E3;pmos</td>
+<td style="text-align:center">pmos4</td>
+<td style="text-align:center">&#x6B63;&#x5F26;&#x7535;&#x538B;&#x6E90;</td>
+<td style="text-align:center">vsin</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x7406;&#x60F3;&#x5F00;&#x5173;</td>
+<td style="text-align:center">switch</td>
+<td style="text-align:center">&#x4EFB;&#x610F;&#x6CE2;&#x5F62;&#x4FE1;&#x53F7;&#x6E90;</td>
+<td style="text-align:center">vpwl</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x9644;-&#x539F;&#x7406;&#x56FE;&#x8BBE;&#x8BA1;&#x4E2D;&#x7684;&#x5FEB;&#x6377;&#x952E;">&#x9644; &#x539F;&#x7406;&#x56FE;&#x8BBE;&#x8BA1;&#x4E2D;&#x7684;&#x5FEB;&#x6377;&#x952E;</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x952E;</th>
+<th style="text-align:center">&#x529F;&#x80FD;</th>
+<th style="text-align:center">&#x952E;</th>
+<th style="text-align:center">&#x529F;&#x80FD;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Shift+LeftClick</td>
+<td style="text-align:center">&#x52A0;&#x9009;&#x5B9E;&#x4F8B;</td>
+<td style="text-align:center">C</td>
+<td style="text-align:center">&#x62F7;&#x8D1D;</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+LeftClick</td>
+<td style="text-align:center">&#x51CF;&#x9009;&#x5B9E;&#x4F8B;</td>
+<td style="text-align:center">M</td>
+<td style="text-align:center">&#x79FB;&#x52A8;</td>
+</tr>
+<tr>
+<td style="text-align:center">X</td>
+<td style="text-align:center">&#x4FDD;&#x5B58;</td>
+<td style="text-align:center">S</td>
+<td style="text-align:center">&#x68C0;&#x67E5;&#x5E76;&#x4FDD;&#x5B58;</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+A</td>
+<td style="text-align:center">&#x5168;&#x9009;</td>
+<td style="text-align:center">U</td>
+<td style="text-align:center">&#x64A4;&#x9500;1&#x6B21;</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+D</td>
+<td style="text-align:center">&#x53D6;&#x6D88;&#x9009;&#x62E9;</td>
+<td style="text-align:center">Shift+U</td>
+<td style="text-align:center">&#x7EE7;&#x7EED;&#x64A4;&#x9500;</td>
+</tr>
+<tr>
+<td style="text-align:center">F</td>
+<td style="text-align:center">&#x663E;&#x793A;&#x5B8C;&#x6574;&#x7535;&#x8DEF;</td>
+<td style="text-align:center">Ctrl+Z,]</td>
+<td style="text-align:center">&#x653E;&#x5927;&#x89C6;&#x56FE;</td>
+</tr>
+<tr>
+<td style="text-align:center">I</td>
+<td style="text-align:center">&#x6DFB;&#x52A0;&#x5B9E;&#x4F8B;</td>
+<td style="text-align:center">Shift+Z,[</td>
+<td style="text-align:center">&#x7F29;&#x5C0F;&#x89C6;&#x56FE;</td>
+</tr>
+<tr>
+<td style="text-align:center">W</td>
+<td style="text-align:center">&#x6DFB;&#x52A0;&#x8FDE;&#x7EBF;</td>
+<td style="text-align:center">Esc</td>
+<td style="text-align:center">&#x9000;&#x51FA;&#x5F53;&#x524D;&#x547D;&#x4EE4;</td>
+</tr>
+<tr>
+<td style="text-align:center">P</td>
+<td style="text-align:center">&#x6DFB;&#x52A0;&#x5F15;&#x811A;</td>
+<td style="text-align:center">L</td>
+<td style="text-align:center">Net Label</td>
+</tr>
+<tr>
+<td style="text-align:center">T</td>
+<td style="text-align:center">&#x6DFB;&#x52A0;&#x6587;&#x672C;</td>
+<td style="text-align:center">B</td>
+<td style="text-align:center">&#x6DFB;&#x52A0;Block</td>
+</tr>
+<tr>
+<td style="text-align:center">Q</td>
+<td style="text-align:center">&#x7F16;&#x8F91;&#x5C5E;&#x6027;</td>
+<td style="text-align:center">Del</td>
+<td style="text-align:center">&#x5220;&#x9664;&#x5668;&#x4EF6;</td>
+</tr>
+</tbody>
+</table>
+<p><hr><div align="center" id="jinrishici-sentence">&#x6B63;&#x5728;&#x52A0;&#x8F7D;&#x4ECA;&#x65E5;&#x8BD7;&#x8BCD;....</div><hr><script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script> </p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; charleechan 2021 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Updated At: 
+2021-04-04 14:46:45
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 模拟IC设计">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="2_Ex2.html" class="navigation navigation-next " aria-label="Next page: 实例2_放大器的仿真">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"实例1入门实验反相器的设计与仿真","level":"2.6.1","depth":2,"next":{"title":"实例2_放大器的仿真","level":"2.6.2","depth":2,"path":"Hardware/6_AnalogIC/2_Ex2.md","ref":"Hardware/6_AnalogIC/2_Ex2.md","articles":[]},"previous":{"title":"模拟IC设计","level":"2.6","depth":1,"path":"Hardware/6_AnalogIC/README.md","ref":"Hardware/6_AnalogIC/README.md","articles":[{"title":"实例1入门实验反相器的设计与仿真","level":"2.6.1","depth":2,"path":"Hardware/6_AnalogIC/1_Ex1.md","ref":"Hardware/6_AnalogIC/1_Ex1.md","articles":[]},{"title":"实例2_放大器的仿真","level":"2.6.2","depth":2,"path":"Hardware/6_AnalogIC/2_Ex2.md","ref":"Hardware/6_AnalogIC/2_Ex2.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["back-to-top-button","splitter","code","-lunr","-search","-sharing","toggle-chapters","sharing-plus","search-pro","insert-logo","custom-favicon","pageview-count","tbfed-pagefooter","mind-maps","hide-element","mathjax-single-dollar","forkmegithub","mermaid-gb3","auto-scroll-table"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy charleechan 2021","modify_label":"Updated At: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"splitter":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"auto-scroll-table":{},"mathjax-single-dollar":{"forceSVG":false,"version":"2.6-latest"},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"mind-maps":{},"highlight":{},"mermaid-gb3":{},"favicon":"https://charleechan.github.io/MyWiki/img/Avatar.ico","back-to-top-button":{},"pageview-count":{},"custom-favicon":{},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"forkmegithub":{"color":"gray","url":"https://github.com/your/repo"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{},"insert-logo":{"style":"background: none; max-height: 100px; min-height: 100px","url":"https://charleechan.github.io/MyWiki/img/Avatar-100.png"}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Hardware/6_AnalogIC/1_Ex1.md","mtime":"2021-04-04T06:46:45.231Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-04-16T11:09:49.183Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-mind-maps/mindmaps.dist.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-mathjax-single-dollar/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-forkmegithub/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-auto-scroll-table/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

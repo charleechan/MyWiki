@@ -5,6 +5,7 @@ import sys
 # 本文件功能: 一键生成侧边栏导航
 def recu_list_subdirs(path,summaryFileDir,sumFile,libDict,indent=0):
     # 列出某目录下的文件
+    
     for item in os.listdir(path):  
         # 获得子项路径     
         curPath = os.path.join(path, item)
@@ -54,7 +55,7 @@ def createNavPage(summaryFileDir,libDict,libList):
     summaryFile = summaryFileDir +"\\SUMMARY.md"
     
     with open(summaryFile,mode="w",encoding="utf_8") as sumFile:
-        sumFile.write("# Summary\n\n## 知识体系\n* [我的Wiki-一本正经地胡说八道](README.md)\n* [我的Wiki-编程平台](nav1.md)\n* [我的Wiki-软件教程](nav2.md)\n")
+        sumFile.write("# Summary\n\n## [知识体系](README.md)\n")
         for libdir in libList:
             cur_path = summaryFileDir + libdir
             if(libDict.__contains__(libdir)):
@@ -80,26 +81,28 @@ def main():
     # 在vvvv下面vvvv添加各级文件夹vvvvvvv
     # libDict[文件夹的路径]                ="侧边栏导航名字"
     libDict["\\Hardware"]                 ="微电子专业"
-    libDict["\\Hardware\\Devices"]        ="电磁与电子器件"
-    libDict["\\Hardware\\SigCirSys"]      ="电路中的信号"
-    libDict["\\Hardware\\AnalogCirciut"]  ="模拟电路基础"
-    libDict["\\Hardware\\DigitalCircuit"] ="数字电路基础"
-    libDict["\\Hardware\\PCB"]            ="PCB设计与应用"
-    libDict["\\Hardware\\AnalogIC"]       ="模拟IC设计"
-    libDict["\\Hardware\\DigitalIC"]      ="数字IC RTL设计"
-    libDict["\\Hardware\\CPU"]            ="CPU设计"
-    libDict["\\Hardware\\SoC"]            ="SoC设计"
+    libDict["\\Hardware\\1_Devices"]        ="电磁与电子器件"
+    libDict["\\Hardware\\2_SigCirSys"]      ="电路中的信号"
+    libDict["\\Hardware\\3_AnalogCirciut"]  ="模拟电路基础"
+    libDict["\\Hardware\\4_DigitalCircuit"] ="数字电路基础"
+    libDict["\\Hardware\\5_PCB"]            ="PCB设计与应用"
+    libDict["\\Hardware\\6_AnalogIC"]       ="模拟IC设计"
+    libDict["\\Hardware\\7_DigitalIC"]      ="数字IC RTL设计"
+    libDict["\\Hardware\\8_CPU"]            ="CPU设计"
+    libDict["\\Hardware\\9_SoC"]            ="SoC设计"
+    libDict["\\Hardware\\A_EDA"]            ="EDA安装"
+    libDict["\\Hardware\\B_HDL"]            ="Verilog/SV"
 
     libDict["\\Software"]                    ="软件教程"
-    libDict["\\Software\\CSTM32"]            ="C程序与驱动开发"
-    libDict["\\Software\\CppQt"]             ="CPP程序与Qt开发"
-    libDict["\\Software\\Datas"]             ="数据结构与数据库"
-    libDict["\\Software\\DSPISP"]            ="信号/图像处理"
-    libDict["\\Software\\PythonAI"]          ="Python与AI"
-    libDict["\\Software\\MD"]                ="Markdown"
-    libDict["\\Software\\HCJ"]               ="HTML/CSS/Javascript"
-    libDict["\\Software\\H5App"]             ="HTML5移动/桌面APP"
-    libDict["\\Software\\QML"]               ="QML"
+    libDict["\\Software\\1_CSTM32"]            ="C程序与驱动开发"
+    libDict["\\Software\\2_CppQt"]             ="CPP程序与Qt开发"
+    libDict["\\Software\\3_Datas"]             ="数据结构与数据库"
+    libDict["\\Software\\4_DSPISP"]            ="信号/图像处理"
+    libDict["\\Software\\5_PythonAI"]          ="Python与AI"
+    libDict["\\Software\\6_MD"]                ="Markdown"
+    libDict["\\Software\\7_HCJ"]               ="HTML/CSS/Javascript"
+    libDict["\\Software\\8_H5App"]             ="HTML5移动/桌面APP"
+    libDict["\\Software\\9_QML"]               ="QML(不建议学习)"
 
 
     libDict["\\Tricks"]              ="日积月累"
