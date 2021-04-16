@@ -1,0 +1,1932 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>电感与磁极化 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-mind-maps/mindmaps.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-forkmegithub/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-auto-scroll-table/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="5_Maxwell.html" />
+    
+    
+    <link rel="prev" href="3_Res.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">知识体系</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    我的Wiki-一本正经地胡说八道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../nav1.md">
+            
+                <span>
+            
+                    
+                    我的Wiki-编程平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../nav2.md">
+            
+                <span>
+            
+                    
+                    我的Wiki-软件教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">微电子专业</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../AnalogCirciut/">
+            
+                <a href="../AnalogCirciut/">
+            
+                    
+                    模拟电路基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../CPU/">
+            
+                <a href="../CPU/">
+            
+                    
+                    CPU设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    电磁与电子器件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="1_StaticEM.html">
+            
+                <a href="1_StaticEM.html">
+            
+                    
+                    静电场与静磁场
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="2_Cap.html">
+            
+                <a href="2_Cap.html">
+            
+                    
+                    电容与电极化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="3_Res.html">
+            
+                <a href="3_Res.html">
+            
+                    
+                    电阻的原理与设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.3.4" data-path="4_Ind.html">
+            
+                <a href="4_Ind.html">
+            
+                    
+                    电感与磁极化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.5" data-path="5_Maxwell.html">
+            
+                <a href="5_Maxwell.html">
+            
+                    
+                    经典电磁学理论基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.6" data-path="6_AntWave.html">
+            
+                <a href="6_AntWave.html">
+            
+                    
+                    电磁波与天线
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.7" data-path="7_EMcircuit.html">
+            
+                <a href="7_EMcircuit.html">
+            
+                    
+                    电磁学与电路的关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.8" data-path="8_BJT.html">
+            
+                <a href="8_BJT.html">
+            
+                    
+                    半导体器件1-双极型晶体管(BJT)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.9" data-path="9_MOS.html">
+            
+                <a href="9_MOS.html">
+            
+                    
+                    半导体器件2-MOS管
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../DigitalCircuit/">
+            
+                <a href="../DigitalCircuit/">
+            
+                    
+                    数字电路基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../DigitalIC/">
+            
+                <a href="../DigitalIC/">
+            
+                    
+                    数字IC RTL设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../PCB/">
+            
+                <a href="../PCB/">
+            
+                    
+                    PCB设计与应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../SigCirSys/">
+            
+                <a href="../SigCirSys/">
+            
+                    
+                    电路中的信号
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.7.1" data-path="../SigCirSys/SigProc/conv1.html">
+            
+                <a href="../SigCirSys/SigProc/conv1.html">
+            
+                    
+                    理解卷积
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.2" data-path="../SigCirSys/SigProc/FourierTransform.html">
+            
+                <a href="../SigCirSys/SigProc/FourierTransform.html">
+            
+                    
+                    傅里叶级数与傅里叶变换(Fourier Transform)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.3" data-path="../SigCirSys/SigProc/wavelet1.html">
+            
+                <a href="../SigCirSys/SigProc/wavelet1.html">
+            
+                    
+                    小波变换(一): 为什么需要小波?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.4" data-path="../SigCirSys/SigProc/wavelet2.html">
+            
+                <a href="../SigCirSys/SigProc/wavelet2.html">
+            
+                    
+                    小波变换(二): 小波基函数,母小波和父小波
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.5" data-path="../SigCirSys/SigProc/wavelet3.html">
+            
+                <a href="../SigCirSys/SigProc/wavelet3.html">
+            
+                    
+                    小波变换(三): 从实例代码看Haar小波分解和重构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.6" data-path="../SigCirSys/SigProc/wavelet4.html">
+            
+                <a href="../SigCirSys/SigProc/wavelet4.html">
+            
+                    
+                    小波变换(四): 常用小波特点及二维小波变换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.7" data-path="../SigCirSys/SigProc/wavelet5.html">
+            
+                <a href="../SigCirSys/SigProc/wavelet5.html">
+            
+                    
+                    小波变换(五): 小波变换与卷积
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.8" data-path="../SigCirSys/SigProc/wavelet6.html">
+            
+                <a href="../SigCirSys/SigProc/wavelet6.html">
+            
+                    
+                    小波变换彩蛋: Python中的小波变换库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">软件教程</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../Software/CppQt/">
+            
+                <a href="../../Software/CppQt/">
+            
+                    
+                    CPP程序与Qt开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../Software/CSTM32/">
+            
+                <a href="../../Software/CSTM32/">
+            
+                    
+                    C程序与驱动开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../../Software/HCJ/">
+            
+                <a href="../../Software/HCJ/">
+            
+                    
+                    HTML/CSS/Javascript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1" data-path="../../Software/HCJ/1_HTMLBasics.html">
+            
+                <a href="../../Software/HCJ/1_HTMLBasics.html">
+            
+                    
+                    HTML的基础知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2" data-path="../../Software/HCJ/DecorateYourCnblogs.html">
+            
+                <a href="../../Software/HCJ/DecorateYourCnblogs.html">
+            
+                    
+                    把博客园装饰得美丽大方
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3" data-path="../../Software/HCJ/HBuilderXTutorial_1_Introduction.html">
+            
+                <a href="../../Software/HCJ/HBuilderXTutorial_1_Introduction.html">
+            
+                    
+                    HBuilderX 1-引言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../../Software/MD/">
+            
+                <a href="../../Software/MD/">
+            
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.4.1" data-path="../../Software/MD/EquationInMD.html">
+            
+                <a href="../../Software/MD/EquationInMD.html">
+            
+                    
+                    Markdown公式代码大全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.2" data-path="../../Software/MD/PlotMindMap.html">
+            
+                <a href="../../Software/MD/PlotMindMap.html">
+            
+                    
+                    Markdown支持绘制脑图啦
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.3" data-path="../../Software/MD/PlotTimingDiagram.html">
+            
+                <a href="../../Software/MD/PlotTimingDiagram.html">
+            
+                    
+                    使用WaveDrom画时序图或电路图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.4" data-path="../../Software/MD/PlotVariousChart.html">
+            
+                <a href="../../Software/MD/PlotVariousChart.html">
+            
+                    
+                    使用mermaid绘制流程图/脑图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.5" data-path="../../Software/MD/UseFontAwesomeInMD.html">
+            
+                <a href="../../Software/MD/UseFontAwesomeInMD.html">
+            
+                    
+                    在Markdown中使用FontAwesome
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.6" data-path="../../Software/MD/UseJavascriptInMD.html">
+            
+                <a href="../../Software/MD/UseJavascriptInMD.html">
+            
+                    
+                    在Markdown中使用Javascript
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../../Software/PythonAI/">
+            
+                <a href="../../Software/PythonAI/">
+            
+                    
+                    Python与AI
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.5.1" data-path="../../Software/PythonAI/DevEnvDeploy.html">
+            
+                <a href="../../Software/PythonAI/DevEnvDeploy.html">
+            
+                    
+                    Python开发环境的配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.2" data-path="../../Software/PythonAI/MakeAGif.html">
+            
+                <a href="../../Software/PythonAI/MakeAGif.html">
+            
+                    
+                    使用Matplotlib绘制动图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.3" data-path="../../Software/PythonAI/MultiPlotInAAxes.html">
+            
+                <a href="../../Software/PythonAI/MultiPlotInAAxes.html">
+            
+                    
+                    pyplot在一个坐标系里画多个子图
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.5.3.1" data-path="../../Software/PythonAI/Pytorch/autograd_gradientInPytorch.html">
+            
+                <a href="../../Software/PythonAI/Pytorch/autograd_gradientInPytorch.html">
+            
+                    
+                    使用autograd.grad()计算导数与偏导
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.3.2" data-path="../../Software/PythonAI/Pytorch/DevEnvDeploy.html">
+            
+                <a href="../../Software/PythonAI/Pytorch/DevEnvDeploy.html">
+            
+                    
+                    Pytorch开发环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../../Software/QML/">
+            
+                <a href="../../Software/QML/">
+            
+                    
+                    QML
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.6.1" data-path="../../Software/QML/QtQuickTutorial_1_DevEnvDeploy.html">
+            
+                <a href="../../Software/QML/QtQuickTutorial_1_DevEnvDeploy.html">
+            
+                    
+                    Qt Quick开发教程1:安卓开发环境的配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.2" data-path="../../Software/QML/QtQuickTutorial_2_QML_Basics.html">
+            
+                <a href="../../Software/QML/QtQuickTutorial_2_QML_Basics.html">
+            
+                    
+                    Qt Quick开发教程2:QML语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.3" data-path="../../Software/QML/QtQuickTutorial_3_QML_CPP.html">
+            
+                <a href="../../Software/QML/QtQuickTutorial_3_QML_CPP.html">
+            
+                    
+                    Qt Quick开发教程3:导出C++到QML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.4" data-path="../../Software/QML/QtQuickTutorial_4_QML_DesignRules.html">
+            
+                <a href="../../Software/QML/QtQuickTutorial_4_QML_DesignRules.html">
+            
+                    
+                    Qt Quick开发教程4:设计规则与流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.5" data-path="../../Software/QML/QtQuickTutorial_5_QML_Animation.html">
+            
+                <a href="../../Software/QML/QtQuickTutorial_5_QML_Animation.html">
+            
+                    
+                    Qt Quick开发教程5:动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.6" data-path="../../Software/QML/QtQuickTutorial_6_QML_StyleSheet.html">
+            
+                <a href="../../Software/QML/QtQuickTutorial_6_QML_StyleSheet.html">
+            
+                    
+                    建立自己的QML Style Sheet文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.7" data-path="../../Software/QML/QtQuickTutorial_7_DevEnvDeploy.html">
+            
+                <a href="../../Software/QML/QtQuickTutorial_7_DevEnvDeploy.html">
+            
+                    
+                    Qt 5.15在的部署过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">日积月累</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../../Tricks/Game/">
+            
+                <a href="../../Tricks/Game/">
+            
+                    
+                    游戏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../../Tricks/Image/">
+            
+                <a href="../../Tricks/Image/">
+            
+                    
+                    图像图表软件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="../../Tricks/Image/GIMP/">
+            
+                <a href="../../Tricks/Image/GIMP/">
+            
+                    
+                    GIMP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1.1" data-path="../../Tricks/Image/GIMP/GIMPDefaultKeys.html">
+            
+                <a href="../../Tricks/Image/GIMP/GIMPDefaultKeys.html">
+            
+                    
+                    GIMP快速指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.2" data-path="../../Tricks/Image/Origin/">
+            
+                <a href="../../Tricks/Image/Origin/">
+            
+                    
+                    Origin
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.2.1" data-path="../../Tricks/Image/Origin/PlotGif.html">
+            
+                <a href="../../Tricks/Image/Origin/PlotGif.html">
+            
+                    
+                    使用Graph Anim插件绘制动图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.3" data-path="../../Tricks/Image/Visio/">
+            
+                <a href="../../Tricks/Image/Visio/">
+            
+                    
+                    Visio
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../../Tricks/Manage/">
+            
+                <a href="../../Tricks/Manage/">
+            
+                    
+                    管理类软件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.3.1" data-path="../../Tricks/Manage/Git/">
+            
+                <a href="../../Tricks/Manage/Git/">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.3.1.1" data-path="../../Tricks/Manage/Git/GitbookUsage.html">
+            
+                <a href="../../Tricks/Manage/Git/GitbookUsage.html">
+            
+                    
+                    结合Github Pages使用GitBook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.1.2" data-path="../../Tricks/Manage/Git/GithubUsage.html">
+            
+                <a href="../../Tricks/Manage/Git/GithubUsage.html">
+            
+                    
+                    使用Github的基本流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.1.3" data-path="../../Tricks/Manage/Git/UpdateThisSite.html">
+            
+                <a href="../../Tricks/Manage/Git/UpdateThisSite.html">
+            
+                    
+                    本Wiki维护教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.2" data-path="../../Tricks/Manage/Inlook/">
+            
+                <a href="../../Tricks/Manage/Inlook/">
+            
+                    
+                    Inlook
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.3.2.1" data-path="../../Tricks/Manage/Inlook/InlookIsReleased.html">
+            
+                <a href="../../Tricks/Manage/Inlook/InlookIsReleased.html">
+            
+                    
+                    Inlook - 你的个人工作助手
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.2.2" data-path="../../Tricks/Manage/Inlook/InlookUsage.html">
+            
+                <a href="../../Tricks/Manage/Inlook/InlookUsage.html">
+            
+                    
+                    Inlook用户指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../../Tricks/Music/">
+            
+                <a href="../../Tricks/Music/">
+            
+                    
+                    音频软件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../../Tricks/Office/">
+            
+                <a href="../../Tricks/Office/">
+            
+                    
+                    办公软件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.5.1" data-path="../../Tricks/Office/Excel/">
+            
+                <a href="../../Tricks/Office/Excel/">
+            
+                    
+                    Excel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.2" data-path="../../Tricks/Office/PPT/">
+            
+                <a href="../../Tricks/Office/PPT/">
+            
+                    
+                    PPT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.3" data-path="../../Tricks/Office/Word/">
+            
+                <a href="../../Tricks/Office/Word/">
+            
+                    
+                    Word
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.5.3.1" data-path="../../Tricks/Office/Word/CNPaperRefSetting.html">
+            
+                <a href="../../Tricks/Office/Word/CNPaperRefSetting.html">
+            
+                    
+                    中文学位论文参考文献格式配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.3.2" data-path="../../Tricks/Office/Word/EquationInWord.html">
+            
+                <a href="../../Tricks/Office/Word/EquationInWord.html">
+            
+                    
+                    Word中公式中自动编号的最终解决办法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.3.3" data-path="../../Tricks/Office/Word/EquationInWord2.html">
+            
+                <a href="../../Tricks/Office/Word/EquationInWord2.html">
+            
+                    
+                    跨行对齐公式与公式代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.3.4" data-path="../../Tricks/Office/Word/MakeOfficeISO.html">
+            
+                <a href="../../Tricks/Office/Word/MakeOfficeISO.html">
+            
+                    
+                    Office 2019的ISO制作,安装,与激活
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.3.5" data-path="../../Tricks/Office/Word/UseFontAwesomeInWord.html">
+            
+                <a href="../../Tricks/Office/Word/UseFontAwesomeInWord.html">
+            
+                    
+                    在Word中使用FontAwesome图标
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../../Tricks/Plugins/">
+            
+                <a href="../../Tricks/Plugins/">
+            
+                    
+                    插件类
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.6.1" data-path="../../Tricks/Plugins/ChromeExt/">
+            
+                <a href="../../Tricks/Plugins/ChromeExt/">
+            
+                    
+                    Chrome插件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.6.1.1" data-path="../../Tricks/Plugins/ChromeExt/FloccusSyncYourBookmarks.html">
+            
+                <a href="../../Tricks/Plugins/ChromeExt/FloccusSyncYourBookmarks.html">
+            
+                    
+                    Floccus配合坚果云同步书签教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6.2" data-path="../../Tricks/Plugins/GIMPPlu/">
+            
+                <a href="../../Tricks/Plugins/GIMPPlu/">
+            
+                    
+                    GIMP插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6.3" data-path="../../Tricks/Plugins/GitbookPlu/">
+            
+                <a href="../../Tricks/Plugins/GitbookPlu/">
+            
+                    
+                    Gitbook插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6.4" data-path="../../Tricks/Plugins/OfficePlu/">
+            
+                <a href="../../Tricks/Plugins/OfficePlu/">
+            
+                    
+                    Office插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6.5" data-path="../../Tricks/Plugins/VSCodeExt/">
+            
+                <a href="../../Tricks/Plugins/VSCodeExt/">
+            
+                    
+                    VSCode插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="../../Tricks/Project/">
+            
+                <a href="../../Tricks/Project/">
+            
+                    
+                    工程/项目软件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.7.1" data-path="../../Tricks/Project/AltiumDesigner/">
+            
+                <a href="../../Tricks/Project/AltiumDesigner/">
+            
+                    
+                    Altium Designer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.2" data-path="../../Tricks/Project/CadenceSPB/">
+            
+                <a href="../../Tricks/Project/CadenceSPB/">
+            
+                    
+                    Cadence SPB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.3" data-path="../../Tricks/Project/KeilMDK/">
+            
+                <a href="../../Tricks/Project/KeilMDK/">
+            
+                    
+                    Keil MDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.4" data-path="../../Tricks/Project/ModelSim/">
+            
+                <a href="../../Tricks/Project/ModelSim/">
+            
+                    
+                    ModelSim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.5" data-path="../../Tricks/Project/MultiSim/">
+            
+                <a href="../../Tricks/Project/MultiSim/">
+            
+                    
+                    MultiSim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.6" data-path="../../Tricks/Project/Others/">
+            
+                <a href="../../Tricks/Project/Others/">
+            
+                    
+                    其他
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.7.6.1" data-path="../../Tricks/Project/Others/InsertASCIIChartInCode.html">
+            
+                <a href="../../Tricks/Project/Others/InsertASCIIChartInCode.html">
+            
+                    
+                    根据文字生成字符画
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.7" data-path="../../Tricks/Project/Qt/">
+            
+                <a href="../../Tricks/Project/Qt/">
+            
+                    
+                    Qt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.8" data-path="../../Tricks/Project/SolidWorks/">
+            
+                <a href="../../Tricks/Project/SolidWorks/">
+            
+                    
+                    SolidWorks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.9" data-path="../../Tricks/Project/VisualStudio/">
+            
+                <a href="../../Tricks/Project/VisualStudio/">
+            
+                    
+                    Visual Studio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.10" data-path="../../Tricks/Project/Vivado/">
+            
+                <a href="../../Tricks/Project/Vivado/">
+            
+                    
+                    Vivado
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.11" data-path="../../Tricks/Project/VSCode/">
+            
+                <a href="../../Tricks/Project/VSCode/">
+            
+                    
+                    VS Code
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="../../Tricks/Video/">
+            
+                <a href="../../Tricks/Video/">
+            
+                    
+                    视频软件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.8.1" data-path="../../Tricks/Video/VideoStudio/">
+            
+                <a href="../../Tricks/Video/VideoStudio/">
+            
+                    
+                    会声会影
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >电感与磁极化</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7535;&#x611F;&#x4E0E;&#x78C1;&#x6781;&#x5316;">&#x7535;&#x611F;&#x4E0E;&#x78C1;&#x6781;&#x5316;</h1>
+<p>&#x5148;&#x8BF4;&#x660E;,&#x6A21;&#x62DF;&#x548C;&#x6570;&#x5B57;IC&#x91CC;,&#x662F;<strong>&#x6CA1;&#x6709;&#x7535;&#x611F;</strong>&#x7684;.&#x56E0;&#x6B64;&#x672C;&#x8282;&#x4E2D;&#x4E0D;&#x5305;&#x62EC;&#x7535;&#x611F;&#x7684;&#x8BBE;&#x8BA1;.</p>
+<p>&#x5728;&#x5FAE;&#x6CE2;/&#x5C04;&#x9891;&#x7535;&#x8DEF;&#x4E2D;,&#x7531;&#x4E8E;&#x6D89;&#x53CA;&#x5230;&#x7535;&#x78C1;&#x6CE2;,&#x9700;&#x8981;&#x8003;&#x8651;&#x7535;&#x611F;&#x7684;&#x8BBE;&#x8BA1;,&#x672C;&#x6587;&#x6682;&#x65F6;&#x4E0D;&#x505A;&#x8BA8;&#x8BBA;.</p>
+<p>&#x5728;IC&#x91CC;&#x4F60;&#x548B;&#x7ED5;&#x7EBF;&#x5708;....</p>
+<h2 id="&#x56DE;&#x987E;">&#x56DE;&#x987E;</h2>
+<p>&#x5728;<a href="1_StaticEM.html">&#x771F;&#x7A7A;&#x4E2D;&#x7684;&#x9759;&#x7535;&#x573A;&#x548C;&#x9759;&#x78C1;&#x573A;</a>&#x548C;<a href="2_Cap.html">&#x7535;&#x5BB9;</a>&#x4E2D;&#x6211;&#x4EEC;&#x8BB2;&#x8FC7;:</p>
+<ul>
+<li>&#x70B9;&#x7535;&#x8377;&#x4E4B;&#x95F4;&#x7684;&#x5E93;&#x4ED1;&#x529B;,&#x5143;&#x7535;&#x6D41;&#x4E4B;&#x95F4;&#x7684;&#x5B89;&#x57F9;&#x529B;;</li>
+<li><a href="1_StaticEM.html">&#x9759;&#x7535;&#x573A;&#x73AF;&#x8DEF;&#x5B9A;&#x7406;</a>:<script type="math/tex; ">\oint E\cdot dl=0</script>,&#x7535;&#x573A;&#x7684;&#x65E0;&#x65CB;&#x6027;;</li>
+<li><a href="2_Cap.html">&#x9759;&#x7535;&#x573A;&#x9AD8;&#x65AF;&#x5B9A;&#x7406;</a>:<script type="math/tex; ">\oint E\cdot dS=q/\epsilon</script>,&#x7535;&#x573A;&#x7684;&#x6709;&#x6E90;&#x6027;;</li>
+<li><a href="1_StaticEM.html">&#x9759;&#x78C1;&#x573A;&#x5B89;&#x57F9;&#x73AF;&#x8DEF;&#x5B9A;&#x7406;</a>:<script type="math/tex; ">\oint_{l}H\cdot dl=I</script>,&#x78C1;&#x573A;&#x7684;&#x6709;&#x65CB;&#x6027;;</li>
+<li><a href="1_StaticEM.html">&#x9759;&#x78C1;&#x573A;&#x78C1;&#x901A;&#x8FDE;&#x7EED;&#x5B9A;&#x7406;</a>:<script type="math/tex; ">\oint B\cdot dS=0</script>,&#x78C1;&#x573A;&#x7684;&#x65E0;&#x6E90;&#x6027;.</li>
+<li><a href="1_StaticEM.html">&#x7535;&#x6D41;&#x8FDE;&#x7EED;&#x6027;&#x5B9A;&#x7406;</a>:<script type="math/tex; ">\oint_{S}\vec{J}\cdot dS=-\frac{d}{dt}\int\rho dV</script>,&#x7535;&#x8377;&#x5B88;&#x6052;&#x5B9A;&#x5F8B;.</li>
+<li><a href="3_Res.html">&#x672C;&#x6784;&#x65B9;&#x7A0B;1-&#x5BFC;&#x4F53;&#x7684;&#x6B27;&#x59C6;&#x5B9A;&#x5F8B;</a>:<script type="math/tex; ">J=\sigma E</script></li>
+<li><a href="2_Cap.html">&#x672C;&#x6784;&#x65B9;&#x7A0B;2-&#x7535;&#x4ECB;&#x8D28;&#x7684;&#x6781;&#x5316;</a>:<script type="math/tex; ">D=\epsilon_{0}\epsilon_{r}E</script></li>
+</ul>
+<h2 id="&#x7535;&#x78C1;&#x611F;&#x5E94;&#x5B9A;&#x5F8B;">&#x7535;&#x78C1;&#x611F;&#x5E94;&#x5B9A;&#x5F8B;</h2>
+<p>&#x540E;&#x6765;,&#x6CD5;&#x62C9;&#x7B2C;&#x4E00;&#x6B21;&#x5B9E;&#x9A8C;&#x4E2D;&#x53D1;&#x73B0;&#x4E86;&#x7535;&#x78C1;&#x611F;&#x5E94;&#x5B9A;&#x5F8B;:</p>
+<p>&#x78C1;&#x573A;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x95ED;&#x5408;&#x5BFC;&#x4F53;&#x56DE;&#x8DEF;&#x7531;&#x4E8E;&#x67D0;&#x79CD;&#x539F;&#x56E0;&#x5F15;&#x8D77;&#x7A7F;&#x8FC7;&#x5BFC;&#x4F53;&#x56DE;&#x8DEF;&#x7684;&#x78C1;&#x901A;&#x91CF;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x65F6;&#xFF0C;&#x56DE;&#x8DEF;&#x4E2D;&#x5C31;&#x4EA7;&#x751F;&#x4E86;&#x611F;&#x5E94;&#x7535;&#x52A8;&#x52BF;&#xFF0C;&#x4E14;&#x611F;&#x5E94;&#x7535;&#x52A8;&#x52BF;&#x7684;&#x5927;&#x5C0F;&#x6B63;&#x6BD4;&#x4E8E;&#x78C1;&#x901A;&#x5BF9;&#x65F6;&#x95F4;&#x7684;&#x53D8;&#x5316;&#x7387;:</p>
+<p><script type="math/tex; mode=display">
+\mathscr{E}_{ind}=-\frac{d\Phi}{dt}</script></p>
+<p><script type="math/tex; mode=display">
+\oint E_{ind}\cdot dl=-\int_{S}\frac{\partial B}{\partial t}dS</script></p>
+<p>&#x5FAE;&#x5206;&#x5F62;&#x5F0F;&#x662F;</p>
+<p><script type="math/tex; mode=display">
+\nabla\times E_{ind}=-\frac{\partial B}{\partial t}</script></p>
+<p>&#x6CE8;&#x610F;,&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x8BF4;&#x65F6;&#x5BFC;&#x4F53;&#x5F62;&#x6210;&#x7684;&#x56DE;&#x8DEF;,&#x90A3;&#x4E48;&#x5F53;&#x5BFC;&#x4F53;&#x7684;&#x5BFC;&#x7535;&#x80FD;&#x529B;&#x4E0B;&#x964D;,&#x66FF;&#x6362;&#x6210;<strong>&#x7EDD;&#x7F18;&#x4F53;&#x5F62;&#x6210;&#x7684;&#x56DE;&#x8DEF;&#x65F6;,&#x611F;&#x5E94;&#x7535;&#x52A8;&#x52BF;&#x4ECD;&#x7136;&#x4E0D;&#x53D8;</strong>,&#x5373;&#x4F7F;&#x6CA1;&#x6709;&#x7EDD;&#x7F18;&#x4F53;,&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x56DE;&#x8DEF;,&#x4ECD;&#x7136;&#x4F1A;&#x611F;&#x5E94;&#x51FA;&#x7535;&#x52A8;&#x52BF;,&#x4E5F;&#x5C31;&#x662F;&#x611F;&#x5E94;&#x51FA;&#x7535;&#x573A;.</p>
+<p>&#x7535;&#x78C1;&#x611F;&#x5E94;&#x5B9A;&#x5F8B;&#x7684;&#x672C;&#x8D28;&#x662F;<strong>&#x53D8;&#x5316;&#x7684;&#x78C1;&#x901A;&#x91CF;&#x4EA7;&#x751F;&#x4E86;&#x611F;&#x5E94;&#x7535;&#x52A8;&#x52BF;(&#x4E5F;&#x5C31;&#x662F;&#x611F;&#x5E94;&#x7535;&#x573A;),&#x4E0E;&#x4ECB;&#x8D28;&#x65E0;&#x5173;</strong>.</p>
+<p>&#x73B0;&#x5728;&#x5047;&#x8BBE;&#x6709;&#x4E00;&#x4E2A;&#x5F88;&#x5706;&#x5F88;&#x5706;&#x7684;&#x7EBF;&#x5708;,&#x4E24;&#x7AEF;&#x52A0;&#x4E0A;&#x7535;&#x538B;.</p>
+<p>&#x5728;<a href="1_StaticEM.html">&#x9759;&#x7535;&#x573A;&#x4E00;&#x8282;</a>&#x4E2D;,&#x6211;&#x4EEC;&#x8BA1;&#x7B97;&#x8FC7;&#x5355;&#x531D;&#x7EBF;&#x5708;&#x5185;&#x90E8;&#x7684;&#x78C1;&#x901A;&#x91CF;.</p>
+<p><script type="math/tex; mode=display">
+\Phi=\frac{\mu_{0}kI}{4}</script></p>
+<p>&#x56E0;&#x6B64;N&#x531D;&#x7EBF;&#x5708;&#x7EBF;&#x5708;&#x4E24;&#x7AEF;&#x7684;&#x611F;&#x5E94;&#x7535;&#x52A8;&#x52BF;<strong>&#x5927;&#x5C0F;</strong>&#x4E3A;:</p>
+<p><script type="math/tex; mode=display">
+U=\frac{Nd\Phi}{dt}=N\frac{\mu_{0}k}{4}\frac{dI}{dt}=L\frac{dI}{dt}</script></p>
+<p>&#x5176;&#x4E2D;<script type="math/tex; mode=display">
+L=N\frac{\mu_{0}k}{4}</script>$&#x4F53;&#x73B0;&#x4E86;&#x7EBF;&#x5708;&#x968F;&#x7535;&#x6D41;&#x53D8;&#x5316;&#x7684;&#x611F;&#x5E94;&#x7535;&#x52A8;&#x52BF;&#x80FD;&#x529B;.<script type="math/tex; ">L$只与线圈的匝数,半径,介质的磁导率有关.
+
+
+
+## 分子电流与磁极化
+我们知道元电流可以产生磁场(毕奥-萨伐尔定律),而事实上,物质中的电子在不停地做着自旋和绕原子旋转的运动.有没有很像日-地关系!!!物理真他妈美.WOC.
+
+那还有一种东西可以形成磁场,比个如,磁性材料! 磁性材料按化学成分分，常见的有两大类：**金属磁性材料**和**铁氧体**．**铁氧体**是以**氧化铁**为主要成分的磁性氧化物．这家伙就是磁铁呀,指南针呀兄弟们,四大发明呀兄弟们~
+
+安培就思考它们之间是不是有联系?于是他就认为,在原子、分子等物质微粒内部，存在着一种环形电流——分子电流，分子电流使每个物质微粒都成为微小的磁体，它的两侧相当于两个磁极.
+
+<div align="center"><img src="./res/Ind1.jpg"></div>
+
+
+这种电子除了自旋和绕核旋转形成分子环形电流,在外磁场作用下会受到安培力,并发生**进动**,该进动形成的环形电流产生的磁场与外磁场方向相反,削弱了磁场的作用(你可以伸开左女朋友试试,再伸出来右女朋友试试,别忘了高中物理知识,只有安培力需要用左爪,其他都用右爪).这种现象叫做**磁极化**,简称为磁化.在任何材料中,除了进动产生的环形电流</script>I<em>{1}<script type="math/tex; ">,材料自身还有分子电流</script>I</em>{2}<script type="math/tex; ">,二者之矢量和统称为</script>I<em>{p}<script type="math/tex; ">.根据泡利不相容原理,同一层的电子的自旋方向一定不同,因此:
+* 如果材料原子外的电子是成对出现的,固有分子电流</script>I</em>{2}<script type="math/tex; ">的和为0.此时磁化作用由进动的环形电流</script>I<em>{1}<script type="math/tex; ">主导;该材料主要体现**抗磁性**. 总场强</script>H&lt;H</em>{0}<script type="math/tex; ">,如铜,铋,硫,氢,银等;
+* 如果材料原子外的电子是不成对的,固有分子电流</script>I<em>{2}<script type="math/tex; ">一般大于进动的环形电流</script>I</em>{1}<script type="math/tex; ">,因此可能体现与外磁场方向相同,此时材料主要体现**顺磁性**. 总场强</script>H&gt;H<em>{0}<script type="math/tex; ">,如锰,铬,铂,氧,氮等;
+* 如果材料原子外的电子是不成对的,固有分子电流</script>I</em>{2}<script type="math/tex; ">远远大于进动的环形电流</script>I<em>{1}<script type="math/tex; ">时,材料呈现**铁磁性**. 总场强</script>H&gt;&gt;H</em>{0}<script type="math/tex; ">,如铁,钴,镍等.
+
+把顺磁性物质和抗磁性物质称为**弱**磁性物质，把铁磁性物质称为**强**磁性物质．**通常所说的磁性材料是指强磁性物质．**
+
+设在导体交界面上的外界环形电流</script>I<em>{0}<script type="math/tex; ">,产生的磁感应强度为</script>B</em>{0}<script type="math/tex; ">;在</script>B<em>{0}<script type="math/tex; ">的作用下,材料磁化产生的磁化环形电流为</script>I</em>{p}<script type="math/tex; ">.现假设**二者方向相反**.该环形电流产生的磁感应强度和外部磁感应强度的矢量和记为</script>\vec{B}=\vec{B<em>{0}}+\vec{B</em>{p}}<script type="math/tex; ">.
+
+
+
+**设磁介质是均匀的**,继续用安培环路定理:
+
+</script>
+\oint B\cdot dl=\mu<em>{0}(I</em>{0}+I<em>{p})<script type="math/tex; ">
+
+</script>I</em>{p}<script type="math/tex; ">的大小与</script>B<em>{0}<script type="math/tex; ">正相关,因此</script>B<script type="math/tex; ">与</script>B</em>{0}<script type="math/tex; ">为线性关系,设</script>B=\mu<em>{r}B</em>{0}<script type="math/tex; ">,其中</script>\mu<em>{r}<script type="math/tex; ">的值仅与材料本身有关。</script>\mu</em>{r}<script type="math/tex; ">反映了实际磁场强度相对于真空介质中的磁场强度的大小,因此叫做**相对磁导率**,且真空中</script>\mu<em>{r}=1<script type="math/tex; ">。
+
+可以计算得到
+</script>
+I</em>{p}=\oint (1-\frac{1}{\mu<em>{r}})\frac{B}{\mu</em>{0}}\cdot dl<script type="math/tex; ">
+
+
+**在</script>0&lt;\mu<em>{r}&lt;1<script type="math/tex; ">时,</script>\mu</em>{r}<script type="math/tex; ">越大,则介质内实际磁场强度越大,材料越不易被磁化.**
+这就是磁化电流.将上式代入到安培环路定理中,可以得到
+</script></p>
+<p>\oint{\frac{B}{\mu<em>{0}\mu</em>{r}}\cdot dl}=I<em>{0}
+<script type="math/tex; ">
+
+> **S是闭合回路l包围的曲面,该曲面是不闭合的**.
+
+这里的</script>I</em>{0}<script type="math/tex; ">**是介质中的传导电流**. 可以看出,与真空介质相比,式中仅多了一项</script>\mu<em>{r}<script type="math/tex; ">.
+这里定义了磁场强度</script>H=B/\mu</em>{0}\mu<em>{r}<script type="math/tex; ">,因此
+
+</script>
+\oint{H\cdot dl}=I</em>{0}=\int<em>{S} J</em>{c}\cdot dS<script type="math/tex; ">
+
+</script>H<script type="math/tex; ">**表示了穿过曲面的传导电流**.</script>B=\mu<em>{0}\mu</em>{r}H=\mu<em>{0}H+\mu</em>{0}M<script type="math/tex; ">,这个方程是材料(磁介质)的**本构方程**.
+微分形式为
+</script>
+\nabla\times H=J<em>{c}<script type="math/tex; ">
+
+## 位移电流
+
+然而麦克斯韦在实验中发现,即使穿过该曲面上的电流和为0时,当**曲面上的电场强度随时间变化**时,仍然有产生了磁感应强度,这种交变的电场就像是一个虚拟的电流对该曲面进行充电产生的,因此叫做**位移电流**.注意,虽然叫做位移电流,但实际上是不存在的电流,仅仅用于表述</script>J</em>{D}=\partial D/\partial t<script type="math/tex; ">. 传导电流</script>J<em>{c}<script type="math/tex; ">与位移电流</script>J</em>{D}<script type="math/tex; ">共同对磁场做出了贡献.
+
+</script>
+\oint{H\cdot dl}=I<em>{0}=\int</em>{S} \left(J<em>{c}+\frac{\partial D}{\partial t}\right)\cdot dS<script type="math/tex; ">
+
+微分形式为
+
+</script>
+\nabla\times H=J</em>{c}+\frac{\partial D}{\partial t}<script type="math/tex; ">
+
+至此,**交变的磁场可以产生电场(感应电动势),交变的电场(位移电流)可以产生磁场,这是电磁波的理论基础,更是电磁波为什么能在真空中传播的原因**.
+
+## 电感的特性
+1. I-V特性
+当线圈内部存在磁介质时,介质中的磁化会增大磁感应强度(与真空介质相比H不变,但B增大了),因此,增大了感应电动势.
+下图中左图显示了当电流不变时,虽然磁感应强度比真空介质的大,但仍无感应电动势.右图显示了感应电动势的产生条件时线圈中的电流发生变化.
+线圈的感应电动势是来自自身电流变化,这种现象叫做**自感**. 当线圈中的感应电动势来自于其他线圈电流的变化,叫做**互感**. 
+电感器的I-V特性方程为
+</script>
+u=L\frac{di}{dt}<script type="math/tex; ">
+其中</script>L=N\frac{\mu<em>{0}\mu</em>{r}k}{4}<script type="math/tex; ">体现了线圈随电流变化的感应电动势能力.</script>L<script type="math/tex; ">只与线圈的匝数,半径,介质的磁导率有关.
+<div align="center"><img src="./res/Ind2.jpg"></div>
+
+2. 电感与磁场能
+在电流变化的过程中,电源为电感**充磁**;在**放磁**过程中,电感能量消耗在回路中.
+充磁时,设经过电感的电流不断增大,电感两端产生的感应电动势为</script>\mathscr{E}=\int<em>{S}{\frac{\partial B}{\partial t}\cdot dS}<script type="math/tex; ">,因此此过程积累的能量为
+</script>
+E=\int\mathscr{E}Idt=\int{B\cdot HdV}<script type="math/tex; ">
+定义**磁场的能量密度**为单位体积内的能量:</script>B\cdot H<script type="math/tex; ">
+**即使没有产生传导电流,只要真空中一定空间内产生了感应电动势,就是外界对其充磁才产生了的电势能.**
+
+3. 感抗与相移
+当流过电感的电流为</script>i=Ke^{j(\omega t+\phi)}<script type="math/tex; ">时,则</script>u=L\cdot j\omega Ke^{j(\omega t + \phi)}=j\omega Li<script type="math/tex; ">,
+因此,电容对交流信号的抵抗能力,也就是**容抗**,大小为
+</script>
+Z={j\omega L}<script type="math/tex; ">
+由于</script>u=e^{j90^{o}}\omega Li<script type="math/tex; ">,因此</script>u<script type="math/tex; "> **的相位超前</script>i<script type="math/tex; ">的相位90°**.
+由于电感的以上特性,常用于**直流信号耦合(DC-DC,变压器)**,构建**延时和相移电路**,**滤除纹波噪声**等.
+由于加入磁介质后,感应电动势明显增大,因此,在变压器(或者说DC-DC)电路中,**根据初级和次级线圈的匝数比值不同**,就可以在次级线圈中产生不同的感应电动势.这就是变压电路的原理.
+> 欧拉公式:</script>e^{aj}=\cos a+j\sin a<script type="math/tex; ">
+## 电感的能量
+
+线圈中的电流</script>I<script type="math/tex; ">发生变化,产生了感应电动势</script>\mathscr{E}<script type="math/tex; ">,产生的能量为
+
+</script>
+E</em>{m}=\int{\mathscr{E}Idt}=\int{LI\frac{dI}{dt}dt}=\frac{1}{2}LI^{2}<script type="math/tex; ">
+
+## 电感与趋肤效应
+
+交流电通过导体时,**导体产生的磁场会以安培力(/洛伦兹力)的形式作用于导体中的载流子,使载流子发生横向运动**.这导致导体各个横向部分的电流密度不均匀,导体表面电流密度大(减少了截面积，增大了损耗),这种现象称为**趋肤效应**.交流电的频率越高,趋肤效应越显著,频率高到一定程度,可以认为电流完全从导体表面流过. 在射频电路中,必须考虑趋肤效应.
+
+> 实际应用：空心导线代替实心导线，节约材料；在高频电路中使用多股相互绝缘细导线编织成束来削弱趋肤效应。
+
+
+## 小结
+
+到目前位置,我们已介绍过电容的原理(介质的极化增大了储存电荷的能力);电感的原理(磁介质的磁化增大了线圈感应电流的能力).
+
+* 点电荷之间的库仑力,元电流之间的安培力;
+* [电磁感应定律](1_StaticEM.html):</script>\oint E\cdot dl=-\int<em>{S}\frac{\partial B}{\partial t}dS<script type="math/tex; ">,电场的无旋性;
+* [电场高斯定理](2_Cap.html):</script>\oint D\cdot dS=q<script type="math/tex; ">,电场的有源性;
+* [磁场安培环路定理](4_Ind.html):</script>\oint</em>{l}H\cdot dl=\int<em>{S} \left(J</em>{c}+\frac{\partial D}{\partial t}\right)\cdot dS<script type="math/tex; ">,磁场的有旋性;
+* [磁场磁通连续定理](1_StaticEM.html):</script>\oint B\cdot dS=0<script type="math/tex; ">,磁场的无源性.
+* [电流连续性定理](1_StaticEM.html):</script>\oint<em>{S}\vec{J}\cdot dS=-\frac{d}{dt}\int\rho dV<script type="math/tex; ">,电荷守恒定律.
+* [本构方程1-导体的欧姆定律](3_Res.html):</script>J=\sigma E<script type="math/tex; ">
+* [本构方程2-电介质的极化](2_Cap.html):</script>D=\epsilon</em>{0}\epsilon<em>{r}E<script type="math/tex; ">
+* [本构方程3-磁介质的磁化](4_Ind.html):</script>B=\mu</em>{0}\mu_{r}H$$</p>
+<p>&#x8FD9;&#x5C31;&#x662F;4&#x4E2A;&#x9EA6;&#x514B;&#x65AF;&#x97E6;&#x65B9;&#x7A0B;&#x7EC4;,1&#x4E2A;&#x7535;&#x6D41;&#x8FDE;&#x7EED;&#x6027;&#x5B9A;&#x7406;,&#x4EE5;&#x53CA;3&#x4E2A;&#x6750;&#x6599;&#x7684;&#x672C;&#x5F81;&#x65B9;&#x7A0B;.  </p>
+<p><hr><div align="center" id="jinrishici-sentence">&#x6B63;&#x5728;&#x52A0;&#x8F7D;&#x4ECA;&#x65E5;&#x8BD7;&#x8BCD;....</div><hr><script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script> </p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; charleechan 2021 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Updated At: 
+2021-04-03 21:00:48
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="3_Res.html" class="navigation navigation-prev " aria-label="Previous page: 电阻的原理与设计">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="5_Maxwell.html" class="navigation navigation-next " aria-label="Next page: 经典电磁学理论基础">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"电感与磁极化","level":"2.3.4","depth":2,"next":{"title":"经典电磁学理论基础","level":"2.3.5","depth":2,"path":"Hardware/Devices/5_Maxwell.md","ref":"Hardware/Devices/5_Maxwell.md","articles":[]},"previous":{"title":"电阻的原理与设计","level":"2.3.3","depth":2,"path":"Hardware/Devices/3_Res.md","ref":"Hardware/Devices/3_Res.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["back-to-top-button","splitter","code","-lunr","-search","-sharing","toggle-chapters","sharing-plus","search-pro","insert-logo","custom-favicon","pageview-count","tbfed-pagefooter","mind-maps","hide-element","mathjax-single-dollar","forkmegithub","mermaid-gb3","auto-scroll-table"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy charleechan 2021","modify_label":"Updated At: ","modify_format":"YYYY-MM-DD HH:mm:ss"},"splitter":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"auto-scroll-table":{},"mathjax-single-dollar":{"forceSVG":false,"version":"2.6-latest"},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"mind-maps":{},"highlight":{},"mermaid-gb3":{},"favicon":"https://charleechan.github.io/MyWiki/img/Avatar.ico","back-to-top-button":{},"pageview-count":{},"custom-favicon":{},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"forkmegithub":{"color":"gray","url":"https://github.com/your/repo"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{},"insert-logo":{"style":"background: none; max-height: 100px; min-height: 100px","url":"https://charleechan.github.io/MyWiki/img/Avatar-100.png"}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Hardware/Devices/4_Ind.md","mtime":"2021-04-03T13:00:48.549Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-04-16T10:49:04.149Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-mind-maps/mindmaps.dist.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-mathjax-single-dollar/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-forkmegithub/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-auto-scroll-table/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

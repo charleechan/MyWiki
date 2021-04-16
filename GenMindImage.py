@@ -230,9 +230,9 @@ def main():
     libList = []
     
     # 如果您已增加一级目录文件夹,请在下面添加
-    libList.append('\\mds\\Coding')
-    libList.append('\\mds\\SoftTuto')
-    libList.append('\\mds\\IME')
+    libList.append('\\mds\\Hardware')
+    libList.append('\\mds\\Software')
+    libList.append('\\mds\\Tricks')
     # 如果您已增加一级目录文件夹,请在上面添加
     
     global langHead

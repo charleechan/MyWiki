@@ -71,116 +71,81 @@ def main():
     
     libList = []
     # 在vvvv下面vvvv添加一级文件夹vvvvvvv
-    libList.append('\\Coding')
-    libList.append('\\SoftTuto')
-    libList.append('\\IME')
+    libList.append('\\Hardware')
+    libList.append('\\Software')
+    libList.append('\\Tricks')
     # 在^^^^上面^^^^添加一级文件夹^^^^^^^
     
     
     # 在vvvv下面vvvv添加各级文件夹vvvvvvv
     # libDict[文件夹的路径]                ="侧边栏导航名字"
+    libDict["\\Hardware"]                 ="微电子专业"
+    libDict["\\Hardware\\Devices"]        ="电磁与电子器件"
+    libDict["\\Hardware\\SigCirSys"]      ="电路中的信号"
+    libDict["\\Hardware\\AnalogCirciut"]  ="模拟电路基础"
+    libDict["\\Hardware\\DigitalCircuit"] ="数字电路基础"
+    libDict["\\Hardware\\PCB"]            ="PCB设计与应用"
+    libDict["\\Hardware\\AnalogIC"]       ="模拟IC设计"
+    libDict["\\Hardware\\DigitalIC"]      ="数字IC RTL设计"
+    libDict["\\Hardware\\CPU"]            ="CPU设计"
+    libDict["\\Hardware\\SoC"]            ="SoC设计"
+
+    libDict["\\Software"]                    ="软件教程"
+    libDict["\\Software\\CSTM32"]            ="C程序与驱动开发"
+    libDict["\\Software\\CppQt"]             ="CPP程序与Qt开发"
+    libDict["\\Software\\Datas"]             ="数据结构与数据库"
+    libDict["\\Software\\DSPISP"]            ="信号/图像处理"
+    libDict["\\Software\\PythonAI"]          ="Python与AI"
+    libDict["\\Software\\MD"]                ="Markdown"
+    libDict["\\Software\\HCJ"]               ="HTML/CSS/Javascript"
+    libDict["\\Software\\H5App"]             ="HTML5移动/桌面APP"
+    libDict["\\Software\\QML"]               ="QML"
+
+
+    libDict["\\Tricks"]              ="日积月累"
+
+    libDict["\\Tricks\\Project"]                 ="工程/项目软件"
+    libDict["\\Tricks\\Project\\AltiumDesigner"] ="Altium Designer"
+    libDict["\\Tricks\\Project\\CadenceSPB"]     ="Cadence SPB"
+    libDict["\\Tricks\\Project\\ModelSim"]       ="ModelSim"
+    libDict["\\Tricks\\Project\\KeilMDK"]        ="Keil MDK"
+    libDict["\\Tricks\\Project\\MultiSim"]       ="MultiSim"
+    libDict["\\Tricks\\Project\\Qt"]             ="Qt"
+    libDict["\\Tricks\\Project\\SolidWorks"]     ="SolidWorks"
+    libDict["\\Tricks\\Project\\VisualStudio"]   ="Visual Studio"
+    libDict["\\Tricks\\Project\\Vivado"]         ="Vivado"
+    libDict["\\Tricks\\Project\\VSCode"]         ="VS Code"
+    libDict["\\Tricks\\Project\\Others"]         ="其他"
+
+    libDict["\\Tricks\\Image"]               ="图像图表软件"
+    libDict["\\Tricks\\Image\\GIMP"]         ="GIMP"
+    libDict["\\Tricks\\Image\\Origin"]       ="Origin"
+    libDict["\\Tricks\\Image\\Visio"]        ="Visio"
+
+    libDict["\\Tricks\\Office"]          ="办公软件"
+    libDict["\\Tricks\\Office\\Word"]    ="Word"
+    libDict["\\Tricks\\Office\\PPT"]     ="PPT"
+    libDict["\\Tricks\\Office\\Excel"]   ="Excel"
+
+    libDict["\\Tricks\\Manage"]          ="管理类软件"
+    libDict["\\Tricks\\Manage\\Inlook"]  ="Inlook"
+    libDict["\\Tricks\\Manage\\Git"]     ="Git"
+
+    libDict["\\Tricks\\Plugins"]             ="插件类"
+    libDict["\\Tricks\\Plugins\\GIMPPlu"]    ="GIMP插件"
+    libDict["\\Tricks\\Plugins\\OfficePlu"]  ="Office插件"
+    libDict["\\Tricks\\Plugins\\GitbookPlu"] ="Gitbook插件"
+    libDict["\\Tricks\\Plugins\\ChromeExt"]  ="Chrome插件"
+    libDict["\\Tricks\\Plugins\\VSCodeExt"]  ="VSCode插件"
+
+    libDict["\\Tricks\\Video"]               ="视频软件"
+    libDict["\\Tricks\\Video\\VideoStudio"]  ="会声会影"
     
-    libDict["\\Coding"]                    ="编程语言"
+    libDict["\\Tricks\\Music"]               ="音频软件"
 
-    libDict["\\Coding\\LangsGene"]         ="通用编程语言"
-    libDict["\\Coding\\LangsGene\\C"]      ="C语言"
-    libDict["\\Coding\\LangsGene\\Cpp"]    ="C++"
-    libDict["\\Coding\\LangsGene\\Java"]   ="Java"
-
-    libDict["\\Coding\\LangsHard"]             ="硬件描述语言"
-    libDict["\\Coding\\LangsHard\\Verilog"]    ="Verilog HDL"
-    libDict["\\Coding\\LangsHard\\VHDL"]       ="VHDL"
-    libDict["\\Coding\\LangsHard\\SV"]         ="System Verilog"
-
-    libDict["\\Coding\\LangsMark"]         ="标记语言"
-    libDict["\\Coding\\LangsMark\\MD"]     ="Markdown"
-    libDict["\\Coding\\LangsMark\\HTML"]   ="HTML"
-    libDict["\\Coding\\LangsMark\\QML"]    ="QML"
-    libDict["\\Coding\\LangsMark\\XML"]    ="XML"
-
-    libDict["\\Coding\\LangsScript"]         ="脚本"
-    libDict["\\Coding\\LangsScript\\JS"]     ="Javascript/QScript"
-    libDict["\\Coding\\LangsScript\\Bash"]   ="Bash"
-    libDict["\\Coding\\LangsScript\\CMD"]    ="CMD 命令行"
-    libDict["\\Coding\\LangsScript\\Matlab"] ="Matlab"
-    libDict["\\Coding\\LangsScript\\Python"] ="Python"
-    libDict["\\Coding\\LangsScript\\SQL"]    ="SQL"
-    libDict["\\Coding\\LangsScript\\TCL"]    ="TCL"
-    libDict["\\Coding\\LangsScript\\PHP"]    ="PHP"
-
-    libDict["\\Coding\\OtherLibs"]             ="库/框架"
-    libDict["\\Coding\\OtherLibs\\Tensorflow"] ="Tensorflow"
-    libDict["\\Coding\\OtherLibs\\Pytorch"]    ="Pytorch"
-    libDict["\\Coding\\OtherLibs\\OpenCV"]     ="OpenCV"
-
-    libDict["\\Coding\\LangsStyle"]          ="样式表"
-    libDict["\\Coding\\LangsStyle\\CSS"]     ="CSS/QSS"
-
-    libDict["\\Coding\\LangsConf"]         ="配置文件"
-    libDict["\\Coding\\LangsConf\\Ini"]    ="Ini"
-    libDict["\\Coding\\LangsConf\\Json"]   ="Json"
-
-
-
-    libDict["\\SoftTuto"]              ="软件教程"
-
-    libDict["\\SoftTuto\\Project"]                 ="工程/项目软件"
-    libDict["\\SoftTuto\\Project\\AltiumDesigner"] ="Altium Designer"
-    libDict["\\SoftTuto\\Project\\CadenceSPB"]     ="Cadence SPB"
-    libDict["\\SoftTuto\\Project\\ModelSim"]       ="ModelSim"
-    libDict["\\SoftTuto\\Project\\KeilMDK"]        ="Keil MDK"
-    libDict["\\SoftTuto\\Project\\MultiSim"]       ="MultiSim"
-    libDict["\\SoftTuto\\Project\\Qt"]             ="Qt"
-    libDict["\\SoftTuto\\Project\\SolidWorks"]     ="SolidWorks"
-    libDict["\\SoftTuto\\Project\\VisualStudio"]   ="Visual Studio"
-    libDict["\\SoftTuto\\Project\\Vivado"]         ="Vivado"
-    libDict["\\SoftTuto\\Project\\VSCode"]         ="VS Code"
-    libDict["\\SoftTuto\\Project\\Others"]         ="其他"
-
-    libDict["\\SoftTuto\\Image"]               ="图像图表软件"
-    libDict["\\SoftTuto\\Image\\GIMP"]         ="GIMP"
-    libDict["\\SoftTuto\\Image\\Mermaid"]      ="Mermaid"
-    libDict["\\SoftTuto\\Image\\Origin"]       ="Origin"
-    libDict["\\SoftTuto\\Image\\Solidworks"]   ="Solidworks"
-    libDict["\\SoftTuto\\Image\\Visio"]        ="Visio"
-
-    libDict["\\SoftTuto\\Animation"]                   ="动画制作软件"
-    libDict["\\SoftTuto\\Animation\\SolidWorks"]       ="SolidWorks"
-    libDict["\\SoftTuto\\Animation\\HTML5"]            ="HTML5"
-    libDict["\\SoftTuto\\Animation\\PocketAnimation"]  ="口袋动画-Pocket Animation"
-
-    libDict["\\SoftTuto\\Office"]          ="办公软件"
-    libDict["\\SoftTuto\\Office\\Word"]    ="Word"
-    libDict["\\SoftTuto\\Office\\PPT"]     ="PPT"
-    libDict["\\SoftTuto\\Office\\Excel"]   ="Excel"
-
-    libDict["\\SoftTuto\\Manage"]          ="管理类软件"
-    libDict["\\SoftTuto\\Manage\\Inlook"]  ="Inlook"
-    libDict["\\SoftTuto\\Manage\\Outlook"] ="Outlook"
-    libDict["\\SoftTuto\\Manage\\Git"]     ="Git"
-
-    libDict["\\SoftTuto\\Plugins"]             ="插件类"
-    libDict["\\SoftTuto\\Plugins\\GIMPPlu"]    ="GIMP插件"
-    libDict["\\SoftTuto\\Plugins\\OfficePlu"]  ="Office插件"
-    libDict["\\SoftTuto\\Plugins\\GitbookPlu"] ="Gitbook插件"
-    libDict["\\SoftTuto\\Plugins\\ChromeExt"]  ="Chrome插件"
-    libDict["\\SoftTuto\\Plugins\\VSCodeExt"]  ="VSCode插件"
-
-    libDict["\\SoftTuto\\Video"]               ="视频软件"
-    libDict["\\SoftTuto\\Video\\VideoStudio"]  ="会声会影"
-    
-    
+    libDict["\\Tricks\\Game"]                ="游戏"
     # 在^^^^下面^^^^添加各级文件夹^^^
-    libDict["\\IME"]                ="微电子专业"
-    libDict["\\IME\\Analog"]        ="模拟IC设计"
-    libDict["\\IME\\SoC"]           ="数字IC设计"
-    libDict["\\IME\\Devices"]       ="电子器件"
-    libDict["\\IME\\SigCirSys"]       ="信号与电路系统"
-    libDict["\\IME\\SigCirSys\\SigProc"]  ="信号处理"
-    libDict["\\IME\\SigCirSys\\ImgProc"]  ="图像处理"
-    libDict["\\IME\\EDA"]       ="EDA实践"
-    libDict["\\IME\\EDA\\Install"]       ="EDA全套安装教程"
-    
+
     
     summaryFileDir = "\\mds"
 

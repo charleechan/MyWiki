@@ -1,105 +1,77 @@
 # 我的Wiki
 
-<mark>**按分类导航**</mark> |  [按平台导航](./nav1.html) | [软件教程导航](./nav2.html)
+[更新本站](./Tricks/Manage/Git/UpdateThisSite.html)
 
-[更新我的Wiki](SoftTuto/Manage/Git/UpdateThisSite.html)
+[办公类(Windows/Office)](./Tricks/Office/index.html) | [图像类](./Tricks/Image/index.html") | [管理类](./Tricks/Manage/index.html") | [插件类](./Tricks/Plugins/index.html") | [工程类](./Tricks/Project/index.html") |[视频类](./Tricks/Video/index.html") | [音频类](./Tricks/Music/index.html") | [游戏类](./Tricks/Game/index.html")
 
 ```mermaid
-graph LR;
-classDef CSS3 fill:#20A162,stroke:#000000,color:#ffffff,stroke-width:0px;
-classDef CSS2 fill:#4C1F24,stroke:#000000,color:#ffffff,stroke-width:0px;
-classDef CSS1 fill:#1677B3,stroke:#000000,color:#ffffff,stroke-width:0px;
-ROOT(按语言)
-B1(Mark Language )
-  C1(Markdown )
-  C2(HTML )
-  C3(QML )
-  C13(XML )
-B2(Scripts )
-  C4("Javascript(QScript) ")
-  C5(Python )
-  C6(Matlab )
-  C7(CMD )
-  C8(TCL )
-  C9(Bash )
-  C10(PHP )
-  C11(SQL )
-B3(StyleSheet )
-  C12("css(qss) ")
-B4(ConfigFile )
-  C14(Json )
-  C15(Ini )
-B5(GeneralCode )
-  C16(C++ )
-  C17(C )
-  C18(Java )
-B6(Hardware )
-  C19(Verilog HDL )
-  C20(VHDL )
-  C21(System Verilog )
-B7(OtherLibs )
-  C22(Tensorflow )
-  C23(Pytorch )
-  C24(OpenCV )
-ROOT --> B1
-ROOT --> B2
-ROOT --> B3
-ROOT --> B4
-ROOT --> B5
-ROOT --> B6
-ROOT --> B7
-B1 --> C1 
-B1 --> C2 
-B1 --> C3 
-B2 --> C4 
-B2 --> C5    
-B2 --> C6 
-B2 --> C7 
-B2 --> C8 
-B2 --> C9 
-B2 --> C10
-B2 --> C11
-B3 --> C12
-B1 --> C13
-B4 --> C14
-B4 --> C15
-B5 --> C16
-B5 --> C17
-B5 --> C18
-B6 --> C19
-B6 --> C20
-B6 --> C21
-B7 --> C22
-B7 --> C23
-B7 --> C24
+flowchart TB
+物理电子-->板级电路
+板级电路-->芯片设计
+计算机组成与设计/软硬件接口-->算法
+算法-->HTML应用与开发
 
-click C1 "./Coding/LangsMark/MD/index.html" "点我打开"
-click C2 "./Coding/LangsMark/HTML/index.html" "点我打开"
-click C3 "./Coding/LangsMark/QML/index.html" "点我打开"
-click C4 "./Coding/LangsScript/JS/index.html" "点我打开"
-click C5 "./Coding/LangsScript/Python/index.html" "点我打开"
-click C6 "./Coding/LangsScript/Matlab/index.html" "点我打开"
-click C7 "./Coding/LangsScript/CMD/index.html" "点我打开"
-click C8 "./Coding/LangsScript/TCL/index.html" "点我打开"
-click C9 "./Coding/LangsScript/Bash/index.html" "点我打开"
-click C10 "./Coding/LangsScript/PHP/index.html" "点我打开"
-click C11 "./Coding/LangsScript/SQL/index.html" "点我打开"
-click C12 "./Coding/LangsStyle/CSS/index.html" "点我打开"
-click C13 "./Coding/LangsMark/XML/index.html" "点我打开"
-click C14 "./Coding/LangsConf/Json/index.html" "点我打开"
-click C15 "./Coding/LangsConf/Ini/index.html" "点我打开"
-click C16 "./Coding/LangsGene/Cpp/index.html" "点我打开"
-click C17 ".Coding/LangsGene/C/index.html" "点我打开"
-click C18 "./Coding/LangsGene/Java/index.html" "点我打开"
-click C19 "./Coding/LangsHard/Verilog/index.html" "点我打开"
-click C20 "./Coding/LangsHard/VHDL/index.html" "点我打开"
-click C21 "./Coding/LangsHard/SystemVerilog/index.html" "点我打开"
-click C22 "./OtherLibs/Tensorflow/index.html" "点我打开"
-click C23 "./OtherLibs/Pytorch/index.html" "点我打开"
-click C24 "./OtherLibs/OpenCV/index.html" "点我打开"
+subgraph 物理电子
+A1(电磁场与电磁波)-->A2(电子器件)-->A3(电路中的信号)
+end
+click A1 "./Hardware/Devices/index.html"
+click A2 "./Hardware/Devices/index.html"
+click A3 "./Hardware/SigCirSys/index.html"
 
-class C1,C2,C3,C4,C5,,C6,C7,C8,C9,C10,C11,C12 CSS3
-class C13,C14,C15,C16,C17,C18,C19,C20,C21,C22,C23,C24 CSS3
-class B1,B2,B3,B4,B5,B6,B7 CSS1
-class ROOT CSS2
+subgraph 板级电路
+B1(模拟电路基础)-->B2(数字电路基础)-->B3(PCB设计与应用) 
+B1-->B3
+end
+click B1 "./Hardware/AnalogCirciut/index.html"
+click B2 "./Hardware/DigitalCircuit/index.html"
+click B3 "./Hardware/PCB/index.html"
+
+subgraph 芯片设计
+C1(模拟IC设计)-->C2(数字IC RTL设计)-->C3(CPU设计)-->C4(SoC设计)
+C1-->C4
+end
+click C1 "./Hardware/AnalogIC/index.html"
+click C2 "./Hardware/DigitalIC/index.html"
+click C3 "./Hardware/CPU/index.html"
+click C4 "./Hardware/SoC/index.html"
+
+subgraph 计算机组成与设计/软硬件接口
+D1(C程序与驱动开发)--> D2(CPP程序与Qt开发)
+end
+click D1 "./Software/CSTM32/index.html"
+click D2 "./Software/CppQt/index.html"
+
+subgraph HTML应用与开发
+E1(Markdown)-->E2(HTML/CSS/Javascript网站应用)-->E3(HTML5移动/桌面APP)
+E4(QML)
+end
+click E1 "./Software/MD/index.html"
+click E2 "./Software/HCJ/index.html"
+click E3 "./Software/H5App/index.html"
+click E4 "./Software/QML/index.html"
+
+subgraph 算法
+F1(数据结构与数据库)-->F2(信号/图像处理)-->F3(Python与AI)
+end
+click F1 "./Software/Datas/index.html"
+click F2 "./Software/DSPISP/index.html"
+click F3 "./Software/PythonAI/index.html"
+
 ```
+
+Q&A:
+1. 两个图之间的关系是什么?
+>* **CPU设计**与**C程序/驱动**之间通过**寄存器**联系起来.
+这就是时至今日,为啥大家还非得学习C语言,也是为啥硬件语言描述的是RTL模型.
+>* 在设计信号处理芯片DSP/图像信号处理芯片ISP时,工程中需要学习**信号/图像处理算法**和**数字IC RTL设计**结合起来.
+2. Qt开发是Qt4还是Qt5?
+>* 这里建议学习Qt4的同时学习C++,配合侯捷老师的视频课程,效果拔群.
+>* **不建议学习Qt5**,因为其本质就是HTML/CSS/JS做前端页面([QML](./Coding/LangMark/QML/index.html)就是把它们融在一起了),后端使用C++处理数据模型.那我为啥还学习你,直接学习HTML开发,通过**JS调用C++的库**就可以了呀,还不用那么复杂的环境.
+
+3. 学习嵌入式Linux系统开发需要哪些知识呢?
+>* 学习完**计算机组成与设计/软硬件接口**,再学习完**物理电子**和**板级电路**即可立马去学习**嵌入式Linux系统开发**.
+>* **嵌入式Linux系统开发**一般需要学习**C程序**实现**底层**外设硬件的驱动,学习**Linux系统**完成系统裁剪和移植,学习**C/Qt4**完成程序/驱动开发.
+>* 本站**不涉及嵌入式Linux系统开发**.
+
+4. 有专门讲TCL、Verilog HDL的吗?
+>* 没有,单独学习一门语言而不实践,是学习不到知识的,因此把TCL和Verilog HDL等已经融入在**数字IC RTL设计**相关教程里了.
